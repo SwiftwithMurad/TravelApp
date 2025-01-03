@@ -8,6 +8,10 @@
 import UIKit
 
 class RegisterController: UIViewController {
+    let helper = FileManagerHelper()
+    let manager = UserDefaultsManager()
+    var user = [User]()
+    var sendDataBack: ((User) -> Void)?
     
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
@@ -22,6 +26,9 @@ class RegisterController: UIViewController {
         addBottomToEmail(to: emailField, height: 1)
         addBottomToUsername(to: usernameField, height: 1)
         addBottomToPassword(to: passwordField, height: 1)
+        helper.readData { user in
+            self.user = user
+        }
     }
     
     func addBottomToEmail(to textField: UITextField, height: CGFloat) {
@@ -40,8 +47,21 @@ class RegisterController: UIViewController {
     
     func addBottomToPassword(to textField: UITextField, height: CGFloat) {
         let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: passwordField.frame.height - height, width: passwordField.frame.width, height: height)
+        bottomLine.frame = CGRect(x: textField.frame.origin.x, y: passwordField.frame.height - height, width: passwordField.frame.width, height: height)
         bottomLine.backgroundColor = UIColor(named: "HomeColor")?.cgColor
         passwordField.layer.addSublayer(bottomLine)
+    }
+    
+    
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        if let email = emailField.text, !email.isEmpty,
+           let username = usernameField.text, !username.isEmpty,
+           let password = passwordField.text, !password.isEmpty {
+            let users: User = .init(username: username, email: email, password: password)
+            user.append(users)
+            helper.writeData(user: user)
+            sendDataBack?(users)
+            navigationController?.popViewController(animated: true)
+        }
     }
 }
