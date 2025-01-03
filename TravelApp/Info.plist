@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Inter_18pt-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>
