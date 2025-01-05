@@ -40,18 +40,15 @@ extension HeaderCollectionReusableView: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: headerCollection.frame.width / 3.3, height: 45)
+        .init(width: headerCollection.frame.width / 3.3, height: 40)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderWidth = 1
-        cell?.layer.borderColor = UIColor(named: "HomeColor")?.cgColor
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor.white.cgColor
+        let cell = collectionView.cellForItem(at: indexPath) as! HeaderCell
+        for(index, _) in categories.enumerated() {
+            cell.updateView(isSelected: categories[indexPath.row].isSelected ?? false)
+            categories[index].isSelected = index == indexPath.item ? true : false
+        }
+        headerCollection.reloadData()
     }
 }

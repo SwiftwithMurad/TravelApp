@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-De-6nB">
-                    <rect key="frame" x="0.0" y="79" width="320" height="124"/>
+                    <rect key="frame" x="24" y="79" width="296" height="124"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tZ2-cU-krv">
                         <size key="itemSize" width="128" height="128"/>
@@ -48,7 +48,7 @@
                 <constraint firstAttribute="bottom" secondItem="DD2-De-6nB" secondAttribute="bottom" id="Lm5-HD-N5k"/>
                 <constraint firstItem="f4A-wG-LaW" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="24" id="YLT-s3-F9C"/>
                 <constraint firstItem="DD2-De-6nB" firstAttribute="top" secondItem="f4I-NW-QuJ" secondAttribute="bottom" constant="20" id="fen-ct-zoc"/>
-                <constraint firstItem="DD2-De-6nB" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="koh-Ws-gXt"/>
+                <constraint firstItem="DD2-De-6nB" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="24" id="koh-Ws-gXt"/>
                 <constraint firstItem="DD2-De-6nB" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="pMU-iu-UHm"/>
             </constraints>
             <connections>

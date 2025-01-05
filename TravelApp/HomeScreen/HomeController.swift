@@ -10,14 +10,14 @@ import UIKit
 class HomeController: UIViewController {
     let trips = [Travel]()
     var category = [Categories]()
-
+    let jsonHelper = JsonHelper()
+    
     @IBOutlet weak var homeCollection: UICollectionView!
     @IBOutlet weak var searchView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configUI()
-        readData()
     }
     
     func configUI() {
@@ -27,16 +27,8 @@ class HomeController: UIViewController {
         homeCollection.delegate = self
         homeCollection.register(UINib(nibName: "HeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView")
         homeCollection.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell")
-    }
-    
-    func readData() {
-        if let fileUrl = Bundle.main.url(forResource: "Categories", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: fileUrl)
-                category = try JSONDecoder().decode([Categories].self, from: data)
-            } catch {
-                print(error.localizedDescription)
-            }
+        jsonHelper.readData { categories in
+            self.category = categories
         }
     }
 }

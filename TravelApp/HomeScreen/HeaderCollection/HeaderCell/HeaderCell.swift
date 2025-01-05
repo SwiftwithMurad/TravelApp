@@ -20,7 +20,9 @@ class HeaderCell: UICollectionViewCell {
 
     func configUI() {
         backgroundColor = .white
-        layer.cornerRadius = 22.5
+        layer.cornerRadius = 20
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.white.cgColor
     }
     
     func configCell(category: Categories) {
@@ -28,8 +30,9 @@ class HeaderCell: UICollectionViewCell {
         cellImage.image = UIImage(named: category.image ?? "")
     }
     
-    func updateView() {
-        cellView.backgroundColor = UIColor(named: "HomeColor")
-        cellView.layer.cornerRadius = 18
+    func updateView(isSelected: Bool) {
+        cellView.backgroundColor = isSelected ? .home: .white
+        cellView.layer.cornerRadius = isSelected ? 20: 0
+        layer.borderColor = isSelected ? UIColor.home.cgColor: UIColor.white.cgColor
     }
 }

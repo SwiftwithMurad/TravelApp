@@ -9,9 +9,23 @@ import UIKit
 
 class CategoryCell: UICollectionViewCell {
 
+    @IBOutlet weak var countryName: UILabel!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cellView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        configUI()
     }
 
+    func configUI() {
+        cellView.layer.cornerRadius = 30
+    }
+    
+    func configCell(travel: Travel) {
+        countryName.text = travel.country
+        cellLabel.text = travel.name
+        cellImage.image = UIImage(named: travel.image ?? "")
+    }
 }

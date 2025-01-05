@@ -359,10 +359,10 @@ Journey together! </string>
             </objects>
             <point key="canvasLocation" x="122.38805970149254" y="-2.7459954233409607"/>
         </scene>
-        <!--View Controller-->
+        <!--Favourites Controller-->
         <scene sceneID="7rq-kA-lEC">
             <objects>
-                <viewController id="pEX-I6-dL8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavouritesController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pEX-I6-dL8" customClass="FavouritesController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fd2-gR-wNr">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -377,10 +377,10 @@ Journey together! </string>
             </objects>
             <point key="canvasLocation" x="1993" y="301"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Controller-->
         <scene sceneID="gtT-XR-I5S">
             <objects>
-                <viewController id="boL-BW-NSo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="boL-BW-NSo" customClass="ProfileController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D5o-tD-Ijx">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
