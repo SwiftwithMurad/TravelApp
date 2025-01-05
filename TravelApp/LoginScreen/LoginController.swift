@@ -8,20 +8,19 @@
 import UIKit
 
 class LoginController: UIViewController {
-    let manager = UserDefaultsManager()
-    let helper = FileManagerHelper()
-    var user = [User]()
+    let viewModel = LoginViewModel()
     
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var passwordFieldView: UIView!
-    @IBOutlet weak var emailFieldView: UIView!
-    @IBOutlet weak var loginView: UIView!
+    @IBOutlet private weak var passwordField: UITextField!
+    @IBOutlet private weak var emailField: UITextField!
+    @IBOutlet private weak var signUpButton: UIButton!
+    @IBOutlet private weak var passwordFieldView: UIView!
+    @IBOutlet private weak var emailFieldView: UIView!
+    @IBOutlet private weak var loginView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configUI()
+        configureViewModel()
     }
     
     func configUI() {
@@ -30,9 +29,10 @@ class LoginController: UIViewController {
         passwordFieldView.layer.borderWidth = 1
         passwordFieldView.layer.borderColor = UIColor(named: "HomeColor")?.cgColor
         passwordFieldView.layer.cornerRadius = 25
-        helper.readData { user in
-            self.user = user
-        }
+    }
+    
+    func configureViewModel() {
+        viewModel.readTravelData()
     }
     
     @IBAction func createButtonTapped(_ sender: Any) {
@@ -44,14 +44,17 @@ class LoginController: UIViewController {
         }
     }
     
+    
+    
     @IBAction func signInButtonTapped(_ sender: Any) {
+        configureViewModel()
         if let email = emailField.text, !email.isEmpty,
            let password = passwordField.text, !password.isEmpty,
            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let sceneDelegate = windowScene.delegate as? SceneDelegate {
-            if user.contains(where: { $0.email == email && $0.password == password }) {
+            if viewModel.user.contains(where: { $0.email == email && $0.password == password }) {
                 sceneDelegate.homeRoot()
-                manager.setValue(value: true, key: .isLoggedIn)
+                viewModel.manager.setValue(value: true, key: .isLoggedIn)
             } else {
                 let alertController = UIAlertController(title: "Wrong information", message: "Please enter valid user info", preferredStyle: .alert)
                 let action = UIAlertAction(title: "Ok", style: .default)
@@ -62,3 +65,4 @@ class LoginController: UIViewController {
         }
     }
 }
+

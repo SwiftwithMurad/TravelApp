@@ -8,5 +8,16 @@
 import Foundation
 
 class LoginViewModel {
+    let manager = UserDefaultsManager()
+    let helper = FileManagerHelper()
+    var user = [User]()
     
+    var successAlert: (() -> Void)?
+    var failureAlert: (() -> Void)?
+    
+    func readTravelData() {
+        helper.readData { result in
+            self.user = result
+        }
+    }
 }

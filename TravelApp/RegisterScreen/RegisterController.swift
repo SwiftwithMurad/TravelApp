@@ -13,9 +13,9 @@ class RegisterController: UIViewController {
     var user = [User]()
     var sendDataBack: ((User) -> Void)?
     
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet private weak var passwordField: UITextField!
+    @IBOutlet private weak var usernameField: UITextField!
+    @IBOutlet private weak var emailField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
