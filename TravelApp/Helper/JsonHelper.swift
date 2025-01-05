@@ -9,7 +9,9 @@ import Foundation
 
 class JsonHelper {
     var categories = [Categories]()
-    func readData(completion: (([Categories]) -> Void)) {
+    var trips = [Travel]()
+    
+    func readCategoryData(completion: (([Categories]) -> Void)) {
         if let fileUrl = Bundle.main.url(forResource: "Categories", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileUrl)
@@ -19,6 +21,18 @@ class JsonHelper {
             catch {
                print(error.localizedDescription)
            }
+        }
+    }
+    
+    func readTravelData(completion: (([Travel]) -> Void)) {
+        if let fileUrl = Bundle.main.url(forResource: "Categories", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: fileUrl)
+                trips = try JSONDecoder().decode([Travel].self, from: data)
+                completion(trips)
+            } catch {
+                print(error.localizedDescription)
+            }
         }
     }
 }

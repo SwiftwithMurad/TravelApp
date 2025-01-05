@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeController: UIViewController {
-    let trips = [Travel]()
+    var trips = [Travel]()
     var category = [Categories]()
     let jsonHelper = JsonHelper()
     
@@ -27,8 +27,11 @@ class HomeController: UIViewController {
         homeCollection.delegate = self
         homeCollection.register(UINib(nibName: "HeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView")
         homeCollection.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell")
-        jsonHelper.readData { categories in
+        jsonHelper.readCategoryData { categories in
             self.category = categories
+        }
+        jsonHelper.readTravelData { trips in
+            self.trips = trips
         }
     }
 }
@@ -45,7 +48,7 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: homeCollection.frame.width / 2, height: 200)
+        .init(width: homeCollection.frame.width / 2, height: 210)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

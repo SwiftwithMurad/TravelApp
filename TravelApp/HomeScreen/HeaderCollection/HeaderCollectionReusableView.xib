@@ -11,11 +11,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="TravelApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="203"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-De-6nB">
-                    <rect key="frame" x="24" y="79" width="296" height="124"/>
+                    <rect key="frame" x="24" y="79" width="296" height="130"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tZ2-cU-krv">
                         <size key="itemSize" width="128" height="128"/>
@@ -54,7 +54,7 @@
             <connections>
                 <outlet property="headerCollection" destination="DD2-De-6nB" id="XYp-la-8wO"/>
             </connections>
-            <point key="canvasLocation" x="138.93129770992365" y="36.267605633802816"/>
+            <point key="canvasLocation" x="138.93129770992365" y="38.380281690140848"/>
         </collectionReusableView>
     </objects>
     <resources>
