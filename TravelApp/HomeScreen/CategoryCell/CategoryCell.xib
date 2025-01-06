@@ -67,14 +67,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhD-zL-0mx">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhD-zL-0mx">
                                 <rect key="frame" x="150" y="180" width="20" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="Gxv-EB-sWW"/>
                                     <constraint firstAttribute="height" constant="17" id="L6o-4t-Epf"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="heartButton" title=""/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="heartButton"/>
+                                <state key="selected" image="selectedHeartButton"/>
+                                <state key="highlighted" image="selectedHeartButton"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heartButton" title="" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -123,6 +128,7 @@
     <resources>
         <image name="heartButton" width="20" height="17"/>
         <image name="locationImage" width="12" height="15"/>
+        <image name="selectedHeartButton" width="20" height="17"/>
         <image name="starImage" width="12" height="11"/>
         <namedColor name="HomeColor">
             <color red="0.0" green="0.56099998950958252" blue="0.62699997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

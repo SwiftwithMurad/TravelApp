@@ -20,3 +20,10 @@ struct Travel: Codable {
     let country: String?
     let image: String?
 }
+
+struct TravelInfo {
+    let image: String?
+    let name: String?
+    let country: String?
+    let tripInfo: String?
+}

@@ -52,6 +52,11 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         .init(width: collectionView.frame.width / 2 - 40, height: 220)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "InfoController") as! InfoController
+        navigationController?.show(controller, sender: nil)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath) as! HeaderCollectionReusableView
         header.configCategory(category: category)

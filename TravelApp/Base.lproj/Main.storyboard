@@ -375,7 +375,7 @@ Journey together! </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2X-g0-qAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1993" y="301"/>
+            <point key="canvasLocation" x="1992.5373134328356" y="300.68649885583523"/>
         </scene>
         <!--Profile Controller-->
         <scene sceneID="gtT-XR-I5S">
@@ -393,7 +393,7 @@ Journey together! </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="web-7E-ZUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1993" y="911"/>
+            <point key="canvasLocation" x="1992.5373134328356" y="910.98398169336383"/>
         </scene>
         <!--Home Controller-->
         <scene sceneID="6Wt-Qi-6MA">
@@ -501,6 +501,65 @@ Journey together! </string>
             </objects>
             <point key="canvasLocation" x="1992.5373134328356" y="-305.49199084668192"/>
         </scene>
+        <!--Info Controller-->
+        <scene sceneID="mNM-9p-5XR">
+            <objects>
+                <viewController storyboardIdentifier="InfoController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HBj-Su-Ycj" customClass="InfoController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eaq-gE-qh1">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-vW-d2P">
+                                <rect key="frame" x="0.0" y="62" width="402" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jg-8g-D1e">
+                                <rect key="frame" x="24" y="801" width="296" height="45"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Booking Now | $40">
+                                    <backgroundConfiguration key="background" cornerRadius="20"/>
+                                    <color key="baseBackgroundColor" name="HomeColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUm-NV-2Ov">
+                                <rect key="frame" x="324" y="808.66666666666663" width="33" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G29-xX-fb1"/>
+                                    <constraint firstAttribute="width" constant="33" id="SFX-zJ-4cI"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" backgroundImage="heartButton"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="heartButton"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="heartButtonTapped:" destination="HBj-Su-Ycj" eventType="touchUpInside" id="Zed-YP-xvx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dny-Eh-pnW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dny-Eh-pnW" firstAttribute="trailing" secondItem="WGh-vW-d2P" secondAttribute="trailing" id="5DA-BF-bwu"/>
+                            <constraint firstItem="5Jg-8g-D1e" firstAttribute="leading" secondItem="Dny-Eh-pnW" secondAttribute="leading" constant="24" id="O2N-Lk-dHb"/>
+                            <constraint firstItem="ZUm-NV-2Ov" firstAttribute="centerY" secondItem="5Jg-8g-D1e" secondAttribute="centerY" id="SwY-uS-Jfd"/>
+                            <constraint firstItem="WGh-vW-d2P" firstAttribute="top" secondItem="Dny-Eh-pnW" secondAttribute="top" id="Ta3-zP-pBL"/>
+                            <constraint firstItem="5Jg-8g-D1e" firstAttribute="height" secondItem="eaq-gE-qh1" secondAttribute="height" multiplier="0.0514874" id="cuT-Tm-vJR"/>
+                            <constraint firstAttribute="bottom" secondItem="5Jg-8g-D1e" secondAttribute="bottom" constant="28" id="lWd-ow-aie"/>
+                            <constraint firstItem="5Jg-8g-D1e" firstAttribute="top" secondItem="WGh-vW-d2P" secondAttribute="bottom" constant="24" id="m3L-dR-W3b"/>
+                            <constraint firstItem="WGh-vW-d2P" firstAttribute="leading" secondItem="Dny-Eh-pnW" secondAttribute="leading" id="omV-dN-dGf"/>
+                            <constraint firstItem="5Jg-8g-D1e" firstAttribute="width" secondItem="eaq-gE-qh1" secondAttribute="width" multiplier="0.736318" id="tEn-wT-U5Q"/>
+                            <constraint firstItem="ZUm-NV-2Ov" firstAttribute="leading" secondItem="5Jg-8g-D1e" secondAttribute="trailing" constant="4" id="x0D-Nw-U0v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heartButton" destination="ZUm-NV-2Ov" id="X7u-3u-N6e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZN-M1-9X1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785.0746268656717" y="-305.49199084668192"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ktk-sW-CKY">
             <objects>
@@ -532,6 +591,7 @@ Journey together! </string>
         <image name="generalWorld" width="209" height="208"/>
         <image name="googleImage" width="28" height="28"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="heartButton" width="20" height="17"/>
         <image name="homeFieldConfig" width="43" height="45"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="locationImage" width="12" height="15"/>
