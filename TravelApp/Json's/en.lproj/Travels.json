@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Redfish Lake",
+        "country": "Idaho",
+        "image": "redfishLake"
+    },
+    {
+        "id": 1,
+        "name": "Maligne Lake",
+        "country": "Canada",
+        "image": "maligneLake"
+    },
+    {
+        "id": 1,
+        "name": "Lake McDonald",
+        "country": "Canada",
+        "image": "lakeMcdonald"
+    },
+    {
+        "id": 1,
+        "name": "Lake Malawi",
+        "country": "Tanzania",
+        "image": "lakeMalawi"
+    },
+   {
+       "id": 1,
+       "name": "Lake Baikal",
+       "country": "Russian",
+       "image": "lakeBaikal"
+   },
+   {
+       "id": 1,
+       "name": "Moraine Lake",
+       "country": "Canada",
+       "image": "moraineLake"
+   },
+   {
+       "id": 2,
+       "name": "Caribbean Sea",
+       "country": "Mexico",
+       "image": "caribbeanSea"
+   },
+   {
+       "id": 2,
+       "name": "Caspian Sea",
+       "country": "Azerbaijan",
+       "image": "caspianSea"
+   },
+   {
+       "id": 2,
+       "name": "Coral Sea",
+       "country": "Australia",
+       "image": "coralSea"
+   },
+   {
+       "id": 2,
+       "name": "Andaman Sea",
+       "country": "Thailand",
+       "image": "andamanSea"
+   },
+   {
+       "id": 2,
+       "name": "Baltic Sea",
+       "country": "Denmark",
+       "image": "balticSea"
+   },
+   {
+       "id": 2,
+       "name": "Black Sea",
+       "country": "Turkey",
+       "image": "blackSea"
+   }
+]

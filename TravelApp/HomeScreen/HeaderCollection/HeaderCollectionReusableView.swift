@@ -9,6 +9,7 @@ import UIKit
 
 class HeaderCollectionReusableView: UICollectionReusableView {
     var categories = [Categories]()
+    var reloadCategoryData: ((Int) -> Void)?
     
     @IBOutlet private weak var headerCollection: UICollectionView!
     override func awakeFromNib() {
@@ -40,7 +41,7 @@ extension HeaderCollectionReusableView: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: headerCollection.frame.width / 3.3, height: 40)
+        .init(width: headerCollection.frame.width / 3.3, height: 45)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -48,7 +49,8 @@ extension HeaderCollectionReusableView: UICollectionViewDataSource, UICollection
         for(index, _) in categories.enumerated() {
             cell.updateView(isSelected: categories[indexPath.row].isSelected ?? false)
             categories[index].isSelected = index == indexPath.item ? true : false
-        }
+        }        
+        reloadCategoryData?(categories[indexPath.row].id ?? 1)
         headerCollection.reloadData()
     }
 }

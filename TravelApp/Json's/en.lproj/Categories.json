@@ -18,9 +18,9 @@
         "isSelected": false
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Forest",
         "image": "forestImage",
-        "isSelected": false
+        "isSelected": false            
     }
 ]

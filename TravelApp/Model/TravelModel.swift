@@ -12,7 +12,6 @@ struct Categories: Codable {
     let name: String?
     let image: String?
     var isSelected: Bool?
-//    let travel: [Travel]
 }
 
 struct Travel: Codable {

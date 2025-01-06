@@ -20,7 +20,9 @@ class CategoryCell: UICollectionViewCell {
     }
 
     func configUI() {
-        cellView.layer.cornerRadius = 30
+        cellView.layer.cornerRadius = 20
+        cellImage.layer.cornerRadius = 30
+        cellImage.clipsToBounds = true
     }
     
     func configCell(travel: Travel) {

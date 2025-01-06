@@ -11,11 +11,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="TravelApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-De-6nB">
-                    <rect key="frame" x="24" y="79" width="296" height="130"/>
+                    <rect key="frame" x="24" y="79.666666666666686" width="296" height="124.33333333333331"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tZ2-cU-krv">
                         <size key="itemSize" width="128" height="128"/>
@@ -31,7 +31,22 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4I-NW-QuJ">
-                    <rect key="frame" x="219" y="24" width="77" height="35"/>
+                    <rect key="frame" x="219" y="25.333333333333332" width="77" height="34.333333333333343"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="See All">
+                        <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99S-hU-1T3">
+                    <rect key="frame" x="24" y="226.66666666666666" width="71.333333333333329" height="19.333333333333343"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNi-Wb-MzS">
+                    <rect key="frame" x="219" y="219" width="77" height="35"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" title="See All">
@@ -42,19 +57,23 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <constraints>
-                <constraint firstItem="f4I-NW-QuJ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="24" id="7E7-Ql-3zl"/>
+                <constraint firstItem="f4A-wG-LaW" firstAttribute="centerY" secondItem="f4I-NW-QuJ" secondAttribute="centerY" id="Bb1-PC-Tr8"/>
                 <constraint firstItem="f4A-wG-LaW" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="32" id="FCH-7X-Z9y"/>
                 <constraint firstAttribute="trailing" secondItem="f4I-NW-QuJ" secondAttribute="trailing" constant="24" id="FdA-as-rlN"/>
-                <constraint firstAttribute="bottom" secondItem="DD2-De-6nB" secondAttribute="bottom" id="Lm5-HD-N5k"/>
+                <constraint firstItem="JNi-Wb-MzS" firstAttribute="centerY" secondItem="99S-hU-1T3" secondAttribute="centerY" id="Ki5-YT-myD"/>
+                <constraint firstItem="DD2-De-6nB" firstAttribute="top" secondItem="f4I-NW-QuJ" secondAttribute="bottom" constant="20" id="L6C-fQ-AL9"/>
+                <constraint firstAttribute="bottom" secondItem="99S-hU-1T3" secondAttribute="bottom" constant="20" id="Ugi-EC-lZW"/>
                 <constraint firstItem="f4A-wG-LaW" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="24" id="YLT-s3-F9C"/>
-                <constraint firstItem="DD2-De-6nB" firstAttribute="top" secondItem="f4I-NW-QuJ" secondAttribute="bottom" constant="20" id="fen-ct-zoc"/>
+                <constraint firstAttribute="trailing" secondItem="JNi-Wb-MzS" secondAttribute="trailing" constant="24" id="gJA-Th-w7Z"/>
                 <constraint firstItem="DD2-De-6nB" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="24" id="koh-Ws-gXt"/>
                 <constraint firstItem="DD2-De-6nB" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="pMU-iu-UHm"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="DD2-De-6nB" secondAttribute="bottom" constant="28" id="pfc-w7-ZhP"/>
+                <constraint firstItem="99S-hU-1T3" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="24" id="ucy-e1-8hE"/>
             </constraints>
             <connections>
                 <outlet property="headerCollection" destination="DD2-De-6nB" id="XYp-la-8wO"/>
             </connections>
-            <point key="canvasLocation" x="138.93129770992365" y="38.380281690140848"/>
+            <point key="canvasLocation" x="138.93129770992365" y="66.901408450704224"/>
         </collectionReusableView>
     </objects>
     <resources>

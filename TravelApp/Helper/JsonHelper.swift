@@ -25,7 +25,7 @@ class JsonHelper {
     }
     
     func readTravelData(completion: (([Travel]) -> Void)) {
-        if let fileUrl = Bundle.main.url(forResource: "Categories", withExtension: "json") {
+        if let fileUrl = Bundle.main.url(forResource: "Travels", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileUrl)
                 trips = try JSONDecoder().decode([Travel].self, from: data)
