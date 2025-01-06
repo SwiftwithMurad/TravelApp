@@ -70,5 +70,77 @@
        "name": "Black Sea",
        "country": "Turkey",
        "image": "blackSea"
+   },
+   {
+       "id": 3,
+       "name": "Mount Everest",
+       "country": "China",
+       "image": "mountEverest"
+   },
+   {
+       "id": 3,
+       "name": "Mount Fuji",
+       "country": "Japan",
+       "image": "mountFuji"
+   },
+   {
+       "id": 3,
+       "name": "Mount Rainier",
+       "country": "United States",
+       "image": "mountRainier"
+   },
+   {
+       "id": 3,
+       "name": "Mount Olympus",
+       "name": "Macedonia",
+       "image": "mountOlympus"
+   },
+   {
+       "id": 3,
+       "name": "Matterhorn",
+       "country": "Switzerland",
+       "image": "matterhorn"
+   },
+   {
+       "id": 3,
+       "name": "Tirich Mir",
+       "country": "Pakistan",
+       "image": "tirichMir"
+   },
+   {
+       "id": 4,
+       "name": "Amazon",
+       "country": "Brazil",
+       "image": "amazon"
+   },
+   {
+       "id": 4,
+       "name": "The Black Forest",
+       "country": "Germany",
+       "image": "blackForest"
+   },
+   {
+       "id": 4,
+       "name": "Crooked Forest",
+       "country": "Poland",
+       "image": "crookedForest"
+   },
+   {
+       "id": 4,
+       "name": "Dragon's blood",
+       "country": "Yemen",
+       "image": "dragonsBloodForest"
+   },
+   {
+       "id": 4,
+       "name": "Dancing Forest",
+       "country": "Russia",
+       "image": "dancingForest"
+   },
+   {
+       "id": 4,
+       "name": "Waipoua Forest",
+       "country": "New Zealand",
+       "image": "waipouaForest"
    }
 ]
