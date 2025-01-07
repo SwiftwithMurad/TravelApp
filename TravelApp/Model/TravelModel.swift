@@ -19,6 +19,7 @@ struct Travel: Codable {
     let name: String?
     let country: String?
     let image: String?
+    let info: String?
 }
 
 struct TravelInfo: Codable {

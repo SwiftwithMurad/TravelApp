@@ -8,10 +8,8 @@
 import UIKit
 
 class InfoController: UIViewController {
-    var travelInfo = [TravelInfo]()
-    let jsonHelper = JsonHelper()
-    var travel = [Travel]()
-
+    var travel: Travel?
+    
     @IBOutlet private weak var infoTable: UITableView!
     @IBOutlet private weak var heartButton: UIButton!
     override func viewDidLoad() {
@@ -35,13 +33,13 @@ class InfoController: UIViewController {
 
 extension InfoController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return travelInfo.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell") as! InfoCell
-        if travelInfo.contains(where: { $0.name == travel[indexPath.row].name }) {
-            cell.configCell(travel: travelInfo[indexPath.row])
+        if let travel = travel {
+            cell.configCell(travel: travel)
         }
         return cell
     }

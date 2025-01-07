@@ -24,7 +24,7 @@ class InfoCell: UITableViewCell {
         
     }
     
-    func configCell(travel: TravelInfo) {
+    func configCell(travel: Travel) {
         countryName.text = travel.country
         tripName.text = travel.name
         tripInfo.text = travel.info
