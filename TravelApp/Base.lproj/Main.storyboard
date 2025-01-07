@@ -554,6 +554,7 @@ Journey together! </string>
                     </view>
                     <connections>
                         <outlet property="heartButton" destination="ZUm-NV-2Ov" id="X7u-3u-N6e"/>
+                        <outlet property="infoTable" destination="WGh-vW-d2P" id="hS9-5s-NCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZN-M1-9X1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

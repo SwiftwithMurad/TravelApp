@@ -10,10 +10,11 @@ import UIKit
 class HomeController: UIViewController {
     var trips = [Travel]()
     var category = [Categories]()
+    var travelInfo = [TravelInfo]()
     let jsonHelper = JsonHelper()
     
-    @IBOutlet weak var homeCollection: UICollectionView!
-    @IBOutlet weak var searchView: UIView!
+    @IBOutlet private weak var homeCollection: UICollectionView!
+    @IBOutlet private weak var searchView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +33,9 @@ class HomeController: UIViewController {
         }
         jsonHelper.readTravelData { trips in
             self.trips = trips
+        }
+        jsonHelper.readTravelInfoData { info in
+            self.travelInfo = info
         }
     }
 }
@@ -54,6 +58,8 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "InfoController") as! InfoController
+        controller.travelInfo = travelInfo
+        controller.travel = trips
         navigationController?.show(controller, sender: nil)
     }
     

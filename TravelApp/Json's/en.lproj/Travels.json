@@ -3,7 +3,8 @@
         "id": 1,
         "name": "Redfish Lake",
         "country": "Idaho",
-        "image": "redfishLake"
+        "image": "redfishLake",
+        "info": "What is Redfish Lake known for? Redfish Lake is the final stop on the longest Pacific salmon run in North America, which requires long-distance swimmers, such as Sockeye and Chinook Salmon, to travel over 900 miles upstream to return to their spawning grounds. Redfish Lake is an alpine lake in Custer County, Idaho, just south of Stanley. It is the largest lake within the Sawtooth National Recreation Area."
     },
     {
         "id": 1,
@@ -92,7 +93,7 @@
    {
        "id": 3,
        "name": "Mount Olympus",
-       "name": "Macedonia",
+       "country": "Macedonia",
        "image": "mountOlympus"
    },
    {

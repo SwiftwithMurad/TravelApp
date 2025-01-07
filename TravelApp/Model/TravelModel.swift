@@ -21,9 +21,10 @@ struct Travel: Codable {
     let image: String?
 }
 
-struct TravelInfo {
-    let image: String?
+struct TravelInfo: Codable {
+    let id: Int?
     let name: String?
     let country: String?
-    let tripInfo: String?
+    let image: String?
+    let info: String?
 }
