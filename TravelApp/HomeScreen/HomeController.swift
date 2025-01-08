@@ -10,7 +10,6 @@ import UIKit
 class HomeController: UIViewController {
     var trips = [Travel]()
     var category = [Categories]()
-    var travelInfo = [TravelInfo]()
     let jsonHelper = JsonHelper()
     
     @IBOutlet private weak var homeCollection: UICollectionView!
@@ -33,9 +32,6 @@ class HomeController: UIViewController {
         }
         jsonHelper.readTravelData { trips in
             self.trips = trips
-        }
-        jsonHelper.readTravelInfoData { info in
-            self.travelInfo = info
         }
     }
 }

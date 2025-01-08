@@ -33,35 +33,28 @@ class LoginController: UIViewController {
     
     func configureViewModel() {
         viewModel.readTravelData()
+        viewModel.errorAlert = {
+            let alertController = UIAlertController(title: "Wrong information", message: "Please enter valid user info", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default)
+            alertController.addAction(action)
+            self.present(alertController, animated: true)
+        }
     }
     
     @IBAction func createButtonTapped(_ sender: Any) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "RegisterController") as! RegisterController
-        navigationController?.show(controller, sender: nil)
         controller.sendDataBack = { user in
             self.emailField.text = user.email
             self.passwordField.text = user.password
         }
+        navigationController?.show(controller, sender: nil)
     }
-    
-    
     
     @IBAction func signInButtonTapped(_ sender: Any) {
         configureViewModel()
         if let email = emailField.text, !email.isEmpty,
-           let password = passwordField.text, !password.isEmpty,
-           let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let sceneDelegate = windowScene.delegate as? SceneDelegate {
-            if viewModel.user.contains(where: { $0.email == email && $0.password == password }) {
-                sceneDelegate.homeRoot()
-                viewModel.manager.setValue(value: true, key: .isLoggedIn)
-            } else {
-                let alertController = UIAlertController(title: "Wrong information", message: "Please enter valid user info", preferredStyle: .alert)
-                let action = UIAlertAction(title: "Ok", style: .default)
-                alertController.addAction(action)
-                present(alertController, animated: true
-                )
-            }
+           let password = passwordField.text, !password.isEmpty {
+            viewModel.config(email: email, password: password)
         }
     }
 }

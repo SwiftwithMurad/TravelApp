@@ -21,13 +21,12 @@ class InfoCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        
     }
     
     func configCell(travel: Travel) {
         countryName.text = travel.country
         tripName.text = travel.name
         tripInfo.text = travel.info
-        infoImage.image = UIImage(named: travel.image ?? "")
+//        infoImage.image = UIImage(named: travel.image ?? "")
     }
 }
