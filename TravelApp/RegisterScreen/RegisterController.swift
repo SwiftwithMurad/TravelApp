@@ -12,6 +12,7 @@ class RegisterController: UIViewController {
     let manager = UserDefaultsManager()
     var user = [User]()
     var sendDataBack: ((User) -> Void)?
+    let viewModel = RegisterViewModel()
     
     @IBOutlet private weak var passwordField: UITextField!
     @IBOutlet private weak var usernameField: UITextField!
@@ -26,9 +27,7 @@ class RegisterController: UIViewController {
         addBottomToEmail(to: emailField, height: 1)
         addBottomToUsername(to: usernameField, height: 1)
         addBottomToPassword(to: passwordField, height: 1)
-        helper.readData { user in
-            self.user = user
-        }
+        viewModel.readData()
     }
     
     func addBottomToEmail(to textField: UITextField, height: CGFloat) {

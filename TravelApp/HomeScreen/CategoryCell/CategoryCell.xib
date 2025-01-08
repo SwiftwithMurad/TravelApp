@@ -12,14 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="TravelApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="178" height="207"/>
+            <rect key="frame" x="0.0" y="0.0" width="178" height="229"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="178" height="207"/>
+                <rect key="frame" x="0.0" y="0.0" width="178" height="229"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIu-vW-zdy">
-                        <rect key="frame" x="0.0" y="0.0" width="178" height="207"/>
+                        <rect key="frame" x="0.0" y="0.0" width="178" height="229"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Az3-W8-Py0">
                                 <rect key="frame" x="0.0" y="0.0" width="178" height="110"/>
@@ -77,17 +77,15 @@
                                 <state key="normal" title="" image="heartButton"/>
                                 <state key="selected" image="selectedHeartButton"/>
                                 <state key="highlighted" image="selectedHeartButton"/>
-                                <buttonConfiguration key="configuration" style="plain" image="heartButton" title="" cornerStyle="fixed">
-                                    <backgroundConfiguration key="background"/>
-                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XhD-zL-0mx" firstAttribute="centerY" secondItem="UWK-HJ-5JQ" secondAttribute="centerY" id="10i-ln-USi"/>
-                            <constraint firstItem="Az3-W8-Py0" firstAttribute="top" secondItem="GIu-vW-zdy" secondAttribute="top" id="3H9-UZ-X85"/>
+                            <constraint firstItem="Az3-W8-Py0" firstAttribute="leading" secondItem="GIu-vW-zdy" secondAttribute="leading" id="50j-NX-zFL"/>
                             <constraint firstItem="Ghj-5I-DzV" firstAttribute="leading" secondItem="GIu-vW-zdy" secondAttribute="leading" constant="8" id="GIc-Yj-49Y"/>
                             <constraint firstItem="NVh-yA-O4c" firstAttribute="leading" secondItem="GIu-vW-zdy" secondAttribute="leading" constant="4" id="Ggx-Lf-ZV1"/>
+                            <constraint firstItem="Az3-W8-Py0" firstAttribute="top" secondItem="GIu-vW-zdy" secondAttribute="top" id="LOe-MN-Jvj"/>
                             <constraint firstAttribute="trailing" secondItem="XhD-zL-0mx" secondAttribute="trailing" constant="8" id="RqQ-DJ-Gjj"/>
                             <constraint firstItem="JVe-7Q-0Pn" firstAttribute="centerY" secondItem="Ghj-5I-DzV" secondAttribute="centerY" id="S3w-b3-dam"/>
                             <constraint firstItem="UWK-HJ-5JQ" firstAttribute="centerY" secondItem="N3s-Y4-Vgt" secondAttribute="centerY" id="YqR-2q-WJO"/>
@@ -97,8 +95,7 @@
                             <constraint firstItem="N3s-Y4-Vgt" firstAttribute="leading" secondItem="GIu-vW-zdy" secondAttribute="leading" constant="8" id="bhy-TQ-rnb"/>
                             <constraint firstAttribute="trailing" secondItem="zqr-xT-UPL" secondAttribute="trailing" constant="8" id="bxw-2f-hU0"/>
                             <constraint firstItem="NVh-yA-O4c" firstAttribute="top" secondItem="Az3-W8-Py0" secondAttribute="bottom" constant="8" id="d5v-Mb-IgB"/>
-                            <constraint firstAttribute="trailing" secondItem="Az3-W8-Py0" secondAttribute="trailing" id="dfo-4X-YEw"/>
-                            <constraint firstItem="Az3-W8-Py0" firstAttribute="leading" secondItem="GIu-vW-zdy" secondAttribute="leading" id="mIU-Ck-ser"/>
+                            <constraint firstAttribute="trailing" secondItem="Az3-W8-Py0" secondAttribute="trailing" id="nbA-B0-zC4"/>
                             <constraint firstItem="N3s-Y4-Vgt" firstAttribute="top" secondItem="Ghj-5I-DzV" secondAttribute="bottom" constant="16" id="ukD-mN-Xwj"/>
                             <constraint firstItem="Ghj-5I-DzV" firstAttribute="top" secondItem="NVh-yA-O4c" secondAttribute="bottom" constant="12" id="vRZ-pM-Avs"/>
                             <constraint firstItem="23f-Sl-Z4s" firstAttribute="centerY" secondItem="NVh-yA-O4c" secondAttribute="centerY" id="wnX-pj-4kk"/>
@@ -115,14 +112,14 @@
                 <constraint firstAttribute="trailing" secondItem="GIu-vW-zdy" secondAttribute="trailing" id="qDZ-Lh-R8q"/>
                 <constraint firstItem="GIu-vW-zdy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sqy-v3-HKf"/>
             </constraints>
-            <size key="customSize" width="178" height="207"/>
+            <size key="customSize" width="178" height="229"/>
             <connections>
                 <outlet property="cellImage" destination="Az3-W8-Py0" id="xJb-iY-Ohi"/>
                 <outlet property="cellLabel" destination="NVh-yA-O4c" id="sNb-Yc-K8r"/>
                 <outlet property="cellView" destination="GIu-vW-zdy" id="5yT-MG-fG0"/>
                 <outlet property="countryName" destination="JVe-7Q-0Pn" id="aYI-tk-lJ9"/>
             </connections>
-            <point key="canvasLocation" x="71.641791044776113" y="-7.8947368421052628"/>
+            <point key="canvasLocation" x="71.641791044776113" y="-0.34324942791762009"/>
         </collectionViewCell>
     </objects>
     <resources>

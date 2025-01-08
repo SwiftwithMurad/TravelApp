@@ -34,7 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func homeRoot() {
         let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
-        window?.rootViewController = UINavigationController(rootViewController: controller)
+        window?.rootViewController = controller
         window?.makeKeyAndVisible()
     }
     

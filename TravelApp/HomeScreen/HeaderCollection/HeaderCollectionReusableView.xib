@@ -14,14 +14,14 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-De-6nB">
-                    <rect key="frame" x="24" y="79.666666666666686" width="296" height="124.33333333333331"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-De-6nB">
+                    <rect key="frame" x="24" y="79.666666666666686" width="272" height="124.33333333333331"/>
                     <color key="backgroundColor" systemColor="systemGray5Color"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b4C-fV-NYi">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
                     </collectionViewFlowLayout>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4A-wG-LaW">
@@ -66,7 +66,7 @@
                 <constraint firstItem="f4A-wG-LaW" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="24" id="YLT-s3-F9C"/>
                 <constraint firstAttribute="trailing" secondItem="JNi-Wb-MzS" secondAttribute="trailing" constant="24" id="gJA-Th-w7Z"/>
                 <constraint firstItem="DD2-De-6nB" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="24" id="koh-Ws-gXt"/>
-                <constraint firstItem="DD2-De-6nB" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="pMU-iu-UHm"/>
+                <constraint firstItem="DD2-De-6nB" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" constant="-24" id="pMU-iu-UHm"/>
                 <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="DD2-De-6nB" secondAttribute="bottom" constant="28" id="pfc-w7-ZhP"/>
                 <constraint firstItem="99S-hU-1T3" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="24" id="ucy-e1-8hE"/>
             </constraints>

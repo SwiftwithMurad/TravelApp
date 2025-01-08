@@ -369,13 +369,11 @@ Journey together! </string>
                         <viewLayoutGuide key="safeArea" id="NrG-gX-ARw"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="peT-xB-z31">
-                        <imageReference key="image" image="heart.fill" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="1ve-ox-BmA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2X-g0-qAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992.5373134328356" y="300.68649885583523"/>
+            <point key="canvasLocation" x="4750.746268656716" y="369.33638443935922"/>
         </scene>
         <!--Profile Controller-->
         <scene sceneID="gtT-XR-I5S">
@@ -387,13 +385,11 @@ Journey together! </string>
                         <viewLayoutGuide key="safeArea" id="DQN-Wr-aLA"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="ZTS-rY-1AH">
-                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="JSp-ld-mTn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="web-7E-ZUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992.5373134328356" y="910.98398169336383"/>
+            <point key="canvasLocation" x="2911.9402985074626" y="910.98398169336383"/>
         </scene>
         <!--Home Controller-->
         <scene sceneID="6Wt-Qi-6MA">
@@ -404,22 +400,22 @@ Journey together! </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ore-be-QKY">
-                                <rect key="frame" x="24" y="80" width="62" height="19.666666666666671"/>
+                                <rect key="frame" x="24" y="124.00000000000001" width="62" height="19.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationImage" translatesAutoresizingMaskIntoConstraints="NO" id="DvV-xb-7cB">
-                                <rect key="frame" x="24" y="107.66666666666667" width="12" height="15"/>
+                                <rect key="frame" x="24" y="151.66666666666666" width="12" height="15"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York, USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl0-Jd-gEC">
-                                <rect key="frame" x="40.000000000000007" y="104.33333333333333" width="109.66666666666669" height="19.333333333333329"/>
+                                <rect key="frame" x="40.000000000000007" y="148.33333333333334" width="109.66666666666669" height="19.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6l-Re-Cgw">
-                                <rect key="frame" x="20" y="143.66666666666666" width="296" height="45"/>
+                                <rect key="frame" x="20" y="187.66666666666666" width="296" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCs-fC-YO1">
                                         <rect key="frame" x="44" y="13" width="45" height="19"/>
@@ -447,19 +443,19 @@ Journey together! </string>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeFieldConfig" translatesAutoresizingMaskIntoConstraints="NO" id="3x9-vL-idn">
-                                <rect key="frame" x="322" y="143.66666666666666" width="43" height="45"/>
+                                <rect key="frame" x="322" y="187.66666666666666" width="43" height="45"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="configImage" translatesAutoresizingMaskIntoConstraints="NO" id="gcs-1t-fYf">
-                                <rect key="frame" x="333" y="155.66666666666666" width="21" height="21"/>
+                                <rect key="frame" x="333" y="199.66666666666666" width="21" height="21"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8NW-ca-aZr">
-                                <rect key="frame" x="0.0" y="188.66666666666669" width="402" height="602.33333333333326"/>
+                                <rect key="frame" x="0.0" y="232.66666666666669" width="402" height="558.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="5eh-KP-7id">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="5eh-KP-7id">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -487,11 +483,7 @@ Journey together! </string>
                             <constraint firstItem="m6l-Re-Cgw" firstAttribute="top" secondItem="kl0-Jd-gEC" secondAttribute="bottom" constant="20" id="xbg-ZE-dUw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="Rr9-6e-I6S">
-                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
-                        <color key="badgeColor" name="HomeColor"/>
-                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="jtf-dx-qtS"/>
                     <connections>
                         <outlet property="homeCollection" destination="8NW-ca-aZr" id="Ff2-eI-2oD"/>
                         <outlet property="searchView" destination="m6l-Re-Cgw" id="BvX-Fe-AxB"/>
@@ -499,7 +491,7 @@ Journey together! </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5c-8g-Kpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992.5373134328356" y="-305.49199084668192"/>
+            <point key="canvasLocation" x="2911.9402985074626" y="-305.49199084668192"/>
         </scene>
         <!--Info Controller-->
         <scene sceneID="mNM-9p-5XR">
@@ -559,7 +551,7 @@ Journey together! </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZN-M1-9X1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2785.0746268656717" y="-305.49199084668192"/>
+            <point key="canvasLocation" x="3704.4776119402982" y="-305.49199084668192"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ktk-sW-CKY">
@@ -572,14 +564,79 @@ Journey together! </string>
                         <color key="selectedImageTintColor" name="HomeColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8fh-Ex-gK1" kind="relationship" relationship="viewControllers" id="s8b-WX-UCW"/>
-                        <segue destination="pEX-I6-dL8" kind="relationship" relationship="viewControllers" id="8iK-Ue-xbh"/>
-                        <segue destination="boL-BW-NSo" kind="relationship" relationship="viewControllers" id="JSJ-HF-vRX"/>
+                        <segue destination="hAS-tU-WzU" kind="relationship" relationship="viewControllers" id="s8b-WX-UCW"/>
+                        <segue destination="kjE-5e-bit" kind="relationship" relationship="viewControllers" id="8iK-Ue-xbh"/>
+                        <segue destination="BQu-zv-70o" kind="relationship" relationship="viewControllers" id="JSJ-HF-vRX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wv5-1I-8sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1094" y="-3"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ahy-3p-N9a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hAS-tU-WzU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="Rr9-6e-I6S">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" name="HomeColor"/>
+                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aus-qX-e56">
+                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8fh-Ex-gK1" kind="relationship" relationship="rootViewController" id="qjQ-88-ha1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSF-GD-kqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.5373134328356" y="-305.49199084668192"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jVf-8k-JAy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kjE-5e-bit" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="peT-xB-z31">
+                        <imageReference key="image" image="heart.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e6k-lR-3I0">
+                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pEX-I6-dL8" kind="relationship" relationship="rootViewController" id="4Yv-x6-b9K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1d-Wx-6Wv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3831.3432835820895" y="369.33638443935922"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r02-Fy-bsc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BQu-zv-70o" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="ZTS-rY-1AH">
+                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yej-in-45q">
+                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="boL-BW-NSo" kind="relationship" relationship="rootViewController" id="l3q-G9-fSB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ot-dg-t0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.5373134328356" y="910.98398169336383"/>
         </scene>
     </scenes>
     <resources>

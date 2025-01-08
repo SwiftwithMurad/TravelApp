@@ -8,5 +8,21 @@
 import Foundation
 
 class RegisterViewModel {
+    let helper = FileManagerHelper()
+    let manager = UserDefaultsManager()
+    var user = [User]()
+    var sendUser: ((User) -> Void)?
     
+    func readData() {
+        helper.readData { user in
+            self.user = user
+        }
+    }
+    
+    func config(email: String, username: String, password: String) {
+        let users: User = .init(username: username, email: email, password: password)
+        user.append(users)
+        helper.writeData(user: user)
+        sendUser?(users)
+    }
 }

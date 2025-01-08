@@ -18,10 +18,16 @@ class CategoryCell: UICollectionViewCell {
         
         configUI()
     }
+    
+    func roundTopCorners(radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
+    }
 
     func configUI() {
         cellView.layer.cornerRadius = 20
-        cellImage.layer.cornerRadius = 30
         cellImage.clipsToBounds = true
     }
     
