@@ -34,7 +34,6 @@ class InfoController: UIViewController {
     }
     
     @IBAction func heartButtonTapped(_ sender: Any) {
-    
     }
 }
 

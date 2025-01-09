@@ -16,15 +16,6 @@ class TableHeaderCell: UICollectionViewCell {
         return image
     }()
     
-//    lazy var imageView2: UIImageView = {
-//        let image = UIImageView()
-//        image.contentMode = .scaleAspectFit
-//        image.translatesAutoresizingMaskIntoConstraints = false
-//        image.clipsToBounds = true
-//        image.image = UIImage(named: "moraineLake")
-//        return image
-//    }()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
 

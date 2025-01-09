@@ -21,6 +21,13 @@ class HomeController: UIViewController {
     }
     
     func configUI() {
+        let navigationBar = self.navigationController?.navigationBar
+        let firstFrame = CGRect(x: 0, y: 0, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
+        let secondFrame = CGRect(x: (navigationBar?.frame.width ?? 0) / 2, y: 0, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
+        let firstLabel = UILabel(frame: firstFrame)
+        firstLabel.text = "Location"
+        let secondLabel = UILabel(frame: secondFrame)
+        secondLabel.text = "USA"
         searchView.layer.cornerRadius = 20
         searchView.layer.borderWidth = 0.5
         homeCollection.dataSource = self

@@ -449,7 +449,7 @@ Journey together! </string>
                                 <rect key="frame" x="333" y="199.66666666666666" width="21" height="21"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8NW-ca-aZr">
-                                <rect key="frame" x="0.0" y="232.66666666666669" width="402" height="558.33333333333326"/>
+                                <rect key="frame" x="0.0" y="240.66666666666669" width="402" height="550.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="5eh-KP-7id">
                                     <size key="itemSize" width="128" height="128"/>
@@ -471,7 +471,7 @@ Journey together! </string>
                             <constraint firstItem="3x9-vL-idn" firstAttribute="centerY" secondItem="m6l-Re-Cgw" secondAttribute="centerY" id="Eti-ek-a8c"/>
                             <constraint firstItem="DvV-xb-7cB" firstAttribute="leading" secondItem="Ore-be-QKY" secondAttribute="leading" id="KV3-NE-6dA"/>
                             <constraint firstItem="Ore-be-QKY" firstAttribute="top" secondItem="MOI-vx-Jqm" secondAttribute="top" constant="18" id="TPM-Ii-8Bf"/>
-                            <constraint firstItem="8NW-ca-aZr" firstAttribute="top" secondItem="m6l-Re-Cgw" secondAttribute="bottom" id="WPx-9B-QRi"/>
+                            <constraint firstItem="8NW-ca-aZr" firstAttribute="top" secondItem="m6l-Re-Cgw" secondAttribute="bottom" constant="8" id="WPx-9B-QRi"/>
                             <constraint firstItem="3x9-vL-idn" firstAttribute="leading" secondItem="m6l-Re-Cgw" secondAttribute="trailing" constant="6" id="Zow-B8-rLp"/>
                             <constraint firstItem="MOI-vx-Jqm" firstAttribute="trailing" secondItem="8NW-ca-aZr" secondAttribute="trailing" id="cCQ-bJ-n6N"/>
                             <constraint firstItem="8NW-ca-aZr" firstAttribute="leading" secondItem="MOI-vx-Jqm" secondAttribute="leading" id="dOo-eR-8VO"/>
