@@ -44,7 +44,7 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-        cell.configCell(travel: trips[indexPath.row])
+        cell.configCell(travel: trips[indexPath.row], index: indexPath.row)
         return cell
     }
     
@@ -54,6 +54,7 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "InfoController") as! InfoController
+        controller.hidesBottomBarWhenPushed = true
         controller.travel = trips[indexPath.row]
         navigationController?.show(controller, sender: nil)
     }

@@ -48,9 +48,10 @@ extension HeaderCollectionReusableView: UICollectionViewDataSource, UICollection
         let cell = collectionView.cellForItem(at: indexPath) as! HeaderCell
         for(index, _) in categories.enumerated() {
             categories[index].isSelected = index == indexPath.item ? true : false
-            cell.updateView(isSelected: categories[indexPath.row].isSelected ?? false)
+        cell.updateView(isSelected: categories[indexPath.row].isSelected ?? true)
         }
         reloadCategoryData?(categories[indexPath.row].id ?? 1)
         headerCollection.reloadData()
     }
 }
+ 

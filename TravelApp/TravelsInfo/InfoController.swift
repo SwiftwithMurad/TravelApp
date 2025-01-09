@@ -29,6 +29,7 @@ class InfoController: UIViewController {
     
     func configHeader() {        
         let headerView = TableHeaderView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 400))
+        headerView.travel = travel
         infoTable.tableHeaderView = headerView
     }
     
@@ -52,9 +53,5 @@ extension InfoController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
-    }
-    
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 200
-//    }
+    }       
 }

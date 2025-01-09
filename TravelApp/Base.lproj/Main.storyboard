@@ -520,10 +520,8 @@ Journey together! </string>
                                     <constraint firstAttribute="width" constant="33" id="SFX-zJ-4cI"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" backgroundImage="heartButton"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="heartButton"/>
-                                </buttonConfiguration>
+                                <state key="normal" backgroundImage="heartButton"/>
+                                <state key="selected" image="selectedHeartButton"/>
                                 <connections>
                                     <action selector="heartButtonTapped:" destination="HBj-Su-Ycj" eventType="touchUpInside" id="Zed-YP-xvx"/>
                                 </connections>
@@ -656,6 +654,7 @@ Journey together! </string>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="passwordImage" width="16" height="21"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="selectedHeartButton" width="20" height="17"/>
         <image name="world" width="254" height="219"/>
         <image name="worldScreen2" width="189" height="230"/>
         <namedColor name="HomeColor">
