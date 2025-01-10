@@ -19,6 +19,10 @@ class InfoController: UIViewController {
         configHeader()
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        navigationController?.navigationBar.hide
+//    }
+    
     func configUI() {
         infoTable.dataSource = self
         infoTable.delegate = self

@@ -33,7 +33,7 @@ class CategoryCell: UICollectionViewCell {
         cellImage.clipsToBounds = true
     }
     
-    func configCell(travel: Travel, index: Int) {
+    func configCell(travel: Travel) {
         countryName.text = travel.country
         cellLabel.text = travel.name
         cellImage.image = UIImage(named: travel.image.first ?? "")

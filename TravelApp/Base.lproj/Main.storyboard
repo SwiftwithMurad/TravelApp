@@ -532,6 +532,79 @@ Journey together! </string>
             </objects>
             <point key="canvasLocation" x="3704.4776119402982" y="-305.49199084668192"/>
         </scene>
+        <!--Trips Controller-->
+        <scene sceneID="z7e-0x-zae">
+            <objects>
+                <viewController storyboardIdentifier="TripsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AYh-sj-cpi" customClass="TripsController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WnR-ZC-MkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVZ-Vd-Iuv">
+                                <rect key="frame" x="16" y="110" width="370" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUX-9e-Koa">
+                                        <rect key="frame" x="44" y="13" width="45" height="19"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="searchField:" destination="8fh-Ex-gK1" eventType="editingChanged" id="lNE-hO-blT"/>
+                                            <action selector="searchField:" destination="AYh-sj-cpi" eventType="editingChanged" id="nzr-m9-AoR"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="34z-ej-f92">
+                                        <rect key="frame" x="16" y="14.999999999999996" width="16" height="15.333333333333339"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16.670000000000002" id="4XX-zo-ZsE"/>
+                                            <constraint firstAttribute="width" constant="16" id="d8G-2F-yDR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="34z-ej-f92" firstAttribute="leading" secondItem="vVZ-Vd-Iuv" secondAttribute="leading" constant="16" id="6Qp-do-luf"/>
+                                    <constraint firstItem="AUX-9e-Koa" firstAttribute="centerY" secondItem="vVZ-Vd-Iuv" secondAttribute="centerY" id="S9t-sA-wdN"/>
+                                    <constraint firstItem="AUX-9e-Koa" firstAttribute="leading" secondItem="34z-ej-f92" secondAttribute="trailing" constant="12" id="aCw-vj-2r7"/>
+                                    <constraint firstAttribute="height" constant="45" id="fxR-82-qaV"/>
+                                    <constraint firstItem="34z-ej-f92" firstAttribute="centerY" secondItem="vVZ-Vd-Iuv" secondAttribute="centerY" id="gyF-3X-lK6"/>
+                                    <constraint firstAttribute="width" constant="370" id="iej-ng-Pae"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AUX-9e-Koa" secondAttribute="trailing" constant="20" symbolic="YES" id="pMc-oH-a74"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-xG-nMu">
+                                <rect key="frame" x="0.0" y="183" width="402" height="657"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="O0w-80-0Od">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ff6-hB-wqu"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="ff6-hB-wqu" firstAttribute="bottom" secondItem="Pbe-xG-nMu" secondAttribute="bottom" id="I6u-YO-Z7I"/>
+                            <constraint firstItem="vVZ-Vd-Iuv" firstAttribute="centerX" secondItem="ff6-hB-wqu" secondAttribute="centerX" id="WT2-jG-2Oo"/>
+                            <constraint firstItem="Pbe-xG-nMu" firstAttribute="top" secondItem="vVZ-Vd-Iuv" secondAttribute="bottom" constant="28" id="ZoL-2K-sAy"/>
+                            <constraint firstItem="ff6-hB-wqu" firstAttribute="trailing" secondItem="Pbe-xG-nMu" secondAttribute="trailing" id="lTz-Mv-Jid"/>
+                            <constraint firstItem="vVZ-Vd-Iuv" firstAttribute="top" secondItem="ff6-hB-wqu" secondAttribute="top" constant="48" id="tEH-0k-Vwd"/>
+                            <constraint firstItem="Pbe-xG-nMu" firstAttribute="leading" secondItem="ff6-hB-wqu" secondAttribute="leading" id="uIZ-Ew-ZUI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collection" destination="Pbe-xG-nMu" id="aaO-vN-bZd"/>
+                        <outlet property="searchTextField" destination="AUX-9e-Koa" id="gW4-u3-N4c"/>
+                        <outlet property="searchView" destination="vVZ-Vd-Iuv" id="jMd-Pv-8e1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EA-Qc-noQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4505.9701492537315" y="-305.49199084668192"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ktk-sW-CKY">
             <objects>

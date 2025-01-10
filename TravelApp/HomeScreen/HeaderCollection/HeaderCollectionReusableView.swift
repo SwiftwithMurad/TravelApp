@@ -10,6 +10,7 @@ import UIKit
 class HeaderCollectionReusableView: UICollectionReusableView {
     var categories = [Categories]()
     var reloadCategoryData: ((Int) -> Void)?
+    var buttonHandler: (() -> Void)?
     
     @IBOutlet private weak var headerCollection: UICollectionView!
     override func awakeFromNib() {
@@ -26,6 +27,12 @@ class HeaderCollectionReusableView: UICollectionReusableView {
     
     func configCategory(category: [Categories]) {
         self.categories = category
+    }
+    
+    
+    @IBAction func seeAllButtonTapped(_ sender: Any) {
+        buttonHandler?()
+        
     }
 }
 

@@ -22,18 +22,19 @@ class HomeController: UIViewController {
         configUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        configNavBar()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.subviews.forEach({ subView in
+            if subView is UILabel {
+                subView.removeFromSuperview()
+            }
+        })
+    }
+    
     func configUI() {
-        let navigationBar = self.navigationController?.navigationBar
-        let firstFrame = CGRect(x: 24, y: 0, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
-        let secondFrame = CGRect(x: 24, y: 32, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
-        let firstLabel = UILabel(frame: firstFrame)
-        firstLabel.text = "Location"
-        let secondLabel = UILabel(frame: secondFrame)
-        secondLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        
-        secondLabel.text = "New York, USA"
-        navigationBar?.addSubview(firstLabel)
-        navigationBar?.addSubview(secondLabel)
         searchView.layer.cornerRadius = 20
         searchView.layer.borderWidth = 0.5
         homeCollection.dataSource = self
@@ -47,6 +48,19 @@ class HomeController: UIViewController {
             self.trips = trips
             self.existedTrips = trips
         }
+    }
+    
+    func configNavBar() {
+        let navigationBar = self.navigationController?.navigationBar
+        let firstFrame = CGRect(x: 24, y: 0, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
+        let secondFrame = CGRect(x: 24, y: 32, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
+        let firstLabel = UILabel(frame: firstFrame)
+        firstLabel.text = "Location"
+        let secondLabel = UILabel(frame: secondFrame)
+        secondLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        secondLabel.text = "New York, USA"
+        navigationBar?.addSubview(firstLabel)
+        navigationBar?.addSubview(secondLabel)
     }
     
     @IBAction func searchField(_ sender: Any) {
@@ -70,7 +84,7 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-        cell.configCell(travel: trips[indexPath.row], index: indexPath.row)
+        cell.configCell(travel: trips[indexPath.row])
         return cell
     }
     
@@ -88,6 +102,10 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath) as! HeaderCollectionReusableView
         header.configCategory(category: category)
+        header.buttonHandler = {
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "TripsController") as! TripsController
+            self.navigationController?.show(controller, sender: nil)
+        }
         return header
     }
     
