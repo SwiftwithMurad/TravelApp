@@ -8,10 +8,7 @@
 import UIKit
 
 class HomeController: UIViewController {
-    var trips = [Travel]()
-    var existedTrips = [Travel]()
-    var category = [Categories]()
-    let jsonHelper = JsonHelper()
+    let viewModel =  HomeViewModel()
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet private weak var homeCollection: UICollectionView!
@@ -41,13 +38,7 @@ class HomeController: UIViewController {
         homeCollection.delegate = self
         homeCollection.register(UINib(nibName: "HeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView")
         homeCollection.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell")
-        jsonHelper.readCategoryData { categories in
-            self.category = categories
-        }
-        jsonHelper.readTravelData { trips in
-            self.trips = trips
-            self.existedTrips = trips
-        }
+        viewModel.readData()
     }
     
     func configNavBar() {
@@ -64,14 +55,8 @@ class HomeController: UIViewController {
     }
     
     @IBAction func searchField(_ sender: Any) {
-        if let search = searchTextField.text?.lowercased() {
-            if trips.contains(where: { $0.name?.lowercased() == search }) {
-                trips = trips.filter({ $0.name?.lowercased() == search })
-                homeCollection.reloadData()
-            } else {
-                trips = existedTrips
-                homeCollection.reloadData()
-            }
+        viewModel.configSearch(search: searchTextField.text ?? "") {
+            homeCollection.reloadData()
         }
     }
 }
@@ -79,12 +64,12 @@ class HomeController: UIViewController {
 extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return trips.count
+        return viewModel.trips.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-        cell.configCell(travel: trips[indexPath.row])
+        cell.configCell(travel: viewModel.trips[indexPath.row])
         return cell
     }
     
@@ -95,13 +80,13 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "InfoController") as! InfoController
         controller.hidesBottomBarWhenPushed = true
-        controller.travel = trips[indexPath.row]
+        controller.travel = viewModel.trips[indexPath.row]
         navigationController?.show(controller, sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath) as! HeaderCollectionReusableView
-        header.configCategory(category: category)
+        header.configCategory(category: viewModel.category)
         header.buttonHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "TripsController") as! TripsController
             self.navigationController?.show(controller, sender: nil)

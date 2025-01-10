@@ -541,7 +541,7 @@ Journey together! </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVZ-Vd-Iuv">
-                                <rect key="frame" x="16" y="110" width="370" height="45"/>
+                                <rect key="frame" x="16" y="86" width="370" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUX-9e-Koa">
                                         <rect key="frame" x="44" y="13" width="45" height="19"/>
@@ -573,7 +573,7 @@ Journey together! </string>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-xG-nMu">
-                                <rect key="frame" x="0.0" y="183" width="402" height="657"/>
+                                <rect key="frame" x="0.0" y="159" width="402" height="681"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="O0w-80-0Od">
                                     <size key="itemSize" width="128" height="128"/>
@@ -591,7 +591,7 @@ Journey together! </string>
                             <constraint firstItem="vVZ-Vd-Iuv" firstAttribute="centerX" secondItem="ff6-hB-wqu" secondAttribute="centerX" id="WT2-jG-2Oo"/>
                             <constraint firstItem="Pbe-xG-nMu" firstAttribute="top" secondItem="vVZ-Vd-Iuv" secondAttribute="bottom" constant="28" id="ZoL-2K-sAy"/>
                             <constraint firstItem="ff6-hB-wqu" firstAttribute="trailing" secondItem="Pbe-xG-nMu" secondAttribute="trailing" id="lTz-Mv-Jid"/>
-                            <constraint firstItem="vVZ-Vd-Iuv" firstAttribute="top" secondItem="ff6-hB-wqu" secondAttribute="top" constant="48" id="tEH-0k-Vwd"/>
+                            <constraint firstItem="vVZ-Vd-Iuv" firstAttribute="top" secondItem="ff6-hB-wqu" secondAttribute="top" constant="24" id="tEH-0k-Vwd"/>
                             <constraint firstItem="Pbe-xG-nMu" firstAttribute="leading" secondItem="ff6-hB-wqu" secondAttribute="leading" id="uIZ-Ew-ZUI"/>
                         </constraints>
                     </view>

@@ -29,14 +29,8 @@ class TripsController: UIViewController {
     }
     
     @IBAction func searchField(_ sender: Any) {
-        if let search = searchTextField.text?.lowercased() {
-            if viewModel.trips.contains(where: { $0.name?.lowercased() == search }) {
-                viewModel.trips = viewModel.trips.filter({ $0.name?.lowercased() == search})
-                collection.reloadData()
-            } else {
-                viewModel.trips = viewModel.existedTrips
-                collection.reloadData()
-            }
+        viewModel.configSearch(search: searchTextField.text ?? "") {
+            collection.reloadData()
         }
     }
 }

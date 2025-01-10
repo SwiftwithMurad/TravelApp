@@ -9,6 +9,7 @@ import UIKit
 
 class InfoController: UIViewController {
     var travel: Travel?
+    let viewModel = InfoViewModel()
     
     @IBOutlet private weak var infoTable: UITableView!
     @IBOutlet private weak var heartButton: UIButton!
@@ -18,10 +19,6 @@ class InfoController: UIViewController {
         configUI()
         configHeader()
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        navigationController?.navigationBar.hide
-//    }
     
     func configUI() {
         infoTable.dataSource = self
