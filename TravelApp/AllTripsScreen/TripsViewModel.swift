@@ -20,7 +20,7 @@ class TripsViewModel {
     }
     
     func configSearch(search: String, reloadCollection: (() -> Void)) {
-        if trips.contains(where: { $0.name?.lowercased() == search}) {
+        if !search.isEmpty {
             trips = existedTrips.filter({ $0.name?.lowercased().contains(search) ?? false})
         } else {
             trips = existedTrips

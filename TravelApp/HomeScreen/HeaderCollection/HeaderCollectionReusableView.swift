@@ -44,6 +44,7 @@ extension HeaderCollectionReusableView: UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderCell", for: indexPath) as! HeaderCell
         cell.configCell(category: categories[indexPath.row])
+        cell.updateView(isSelected: categories[indexPath.row].isSelected ?? false)
         return cell
     }
     
@@ -52,10 +53,8 @@ extension HeaderCollectionReusableView: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! HeaderCell
         for(index, _) in categories.enumerated() {
             categories[index].isSelected = index == indexPath.item ? true: false
-        cell.updateView(isSelected: categories[indexPath.row].isSelected ?? true)
         }
         reloadCategoryData?(categories[indexPath.row].id ?? 1)
         headerCollection.reloadData()
