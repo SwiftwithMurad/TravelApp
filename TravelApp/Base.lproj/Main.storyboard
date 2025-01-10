@@ -399,28 +399,16 @@ Journey together! </string>
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ore-be-QKY">
-                                <rect key="frame" x="24" y="124.00000000000001" width="62" height="19.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationImage" translatesAutoresizingMaskIntoConstraints="NO" id="DvV-xb-7cB">
-                                <rect key="frame" x="24" y="151.66666666666666" width="12" height="15"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York, USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl0-Jd-gEC">
-                                <rect key="frame" x="40.000000000000007" y="148.33333333333334" width="109.66666666666669" height="19.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6l-Re-Cgw">
-                                <rect key="frame" x="20" y="187.66666666666666" width="296" height="45"/>
+                                <rect key="frame" x="20" y="154" width="296" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCs-fC-YO1">
                                         <rect key="frame" x="44" y="13" width="45" height="19"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="searchField:" destination="8fh-Ex-gK1" eventType="editingChanged" id="y6r-QI-b40"/>
+                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cxe-5A-tJH">
                                         <rect key="frame" x="16" y="14.999999999999996" width="16" height="15.333333333333339"/>
@@ -443,13 +431,13 @@ Journey together! </string>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeFieldConfig" translatesAutoresizingMaskIntoConstraints="NO" id="3x9-vL-idn">
-                                <rect key="frame" x="322" y="187.66666666666666" width="43" height="45"/>
+                                <rect key="frame" x="322" y="154" width="43" height="45"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="configImage" translatesAutoresizingMaskIntoConstraints="NO" id="gcs-1t-fYf">
-                                <rect key="frame" x="333" y="199.66666666666666" width="21" height="21"/>
+                                <rect key="frame" x="333" y="166" width="21" height="21"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8NW-ca-aZr">
-                                <rect key="frame" x="0.0" y="240.66666666666669" width="402" height="550.33333333333326"/>
+                                <rect key="frame" x="0.0" y="207" width="402" height="584"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="5eh-KP-7id">
                                     <size key="itemSize" width="128" height="128"/>
@@ -463,29 +451,22 @@ Journey together! </string>
                         <viewLayoutGuide key="safeArea" id="MOI-vx-Jqm"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="MOI-vx-Jqm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kl0-Jd-gEC" secondAttribute="trailing" symbolic="YES" id="1nD-TP-aZC"/>
                             <constraint firstItem="gcs-1t-fYf" firstAttribute="centerY" secondItem="3x9-vL-idn" secondAttribute="centerY" id="AGb-bb-fJm"/>
-                            <constraint firstItem="MOI-vx-Jqm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ore-be-QKY" secondAttribute="trailing" symbolic="YES" id="AMx-XD-m47"/>
                             <constraint firstItem="MOI-vx-Jqm" firstAttribute="bottom" secondItem="8NW-ca-aZr" secondAttribute="bottom" id="DIV-DY-zDf"/>
-                            <constraint firstItem="kl0-Jd-gEC" firstAttribute="leading" secondItem="DvV-xb-7cB" secondAttribute="trailing" constant="4" id="EaG-bF-yOd"/>
                             <constraint firstItem="3x9-vL-idn" firstAttribute="centerY" secondItem="m6l-Re-Cgw" secondAttribute="centerY" id="Eti-ek-a8c"/>
-                            <constraint firstItem="DvV-xb-7cB" firstAttribute="leading" secondItem="Ore-be-QKY" secondAttribute="leading" id="KV3-NE-6dA"/>
-                            <constraint firstItem="Ore-be-QKY" firstAttribute="top" secondItem="MOI-vx-Jqm" secondAttribute="top" constant="18" id="TPM-Ii-8Bf"/>
+                            <constraint firstItem="m6l-Re-Cgw" firstAttribute="top" secondItem="MOI-vx-Jqm" secondAttribute="top" constant="48" id="SD0-yj-fAN"/>
                             <constraint firstItem="8NW-ca-aZr" firstAttribute="top" secondItem="m6l-Re-Cgw" secondAttribute="bottom" constant="8" id="WPx-9B-QRi"/>
                             <constraint firstItem="3x9-vL-idn" firstAttribute="leading" secondItem="m6l-Re-Cgw" secondAttribute="trailing" constant="6" id="Zow-B8-rLp"/>
                             <constraint firstItem="MOI-vx-Jqm" firstAttribute="trailing" secondItem="8NW-ca-aZr" secondAttribute="trailing" id="cCQ-bJ-n6N"/>
                             <constraint firstItem="8NW-ca-aZr" firstAttribute="leading" secondItem="MOI-vx-Jqm" secondAttribute="leading" id="dOo-eR-8VO"/>
-                            <constraint firstItem="Ore-be-QKY" firstAttribute="leading" secondItem="MOI-vx-Jqm" secondAttribute="leading" constant="24" id="eIi-x8-7v9"/>
-                            <constraint firstItem="kl0-Jd-gEC" firstAttribute="top" secondItem="Ore-be-QKY" secondAttribute="bottom" constant="4.6666666666666714" id="hAN-tQ-Fm4"/>
                             <constraint firstItem="gcs-1t-fYf" firstAttribute="centerX" secondItem="3x9-vL-idn" secondAttribute="centerX" id="jL5-k3-IkQ"/>
-                            <constraint firstItem="DvV-xb-7cB" firstAttribute="top" secondItem="Ore-be-QKY" secondAttribute="bottom" constant="8" id="jbK-5a-lsz"/>
                             <constraint firstItem="m6l-Re-Cgw" firstAttribute="leading" secondItem="MOI-vx-Jqm" secondAttribute="leading" constant="20" id="q6c-uN-bn1"/>
-                            <constraint firstItem="m6l-Re-Cgw" firstAttribute="top" secondItem="kl0-Jd-gEC" secondAttribute="bottom" constant="20" id="xbg-ZE-dUw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jtf-dx-qtS"/>
                     <connections>
                         <outlet property="homeCollection" destination="8NW-ca-aZr" id="Ff2-eI-2oD"/>
+                        <outlet property="searchTextField" destination="tCs-fC-YO1" id="skU-5k-Wpb"/>
                         <outlet property="searchView" destination="m6l-Re-Cgw" id="BvX-Fe-AxB"/>
                     </connections>
                 </viewController>
@@ -650,7 +631,6 @@ Journey together! </string>
         <image name="heartButton" width="20" height="17"/>
         <image name="homeFieldConfig" width="43" height="45"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="locationImage" width="12" height="15"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="passwordImage" width="16" height="21"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

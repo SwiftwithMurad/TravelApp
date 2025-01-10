@@ -9,9 +9,11 @@ import UIKit
 
 class HomeController: UIViewController {
     var trips = [Travel]()
+    var existedTrips = [Travel]()
     var category = [Categories]()
     let jsonHelper = JsonHelper()
     
+    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet private weak var homeCollection: UICollectionView!
     @IBOutlet private weak var searchView: UIView!
     override func viewDidLoad() {
@@ -22,12 +24,16 @@ class HomeController: UIViewController {
     
     func configUI() {
         let navigationBar = self.navigationController?.navigationBar
-        let firstFrame = CGRect(x: 0, y: 0, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
-        let secondFrame = CGRect(x: (navigationBar?.frame.width ?? 0) / 2, y: 0, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
+        let firstFrame = CGRect(x: 24, y: 0, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
+        let secondFrame = CGRect(x: 24, y: 32, width: (navigationBar?.frame.width ?? 0) / 2, height: navigationBar?.frame.height ?? 0)
         let firstLabel = UILabel(frame: firstFrame)
         firstLabel.text = "Location"
         let secondLabel = UILabel(frame: secondFrame)
-        secondLabel.text = "USA"
+        secondLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        
+        secondLabel.text = "New York, USA"
+        navigationBar?.addSubview(firstLabel)
+        navigationBar?.addSubview(secondLabel)
         searchView.layer.cornerRadius = 20
         searchView.layer.borderWidth = 0.5
         homeCollection.dataSource = self
@@ -39,6 +45,19 @@ class HomeController: UIViewController {
         }
         jsonHelper.readTravelData { trips in
             self.trips = trips
+            self.existedTrips = trips
+        }
+    }
+    
+    @IBAction func searchField(_ sender: Any) {
+        if let search = searchTextField.text?.lowercased() {
+            if trips.contains(where: { $0.name?.lowercased() == search }) {
+                trips = trips.filter({ $0.name?.lowercased() == search })
+                homeCollection.reloadData()
+            } else {
+                trips = existedTrips
+                homeCollection.reloadData()
+            }
         }
     }
 }
