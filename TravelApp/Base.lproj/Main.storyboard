@@ -382,10 +382,95 @@ Journey together! </string>
                     <view key="view" contentMode="scaleToFill" id="D5o-tD-Ijx">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JY-sk-H4a" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="20" y="170" width="362" height="266"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="ProfileAnimation"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiH-v2-SJs">
+                                <rect key="frame" x="20" y="468" width="362" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIY-16-IBY">
+                                        <rect key="frame" x="32" y="18" width="41" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="SIY-16-IBY" firstAttribute="leading" secondItem="FiH-v2-SJs" secondAttribute="leading" constant="32" id="45q-FH-X22"/>
+                                    <constraint firstItem="SIY-16-IBY" firstAttribute="centerY" secondItem="FiH-v2-SJs" secondAttribute="centerY" id="lxQ-99-6af"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wnb-AC-Tn3">
+                                <rect key="frame" x="20" y="629" width="362" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACL-iu-FLf">
+                                        <rect key="frame" x="32" y="17.666666666666629" width="74" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ACL-iu-FLf" firstAttribute="leading" secondItem="Wnb-AC-Tn3" secondAttribute="leading" constant="32" id="ezv-BP-Ctn"/>
+                                    <constraint firstItem="ACL-iu-FLf" firstAttribute="centerY" secondItem="Wnb-AC-Tn3" secondAttribute="centerY" id="l2f-gs-Ryb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URz-S2-TBO">
+                                <rect key="frame" x="20" y="549" width="362" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kib-ug-F2d">
+                                        <rect key="frame" x="32" y="17.666666666666629" width="45" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="kib-ug-F2d" firstAttribute="centerY" secondItem="URz-S2-TBO" secondAttribute="centerY" id="2Ct-UY-Rpw"/>
+                                    <constraint firstItem="kib-ug-F2d" firstAttribute="leading" secondItem="URz-S2-TBO" secondAttribute="leading" constant="32" id="4PM-1G-Ifc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DQN-Wr-aLA"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="FiH-v2-SJs" firstAttribute="centerX" secondItem="1JY-sk-H4a" secondAttribute="centerX" id="0iB-cz-Ma7"/>
+                            <constraint firstItem="Wnb-AC-Tn3" firstAttribute="top" secondItem="URz-S2-TBO" secondAttribute="bottom" constant="24" id="0iE-8U-1dd"/>
+                            <constraint firstItem="FiH-v2-SJs" firstAttribute="leading" secondItem="1JY-sk-H4a" secondAttribute="leading" id="CEK-L3-8tO"/>
+                            <constraint firstItem="URz-S2-TBO" firstAttribute="height" secondItem="FiH-v2-SJs" secondAttribute="height" id="HdC-Li-ehy"/>
+                            <constraint firstItem="1JY-sk-H4a" firstAttribute="top" secondItem="DQN-Wr-aLA" secondAttribute="top" constant="64" id="Jya-fe-w0Z"/>
+                            <constraint firstItem="URz-S2-TBO" firstAttribute="leading" secondItem="FiH-v2-SJs" secondAttribute="leading" id="NJB-Ns-U4A"/>
+                            <constraint firstItem="URz-S2-TBO" firstAttribute="top" secondItem="FiH-v2-SJs" secondAttribute="bottom" constant="25" id="Oc7-j3-0Cz"/>
+                            <constraint firstItem="FiH-v2-SJs" firstAttribute="trailing" secondItem="1JY-sk-H4a" secondAttribute="trailing" id="Og8-Jd-xQG"/>
+                            <constraint firstItem="1JY-sk-H4a" firstAttribute="width" secondItem="D5o-tD-Ijx" secondAttribute="width" multiplier="0.900498" id="P0z-nO-0OQ"/>
+                            <constraint firstItem="1JY-sk-H4a" firstAttribute="centerX" secondItem="DQN-Wr-aLA" secondAttribute="centerX" id="PfZ-vY-tgL"/>
+                            <constraint firstItem="Wnb-AC-Tn3" firstAttribute="height" secondItem="URz-S2-TBO" secondAttribute="height" id="WmH-gp-wGd"/>
+                            <constraint firstItem="1JY-sk-H4a" firstAttribute="height" secondItem="D5o-tD-Ijx" secondAttribute="height" multiplier="0.304348" id="afn-cL-38f"/>
+                            <constraint firstItem="URz-S2-TBO" firstAttribute="trailing" secondItem="FiH-v2-SJs" secondAttribute="trailing" id="aiK-O0-Y6p"/>
+                            <constraint firstItem="FiH-v2-SJs" firstAttribute="height" secondItem="1JY-sk-H4a" secondAttribute="height" multiplier="0.210526" id="dJF-j4-Z3A"/>
+                            <constraint firstItem="Wnb-AC-Tn3" firstAttribute="trailing" secondItem="URz-S2-TBO" secondAttribute="trailing" id="eqO-i0-FIW"/>
+                            <constraint firstItem="Wnb-AC-Tn3" firstAttribute="leading" secondItem="URz-S2-TBO" secondAttribute="leading" id="g3Z-IY-dF6"/>
+                            <constraint firstItem="FiH-v2-SJs" firstAttribute="top" secondItem="1JY-sk-H4a" secondAttribute="bottom" constant="32" id="rpe-Xs-etg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JSp-ld-mTn"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="SIY-16-IBY" id="sxN-9X-F58"/>
+                        <outlet property="emailView" destination="FiH-v2-SJs" id="FU4-8s-wQ6"/>
+                        <outlet property="nameLabel" destination="kib-ug-F2d" id="cmR-Nt-5xE"/>
+                        <outlet property="nameView" destination="URz-S2-TBO" id="bxQ-7R-80i"/>
+                        <outlet property="passwordLabel" destination="ACL-iu-FLf" id="fiD-Da-13K"/>
+                        <outlet property="passwordView" destination="Wnb-AC-Tn3" id="pB1-er-VZ6"/>
+                        <outlet property="profileAnimation" destination="1JY-sk-H4a" id="Zsl-pw-OXC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="web-7E-ZUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

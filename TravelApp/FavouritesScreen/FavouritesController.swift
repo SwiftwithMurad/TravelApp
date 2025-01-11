@@ -8,9 +8,14 @@
 import UIKit
 
 class FavouritesController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        configUI()
+    }
+    
+    func configUI() {
+        
     }
 }

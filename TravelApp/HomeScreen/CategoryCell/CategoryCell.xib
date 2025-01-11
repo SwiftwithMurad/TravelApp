@@ -73,9 +73,12 @@
                                     <constraint firstAttribute="width" constant="20" id="Gxv-EB-sWW"/>
                                     <constraint firstAttribute="height" constant="17" id="L6o-4t-Epf"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="heartButton"/>
-                                <state key="selected" image="selectedHeartButton"/>
+                                <state key="selected" image="selectedHeartButton">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <state key="highlighted" image="selectedHeartButton"/>
                             </button>
                         </subviews>
@@ -115,9 +118,10 @@
             <size key="customSize" width="178" height="229"/>
             <connections>
                 <outlet property="cellImage" destination="Az3-W8-Py0" id="xJb-iY-Ohi"/>
-                <outlet property="cellLabel" destination="NVh-yA-O4c" id="sNb-Yc-K8r"/>
+                <outlet property="cellLabel" destination="NVh-yA-O4c" id="Pc9-RU-eeE"/>
                 <outlet property="cellView" destination="GIu-vW-zdy" id="5yT-MG-fG0"/>
-                <outlet property="countryName" destination="JVe-7Q-0Pn" id="aYI-tk-lJ9"/>
+                <outlet property="countryName" destination="JVe-7Q-0Pn" id="82j-Pk-z5E"/>
+                <outlet property="heartButton" destination="XhD-zL-0mx" id="xgb-Ih-74Q"/>
             </connections>
             <point key="canvasLocation" x="71.641791044776113" y="-0.34324942791762009"/>
         </collectionViewCell>

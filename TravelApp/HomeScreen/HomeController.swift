@@ -91,6 +91,10 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "TripsController") as! TripsController
             self.navigationController?.show(controller, sender: nil)
         }
+        header.reloadCategoryData = { id in
+            self.viewModel.trips = self.viewModel.existedTrips.filter({ $0.id == id })
+            self.homeCollection.reloadData()
+        }
         return header
     }
     

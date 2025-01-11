@@ -29,10 +29,8 @@ class HeaderCollectionReusableView: UICollectionReusableView {
         self.categories = category
     }
     
-    
     @IBAction func seeAllButtonTapped(_ sender: Any) {
         buttonHandler?()
-        
     }
 }
 
@@ -54,10 +52,9 @@ extension HeaderCollectionReusableView: UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         for(index, _) in categories.enumerated() {
-            categories[index].isSelected = index == indexPath.item ? true: false
+             categories[index].isSelected = index == indexPath.item ? true: false
         }
         reloadCategoryData?(categories[indexPath.row].id ?? 1)
         headerCollection.reloadData()
     }
 }
- 

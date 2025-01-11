@@ -9,6 +9,7 @@ import UIKit
 
 class CategoryCell: UICollectionViewCell {
 
+    @IBOutlet weak var heartButton: UIButton!
     @IBOutlet private weak var countryName: UILabel!
     @IBOutlet private weak var cellLabel: UILabel!
     @IBOutlet private weak var cellImage: UIImageView!
@@ -17,13 +18,6 @@ class CategoryCell: UICollectionViewCell {
         super.awakeFromNib()
         
         configUI()
-    }
-    
-    func roundTopCorners(radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        layer.mask = mask
     }
 
     func configUI() {
@@ -37,5 +31,10 @@ class CategoryCell: UICollectionViewCell {
         countryName.text = travel.country
         cellLabel.text = travel.name
         cellImage.image = UIImage(named: travel.image.first ?? "")
+    }
+    
+    @IBAction func heartButtonTapped(_ sender: Any) {
+        heartButton.isEnabled = true
+        heartButton.tintColor = .home
     }
 }
