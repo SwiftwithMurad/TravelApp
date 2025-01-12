@@ -9,6 +9,7 @@ import UIKit
 
 class HomeController: UIViewController {
     let viewModel =  HomeViewModel()
+    var isSegmentConfigured = false
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet private weak var homeCollection: UICollectionView!
@@ -86,7 +87,10 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath) as! HeaderCollectionReusableView
-        header.configCategory(category: viewModel.category)
+        if !isSegmentConfigured {
+            header.configCategory(category: viewModel.category)
+            isSegmentConfigured = true
+        }
         header.buttonHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "TripsController") as! TripsController
             self.navigationController?.show(controller, sender: nil)

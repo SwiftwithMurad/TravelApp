@@ -28,6 +28,7 @@ class LoginViewModel {
             let sceneDelegate = windowScene?.delegate as? SceneDelegate
             sceneDelegate?.homeRoot()
             manager.setValue(value: true, key: .isLoggedIn)
+            manager.setValue(value: email, key: .emailSaved)
             successAlert?()
         } else {
             errorAlert?()

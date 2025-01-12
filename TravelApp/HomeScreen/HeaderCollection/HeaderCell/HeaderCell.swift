@@ -26,12 +26,9 @@ class HeaderCell: UICollectionViewCell {
         cellImage.tintColor = .home
     }
     
-    func configCell(category: Categories) {
+    func configCell(category: Categories, isSelected: Bool) {
         cellLabel.text = category.name
         cellImage.image = UIImage(named: category.image ?? "")?.withRenderingMode(.alwaysTemplate)
-    }
-    
-    func updateView(isSelected: Bool) {
         cellView.backgroundColor = isSelected ? .home: .white
         cellView.layer.cornerRadius = isSelected ? 20: 0
         cellImage.tintColor = isSelected ? .white: .home

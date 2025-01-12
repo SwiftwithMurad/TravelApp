@@ -10,7 +10,7 @@ import Foundation
 class UserDefaultsManager {
     enum UserDefaultsTypes: String {
         case isLoggedIn = "isLoggedIn"
-        case email = "email"
+        case emailSaved = "emailSaved"
     }
     
     func setValue(value: Any, key: UserDefaultsTypes) {
@@ -19,5 +19,9 @@ class UserDefaultsManager {
     
     func getBool(key: UserDefaultsTypes) -> Bool {
         UserDefaults.standard.bool(forKey: key.rawValue)
+    }
+    
+    func getString(key: UserDefaultsTypes) -> String {
+        UserDefaults.standard.string(forKey: key.rawValue) ?? ""
     }
 }

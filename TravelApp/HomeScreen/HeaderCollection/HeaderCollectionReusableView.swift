@@ -11,6 +11,7 @@ class HeaderCollectionReusableView: UICollectionReusableView {
     var categories = [Categories]()
     var reloadCategoryData: ((Int) -> Void)?
     var buttonHandler: (() -> Void)?
+    var isSegmentConfigured = false
     
     @IBOutlet private weak var headerCollection: UICollectionView!
     override func awakeFromNib() {
@@ -41,8 +42,7 @@ extension HeaderCollectionReusableView: UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderCell", for: indexPath) as! HeaderCell
-        cell.configCell(category: categories[indexPath.row])
-        cell.updateView(isSelected: categories[indexPath.row].isSelected ?? false)
+        cell.configCell(category: categories[indexPath.row], isSelected: categories[indexPath.row].isSelected ?? false)
         return cell
     }
     
