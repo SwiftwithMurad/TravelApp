@@ -9,7 +9,6 @@ import UIKit
 
 class HomeController: UIViewController {
     let viewModel =  HomeViewModel()
-    var isSegmentConfigured = false
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet private weak var homeCollection: UICollectionView!
@@ -33,6 +32,7 @@ class HomeController: UIViewController {
     }
     
     func configUI() {
+        tabBarController?.tabBar.tintColor = .home
         searchView.layer.cornerRadius = 20
         searchView.layer.borderWidth = 0.5
         homeCollection.dataSource = self
@@ -63,7 +63,6 @@ class HomeController: UIViewController {
 }
 
 extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.trips.count
     }
@@ -82,14 +81,15 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         let controller = storyboard?.instantiateViewController(withIdentifier: "InfoController") as! InfoController
         controller.hidesBottomBarWhenPushed = true
         controller.travel = viewModel.trips[indexPath.row]
+        controller.title = viewModel.trips[indexPath.row].name
         navigationController?.show(controller, sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView", for: indexPath) as! HeaderCollectionReusableView
-        if !isSegmentConfigured {
+        if !viewModel.isSegmentConfigured {
             header.configCategory(category: viewModel.category)
-            isSegmentConfigured = true
+            viewModel.isSegmentConfigured = true
         }
         header.buttonHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "TripsController") as! TripsController

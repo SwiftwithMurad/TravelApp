@@ -27,6 +27,5 @@ class InfoCell: UITableViewCell {
         countryName.text = travel.country
         tripName.text = travel.name
         tripInfo.text = travel.info
-//        infoImage.image = UIImage(named: travel.image ?? "")
     }
 }

@@ -12,5 +12,10 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configUI()
+    }
+    
+    func configUI() {
+        tabBar.barTintColor = .systemGray5
     }
 }

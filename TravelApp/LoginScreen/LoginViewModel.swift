@@ -16,7 +16,7 @@ class LoginViewModel {
     var successAlert: (() -> Void)?
     var errorAlert: (() -> Void)?
     
-    func readTravelData() {
+    func readUserData() {
         helper.readData { result in
             self.user = result
         }

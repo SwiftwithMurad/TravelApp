@@ -25,14 +25,15 @@ class LoginController: UIViewController {
     
     func configUI() {
         loginView.layer.cornerRadius = 30
-        emailFieldView.layer.cornerRadius = 25
+        [emailFieldView, passwordFieldView].forEach { view in
+            view.layer.cornerRadius = 25
+        }
         passwordFieldView.layer.borderWidth = 1
         passwordFieldView.layer.borderColor = UIColor(named: "HomeColor")?.cgColor
-        passwordFieldView.layer.cornerRadius = 25
     }
     
     func configureViewModel() {
-        viewModel.readTravelData()
+        viewModel.readUserData()
         viewModel.errorAlert = {
             let alertController = UIAlertController(title: "Wrong information", message: "Please enter valid user info", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .default)

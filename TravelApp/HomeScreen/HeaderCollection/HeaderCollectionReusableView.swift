@@ -11,7 +11,6 @@ class HeaderCollectionReusableView: UICollectionReusableView {
     var categories = [Categories]()
     var reloadCategoryData: ((Int) -> Void)?
     var buttonHandler: (() -> Void)?
-    var isSegmentConfigured = false
     
     @IBOutlet private weak var headerCollection: UICollectionView!
     override func awakeFromNib() {

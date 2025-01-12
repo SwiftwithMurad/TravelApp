@@ -12,6 +12,7 @@ class HomeViewModel {
     var existedTrips = [Travel]()
     var category = [Categories]()
     let jsonHelper = JsonHelper()
+    var isSegmentConfigured = false
     
     func readData() {
         jsonHelper.readCategoryData { categories in

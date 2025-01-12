@@ -9,42 +9,35 @@ import UIKit
 import Lottie
 
 class ProfileController: UIViewController {
-    let manager = UserDefaultsManager()
-    var user = [User]()
+    let viewModel = ProfileViewModel()
     
+    @IBOutlet private weak var generalLabelView: UIView!
+    @IBOutlet private weak var profileAnimation: LottieAnimationView!
     @IBOutlet private weak var passwordLabel: UILabel!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var emailLabel: UILabel!
     @IBOutlet private weak var passwordView: UIView!
     @IBOutlet private weak var nameView: UIView!
     @IBOutlet private weak var emailView: UIView!
-    @IBOutlet private weak var profileAnimation: LottieAnimationView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configUI()
-        configLabels()
     }
     
     func configUI() {
-        profileAnimation.backgroundColor = .systemGray5
+        generalLabelView.layer.cornerRadius = 30
         profileAnimation.play()
         profileAnimation.loopMode = .loop
-        passwordView.layer.cornerRadius = passwordView.frame.height / 2
-        emailView.layer.cornerRadius = emailView.frame.height / 2
-        nameView.layer.cornerRadius = nameView.frame.height / 2
-    }
-    
-    func configLabels() {
-        let filteredUser = user.filter({ $0.email == manager.getString(key: .emailSaved) })
-        if let name = nameLabel,
-           let password = passwordLabel,
-           let email = emailLabel {
-            if user.contains(where: { $0.email == manager.getString(key: .emailSaved) }) {
-                email.text = filteredUser[0].email
-                name.text = filteredUser[0].username
-                password.text = filteredUser[0].password
-            }
+        [emailView, nameView, passwordView].forEach { view in
+            view.layer.cornerRadius = view.frame.height / 2
+            view.layer.borderWidth = 1
+            view.layer.borderColor = UIColor.home.cgColor
+        }
+        viewModel.configViewModel { email, name, password in
+            self.emailLabel.text = email
+            self.nameLabel.text = name
+            self.passwordLabel.text = password
         }
     }
 }
