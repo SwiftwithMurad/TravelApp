@@ -366,10 +366,25 @@ Journey together! </string>
                     <view key="view" contentMode="scaleToFill" id="fd2-gR-wNr">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-Wt-M8D">
+                                <rect key="frame" x="0.0" y="106" width="402" height="685"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NrG-gX-ARw"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="jgv-Wt-M8D" firstAttribute="top" secondItem="NrG-gX-ARw" secondAttribute="top" id="C7h-7c-mit"/>
+                            <constraint firstItem="NrG-gX-ARw" firstAttribute="trailing" secondItem="jgv-Wt-M8D" secondAttribute="trailing" id="Rhu-Us-8PQ"/>
+                            <constraint firstItem="NrG-gX-ARw" firstAttribute="bottom" secondItem="jgv-Wt-M8D" secondAttribute="bottom" id="aLk-4M-FsR"/>
+                            <constraint firstItem="jgv-Wt-M8D" firstAttribute="leading" secondItem="NrG-gX-ARw" secondAttribute="leading" id="g0O-7B-fU4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1ve-ox-BmA"/>
+                    <connections>
+                        <outlet property="favouritesTable" destination="jgv-Wt-M8D" id="Ghw-iu-Otd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2X-g0-qAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -419,7 +434,7 @@ Journey together! </string>
                                         <rect key="frame" x="8" y="217" width="327" height="43"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyh-sc-WhG">
-                                                <rect key="frame" x="126" y="11" width="74" height="21"/>
+                                                <rect key="frame" x="126.33333333333334" y="11" width="74" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -454,6 +469,9 @@ Journey together! </string>
                                             <backgroundConfiguration key="background" cornerRadius="20"/>
                                             <color key="baseBackgroundColor" name="HomeColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="logoutButtonTapped:" destination="boL-BW-NSo" eventType="touchUpInside" id="3JR-We-VEk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -40,5 +40,8 @@ class ProfileController: UIViewController {
             self.passwordLabel.text = password
         }
     }
+    
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+        viewModel.configLogoutButton()
+    }
 }
-

@@ -8,8 +8,9 @@
 import UIKit
 
 class CategoryCell: UICollectionViewCell {
+    var heartButtonHandler: (() -> Void)?
 
-    @IBOutlet weak var heartButton: UIButton!
+    @IBOutlet private weak var heartButton: UIButton!
     @IBOutlet private weak var countryName: UILabel!
     @IBOutlet private weak var cellLabel: UILabel!
     @IBOutlet private weak var cellImage: UIImageView!
@@ -34,7 +35,6 @@ class CategoryCell: UICollectionViewCell {
     }
     
     @IBAction func heartButtonTapped(_ sender: Any) {
-        heartButton.isEnabled = true
-        heartButton.tintColor = .home
+        heartButtonHandler?()
     }
 }

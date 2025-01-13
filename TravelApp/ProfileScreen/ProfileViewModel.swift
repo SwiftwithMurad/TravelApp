@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class ProfileViewModel {
-    let manager = UserDefaultsManager()
+    let userDefaultsManager = UserDefaultsManager()
     var user = [User]()
     let fileManagerHelper = FileManagerHelper()
     
@@ -17,11 +17,18 @@ class ProfileViewModel {
         fileManagerHelper.readData { user in
             self.user = user
         }
-        let filteredUser = user.filter({ $0.email == manager.getString(key: .emailSaved) })
+        let filteredUser = user.filter({ $0.email == userDefaultsManager.getString(key: .emailSaved) })
         let email = "Email: \(filteredUser[0].email ?? "")"
         let name = "Username: \(filteredUser[0].username ?? "")"
         let password = "Password: \(filteredUser[0].password ?? "")"
         completion(email, name, password)
     }
+    
+    func configLogoutButton() {
+        userDefaultsManager.setValue(value: true, key: .isLogout)
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let sceneDelegate = windowScene.delegate as? SceneDelegate {
+            sceneDelegate.loginRoot()
+        }
+    }
 }
-
