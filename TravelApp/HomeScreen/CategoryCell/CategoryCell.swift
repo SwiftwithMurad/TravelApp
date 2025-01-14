@@ -26,6 +26,7 @@ class CategoryCell: UICollectionViewCell {
         cellImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         cellImage.layer.cornerRadius = 25
         cellImage.clipsToBounds = true
+        heartButton.addTarget(self, action: #selector(heartButtonTapped(_:)), for: .touchUpInside)
     }
     
     func configCell(travel: Travel) {
@@ -35,6 +36,7 @@ class CategoryCell: UICollectionViewCell {
     }
     
     @IBAction func heartButtonTapped(_ sender: Any) {
+        heartButton.isSelected.toggle()
         heartButtonHandler?()
     }
 }

@@ -21,11 +21,26 @@ class FavouritesController: UIViewController {
     
     func configUI() {
         favouritesTable.register(UINib(nibName: "FavouritesCell", bundle: nil), forCellReuseIdentifier: "FavouritesCell")
+        favouritesTable.dataSource = self
+        favouritesTable.delegate = self
         helper.fetchData { travel in
             self.travel = travel
         }
-        if let travels = travels {
-            helper.saveData(travel: travels)
-        }
+    }
+}
+
+extension FavouritesController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return travel.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesCell") as! FavouritesCell
+        cell.configCell(travel: travel[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
     }
 }

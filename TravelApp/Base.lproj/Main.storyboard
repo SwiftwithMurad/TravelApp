@@ -359,7 +359,7 @@ Journey together! </string>
             </objects>
             <point key="canvasLocation" x="122.38805970149254" y="-2.7459954233409607"/>
         </scene>
-        <!--Favourites Controller-->
+        <!--Saved Trips-->
         <scene sceneID="7rq-kA-lEC">
             <objects>
                 <viewController storyboardIdentifier="FavouritesController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pEX-I6-dL8" customClass="FavouritesController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -367,9 +367,9 @@ Journey together! </string>
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-Wt-M8D">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-Wt-M8D">
                                 <rect key="frame" x="0.0" y="106" width="402" height="685"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NrG-gX-ARw"/>
@@ -381,7 +381,7 @@ Journey together! </string>
                             <constraint firstItem="jgv-Wt-M8D" firstAttribute="leading" secondItem="NrG-gX-ARw" secondAttribute="leading" id="g0O-7B-fU4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1ve-ox-BmA"/>
+                    <navigationItem key="navigationItem" title="Saved Trips" id="1ve-ox-BmA"/>
                     <connections>
                         <outlet property="favouritesTable" destination="jgv-Wt-M8D" id="Ghw-iu-Otd"/>
                     </connections>
@@ -707,7 +707,7 @@ Journey together! </string>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AUX-9e-Koa" secondAttribute="trailing" constant="20" symbolic="YES" id="pMc-oH-a74"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-xG-nMu">
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-xG-nMu">
                                 <rect key="frame" x="0.0" y="159" width="402" height="681"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="O0w-80-0Od">

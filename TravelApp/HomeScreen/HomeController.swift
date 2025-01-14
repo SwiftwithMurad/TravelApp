@@ -10,7 +10,7 @@ import UIKit
 class HomeController: UIViewController {
     let viewModel =  HomeViewModel()
     
-    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet private weak var searchTextField: UITextField!
     @IBOutlet private weak var homeCollection: UICollectionView!
     @IBOutlet private weak var searchView: UIView!
     override func viewDidLoad() {
@@ -72,7 +72,9 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         cell.configCell(travel: viewModel.trips[indexPath.row])
         cell.heartButtonHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesController") as! FavouritesController
-
+            let coreDataHelper = CoreDataHelper()
+            coreDataHelper.saveData(travel: self.viewModel.existedTrips[indexPath.row])
+            controller.travels = self.viewModel.existedTrips[indexPath.row]
         }
         return cell
     }
