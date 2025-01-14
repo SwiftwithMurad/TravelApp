@@ -10,7 +10,8 @@ import UIKit
 class FavouritesController: UIViewController {
     let helper = CoreDataHelper()
     var travel = [TravelList]()
-    var travels: Travel?
+    var trips = [Travel]()
+    let refreshControl = UIRefreshControl()
     
     @IBOutlet private weak var favouritesTable: UITableView!
     override func viewDidLoad() {
@@ -25,7 +26,18 @@ class FavouritesController: UIViewController {
         favouritesTable.delegate = self
         helper.fetchData { travel in
             self.travel = travel
+            self.favouritesTable.reloadData()
         }
+        favouritesTable.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+    }
+    
+    @objc func refreshData() {
+        helper.fetchData { travel in
+            self.travel = travel
+            self.favouritesTable.reloadData()
+        }
+        refreshControl.endRefreshing()
     }
 }
 
@@ -42,5 +54,20 @@ extension FavouritesController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        .delete
+    }
+
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "") { action, view, completionHandler in
+            self.travel.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            completionHandler(true)
+        }
+        deleteAction.image = UIImage(systemName: "trash")
+        deleteAction.backgroundColor = UIColor.home
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
 }

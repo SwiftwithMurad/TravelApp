@@ -12,6 +12,7 @@ class HomeViewModel {
     var existedTrips = [Travel]()
     var category = [Categories]()
     let jsonHelper = JsonHelper()
+    var travel = [TravelList]()
     let coreDataHelper = CoreDataHelper()
     var isSegmentConfigured = false
     
