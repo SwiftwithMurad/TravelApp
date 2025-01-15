@@ -8,9 +8,7 @@
 import UIKit
 
 class FavouritesController: UIViewController {
-    let helper = CoreDataHelper()
-    var travel = [TravelList]()
-    var trips = [Travel]()
+    let viewModel = FavouritesViewModel()
     let refreshControl = UIRefreshControl()
     
     @IBOutlet private weak var favouritesTable: UITableView!
@@ -24,8 +22,7 @@ class FavouritesController: UIViewController {
         favouritesTable.register(UINib(nibName: "FavouritesCell", bundle: nil), forCellReuseIdentifier: "FavouritesCell")
         favouritesTable.dataSource = self
         favouritesTable.delegate = self
-        helper.fetchData { travel in
-            self.travel = travel
+        viewModel.readData {
             self.favouritesTable.reloadData()
         }
         favouritesTable.refreshControl = refreshControl
@@ -33,22 +30,21 @@ class FavouritesController: UIViewController {
     }
     
     @objc func refreshData() {
-        helper.fetchData { travel in
-            self.travel = travel
+        viewModel.readData {
             self.favouritesTable.reloadData()
+            refreshControl.endRefreshing()
         }
-        refreshControl.endRefreshing()
     }
 }
 
 extension FavouritesController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return travel.count
+        return viewModel.travel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesCell") as! FavouritesCell
-        cell.configCell(travel: travel[indexPath.row])
+        cell.configCell(travel: viewModel.travel[indexPath.row])
         return cell
     }
     
@@ -62,8 +58,9 @@ extension FavouritesController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "") { action, view, completionHandler in
-            self.travel.remove(at: indexPath.row)
+            self.viewModel.travel.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            self.viewModel.deleteData(at: indexPath)
             completionHandler(true)
         }
         deleteAction.image = UIImage(systemName: "trash")

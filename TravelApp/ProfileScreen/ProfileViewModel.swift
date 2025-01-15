@@ -25,7 +25,7 @@ class ProfileViewModel {
     }
     
     func configLogoutButton() {
-        userDefaultsManager.setValue(value: true, key: .isLogout)
+        userDefaultsManager.setValue(value: false, key: .isLoggedIn)
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let sceneDelegate = windowScene.delegate as? SceneDelegate {
             sceneDelegate.loginRoot()

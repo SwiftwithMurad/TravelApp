@@ -32,4 +32,15 @@ class CoreDataHelper {
             print(error.localizedDescription)
         }
     }
+    
+    func deleteData(at indexPath: IndexPath) {
+        let deletedTrips = favouriteTrips[indexPath.row]
+        context.delete(deletedTrips)
+        favouriteTrips.remove(at: indexPath.row)
+        do {
+            try context.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
 }

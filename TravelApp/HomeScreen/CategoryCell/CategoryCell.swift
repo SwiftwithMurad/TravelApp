@@ -33,6 +33,11 @@ class CategoryCell: UICollectionViewCell {
         countryName.text = travel.country
         cellLabel.text = travel.name
         cellImage.image = UIImage(named: travel.image.first ?? "")
+        heartButton.isSelected = travel.isFavourite ?? false
+    }
+    
+    func isHeartButtonSelected() -> Bool {
+        return heartButton.isSelected
     }
     
     @IBAction func heartButtonTapped(_ sender: Any) {

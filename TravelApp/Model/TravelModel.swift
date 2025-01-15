@@ -20,5 +20,6 @@ struct Travel: Codable {
     let country: String?
     let image: [String]
     let info: String?
+    let isFavourite: Bool?
 }
 

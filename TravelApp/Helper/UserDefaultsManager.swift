@@ -11,7 +11,6 @@ class UserDefaultsManager {
     enum UserDefaultsTypes: String {
         case isLoggedIn = "isLoggedIn"
         case emailSaved = "emailSaved"
-        case isLogout = "isLogout"
     }
     
     func setValue(value: Any, key: UserDefaultsTypes) {

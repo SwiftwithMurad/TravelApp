@@ -71,9 +71,21 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
         cell.configCell(travel: viewModel.trips[indexPath.row])
         cell.heartButtonHandler = {
-            let controller = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesController") as! FavouritesController            
-            self.viewModel.coreDataHelper.saveData(travel: self.viewModel.existedTrips[indexPath.row])
-            controller.trips.append(contentsOf: self.viewModel.existedTrips)
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesController") as! FavouritesController
+            if indexPath.row < self.viewModel.trips.count {
+                if cell.isHeartButtonSelected() == true {
+                    self.viewModel.coreDataHelper.saveData(travel: self.viewModel.existedTrips[indexPath.row])
+                    controller.viewModel.trips.append(contentsOf: self.viewModel.existedTrips)
+                } else {
+                    if indexPath.row < controller.viewModel.travel.count {
+                        controller.viewModel.deleteData(at: indexPath)
+                        controller.viewModel.travel.remove(at: indexPath.row)
+                        self.homeCollection.reloadData()
+                    }
+                }
+            }
+//            self.viewModel.coreDataHelper.saveData(travel: self.viewModel.existedTrips[indexPath.row])
+//            controller.viewModel.trips.append(contentsOf: self.viewModel.existedTrips)
         }
         return cell
     }

@@ -34,7 +34,7 @@ class TableHeaderView: UIView {
         collection.delegate = self
         collection.dataSource = self
         collection.addSubview(pageControl)
-        config()
+        configConstraint()
         Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollingSetup), userInfo: nil, repeats: true)
     }
     
@@ -53,7 +53,7 @@ class TableHeaderView: UIView {
         collection.scrollToItem(at: IndexPath(item: index, section: 0), at: .right, animated: true)
     }
     
-    func config() {
+    func configConstraint() {
         addSubview(collection)
         NSLayoutConstraint.activate([
             collection.topAnchor.constraint(equalTo: topAnchor, constant: 0),
