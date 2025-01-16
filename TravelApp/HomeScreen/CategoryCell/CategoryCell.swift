@@ -9,7 +9,8 @@ import UIKit
 
 class CategoryCell: UICollectionViewCell {
     var heartButtonHandler: (() -> Void)?
-
+    let manager = UserDefaultsManager()
+    
     @IBOutlet private weak var heartButton: UIButton!
     @IBOutlet private weak var countryName: UILabel!
     @IBOutlet private weak var cellLabel: UILabel!
@@ -20,7 +21,7 @@ class CategoryCell: UICollectionViewCell {
         
         configUI()
     }
-
+    
     func configUI() {
         cellView.layer.cornerRadius = 20
         cellImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
@@ -33,7 +34,8 @@ class CategoryCell: UICollectionViewCell {
         countryName.text = travel.country
         cellLabel.text = travel.name
         cellImage.image = UIImage(named: travel.image.first ?? "")
-        heartButton.isSelected = travel.isFavourite ?? false
+        let isHeartSelected = manager.getHeartButtonState(for: travel.country ?? "")
+        heartButton.isSelected = isHeartSelected
     }
     
     func isHeartButtonSelected() -> Bool {
@@ -42,6 +44,9 @@ class CategoryCell: UICollectionViewCell {
     
     @IBAction func heartButtonTapped(_ sender: Any) {
         heartButton.isSelected.toggle()
+        if let country = countryName.text {
+            manager.setHeartButtonState(isSelected: heartButton.isSelected, countryName: country)
+        }
         heartButtonHandler?()
     }
 }

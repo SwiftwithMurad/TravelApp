@@ -15,7 +15,7 @@ class HomeController: UIViewController {
     @IBOutlet private weak var searchView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configUI()
     }
     
@@ -72,20 +72,11 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         cell.configCell(travel: viewModel.trips[indexPath.row])
         cell.heartButtonHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesController") as! FavouritesController
-            if indexPath.row < self.viewModel.trips.count {
-                if cell.isHeartButtonSelected() == true {
-                    self.viewModel.coreDataHelper.saveData(travel: self.viewModel.existedTrips[indexPath.row])
-                    controller.viewModel.trips.append(contentsOf: self.viewModel.existedTrips)
-                } else {
-                    if indexPath.row < controller.viewModel.travel.count {
-                        controller.viewModel.deleteData(at: indexPath)
-                        controller.viewModel.travel.remove(at: indexPath.row)
-                        self.homeCollection.reloadData()
-                    }
-                }
+            if cell.isHeartButtonSelected() {
+                self.viewModel.coreDataHelper.saveData(travel: self.viewModel.trips[indexPath.row])
+            } else {
+                controller.viewModel.deleteData(at: indexPath)
             }
-//            self.viewModel.coreDataHelper.saveData(travel: self.viewModel.existedTrips[indexPath.row])
-//            controller.viewModel.trips.append(contentsOf: self.viewModel.existedTrips)
         }
         return cell
     }

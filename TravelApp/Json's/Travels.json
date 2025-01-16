@@ -4,56 +4,77 @@
         "name": "Redfish Lake",
         "country": "Idaho",
         "image": ["redfishLake", "redfishLake2", "redfishLake3"],
-        "info": "What is Redfish Lake known for? Redfish Lake is the final stop on the longest Pacific salmon run in North America, which requires long-distance swimmers, such as Sockeye and Chinook Salmon, to travel over 900 miles upstream to return to their spawning grounds. Redfish Lake is an alpine lake in Custer County, Idaho, just south of Stanley. It is the largest lake within the Sawtooth National Recreation Area.",
-        "isFavourite": false
+        "info": "What is Redfish Lake known for? Redfish Lake is the final stop on the longest Pacific salmon run in North America, which requires long-distance swimmers, such as Sockeye and Chinook Salmon, to travel over 900 miles upstream to return to their spawning grounds. Redfish Lake is an alpine lake in Custer County, Idaho, just south of Stanley. It is the largest lake within the Sawtooth National Recreation Area."
     },
     {
         "id": 1,
         "name": "Maligne Lake",
         "country": "Canada",
         "image": ["maligneLake", "maligneLake2", "maligneLake3"],
-        "info": "Maligne Lake is the largest natural lake in the Canadian Rockies. Ringed by snow-and-ice-capped mountains, the 22 km long lake stretches past serene Spirit Island right to the melt-water channels of Coronet Glacier. An open forest of lodgepole pine and spruce, home of moose, Harlequin Ducks, and many other types of wildlife surround visitors at the north end of the lake. Hiking and, in winter, cross-country skiing trails abound making this a popular retreat at all times of the Maligne Lake was originally known as Chaba Imne (Beaver Lake) by the Indigenous people who lived in Jasper. In 1907 Mary Schaeffer, a wealthy Quaker from Philadelphia, learned of the mysterious lake. Following a map obtained from Samson Beaver, Mary explored the valley and lake and later wrote about her adventures, making the area a popular tourist attraction in years to follow.",
-            "isFavourite": false
+        "info": "Maligne Lake is the largest natural lake in the Canadian Rockies. Ringed by snow-and-ice-capped mountains, the 22 km long lake stretches past serene Spirit Island right to the melt-water channels of Coronet Glacier. An open forest of lodgepole pine and spruce, home of moose, Harlequin Ducks, and many other types of wildlife surround visitors at the north end of the lake. Hiking and, in winter, cross-country skiing trails abound making this a popular retreat at all times of the Maligne Lake was originally known as Chaba Imne (Beaver Lake) by the Indigenous people who lived in Jasper. In 1907 Mary Schaeffer, a wealthy Quaker from Philadelphia, learned of the mysterious lake. Following a map obtained from Samson Beaver, Mary explored the valley and lake and later wrote about her adventures, making the area a popular tourist attraction in years to follow."
     },
     {
         "id": 1,
         "name": "Lake McDonald",
         "country": "Canada",
         "image": ["lakeMcdonald", "lakeMcdonald2", "lakeMcdonald3"],
-        "info": "Lake McDonald is Glacier National Park's biggest lake; ten miles long and 472 feet deep. Filling a basin gouged out by Ice Age glaciers, Lake McDonald is a classic glacial feature. This long fjord-like lake is surrounded by mountains on the north, south, and east with the Continental Divide, 14 miles away. The mountains provide a spectacular backdrop for the lake and also act as a rain block. Much of the blocked precipitation ends up falling on the McDonald valley. The result is a mild, damp climate. Stands of western red cedar and hemlock flourish in the valley of Lake McDonald. The wildlife-viewing here can be spectacular, with species including bighorn sheep, mountain goat, elk, black bear, and whitetail and mule deer.",
-            "isFavourite": false
+        "info": "Lake McDonald is Glacier National Park's biggest lake; ten miles long and 472 feet deep. Filling a basin gouged out by Ice Age glaciers, Lake McDonald is a classic glacial feature. This long fjord-like lake is surrounded by mountains on the north, south, and east with the Continental Divide, 14 miles away. The mountains provide a spectacular backdrop for the lake and also act as a rain block. Much of the blocked precipitation ends up falling on the McDonald valley. The result is a mild, damp climate. Stands of western red cedar and hemlock flourish in the valley of Lake McDonald. The wildlife-viewing here can be spectacular, with species including bighorn sheep, mountain goat, elk, black bear, and whitetail and mule deer."
     },
     {
         "id": 1,
         "name": "Lake Malawi",
         "country": "Tanzania",
         "image": ["lakeMalawi", "lakeMalawi2", "lakeMalawi3"],
-        "info": "Located at the southern end of the great expanse of Lake Malawi, the property is of global importance for biodiversity conservation due particularly to its fish diversity. Lying within the Western Rift Valley, Lake Malawi is one of the deepest lakes in the world. The property is an area of exceptional natural beauty with the rugged landscapes around it contrasting with the remarkably clear waters of the lake. The property is home to many hundreds of cichlid fish, nearly all of which are endemic to Lake Malawi, and are known locally as mbuna. The mbuna fishes display a significant example of biological evolution. Due to the isolation of Lake Malawi from other water bodies, its fish have developed impressive adaptive radiation and speciation, and are an outstanding example of the ecological processes.",
-            "isFavourite": false
+        "info": "Located at the southern end of the great expanse of Lake Malawi, the property is of global importance for biodiversity conservation due particularly to its fish diversity. Lying within the Western Rift Valley, Lake Malawi is one of the deepest lakes in the world. The property is an area of exceptional natural beauty with the rugged landscapes around it contrasting with the remarkably clear waters of the lake. The property is home to many hundreds of cichlid fish, nearly all of which are endemic to Lake Malawi, and are known locally as mbuna. The mbuna fishes display a significant example of biological evolution. Due to the isolation of Lake Malawi from other water bodies, its fish have developed impressive adaptive radiation and speciation, and are an outstanding example of the ecological processes."
     },
     {
         "id": 1,
         "name": "Lake Baikal",
         "country": "Russian",
         "image": ["lakeBaikal", "lakeBaikal2", "lakeBaikal3"],
-        "info": "The Committee inscribed Lake Baikal as the most outstanding example of a freshwater ecosystem on the basis of natural criteria (vii), (viii), (ix) and (x). It is the oldest and deepest of the world´s lakes containing nearly 20% of the world´s unfrozen freshwater reserve. The lake contains an outstanding variety of endemic flora and fauna, which is of exceptional value to evolutionary science. It is also surrounded by a system of protected areas that have high scenic and other natural values. The Committee took note of the confirmation of the revised boundaries of the site, which correspond to the core areas defined in the Baikal Law (excluding the five urban developed areas). It also noted that the special Lake Baikal Law is now in its second reading in the Duma. Finally, it noted concern over a number of integrity issues including pollution, which should be brought to the attention of the Russian authorities.",
-            "isFavourite": false
+        "info": "The Committee inscribed Lake Baikal as the most outstanding example of a freshwater ecosystem on the basis of natural criteria (vii), (viii), (ix) and (x). It is the oldest and deepest of the world´s lakes containing nearly 20% of the world´s unfrozen freshwater reserve. The lake contains an outstanding variety of endemic flora and fauna, which is of exceptional value to evolutionary science. It is also surrounded by a system of protected areas that have high scenic and other natural values. The Committee took note of the confirmation of the revised boundaries of the site, which correspond to the core areas defined in the Baikal Law (excluding the five urban developed areas). It also noted that the special Lake Baikal Law is now in its second reading in the Duma. Finally, it noted concern over a number of integrity issues including pollution, which should be brought to the attention of the Russian authorities."
     },
     {
         "id": 1,
         "name": "Moraine Lake",
         "country": "Canada",
         "image": ["moraineLake", "moraineLake2", "moraineLake3"],
-        "info": "Don't miss a visit to one of Banff's most popular locations, Moraine Lake. This stunning turquoise gem, cradled by the Valley of the Ten Peaks, is a sight straight out of a dream. Take in the iconic views from the lakeshore and the rockpile or explore the area further with trails suitable for both seasoned hikers and casual  Open from June to October, a shuttle is required to access Moraine Lake. Plan ahead and book your shuttle in advance to avoid Moraine Lake is closed in the winter months from October to June. The road is track set for cross-country skiing when conditions permit.",
-            "isFavourite": false
+        "info": "Don't miss a visit to one of Banff's most popular locations, Moraine Lake. This stunning turquoise gem, cradled by the Valley of the Ten Peaks, is a sight straight out of a dream. Take in the iconic views from the lakeshore and the rockpile or explore the area further with trails suitable for both seasoned hikers and casual  Open from June to October, a shuttle is required to access Moraine Lake. Plan ahead and book your shuttle in advance to avoid Moraine Lake is closed in the winter months from October to June. The road is track set for cross-country skiing when conditions permit."
+    },
+    {
+        "id": 1,
+        "name": "Pragser Wildsee",
+        "country": "Italy",
+        "image": ["pragserWildsee", "pragserWildsee2", "pragserWildsee3"],
+        "info": "One of the most photographed and visited lakes in South Tyrol, Lake Pragserwildsee owes its fame not only to the TV series “One step from Heaven - The Spirit of the Wolf” featuring Terence Hill: Lake Pragser Wildsee shines in all shades from blue to emerald green, and no one can fail to be moved by its backdrop of the 2,800-metre-high Seekofel mountain. A lake tour offers children and adults alike the opportunity to make small discoveries. During the approximately one-hour hike, new perspectives of the lake and its surroundings open up unstoppably. If you want to spend more time by the lake, you can rent a rowing boat and venture out onto the water."
+    },
+    {
+        "id": 1,
+        "name": "Lake Ohrid",
+        "country": "Albania",
+        "image": ["lakeOhrid", "lakeOhrid2", "lakeOhrid3"],
+        "info": "Nestled along the shores of Lake Ohrid, the city of Ohrid, North Macedonia is a lovely Balkan destination known for its stunning natural beauty, ancient churches, and quaint old town. While Ohrid might not be the first place that comes to people’s minds for a European Holiday, it is a wonderful under-the-radar destination, perfect for those who want to experience a place with rich culture, delicious food, and lovely lakeside beaches – without the crowds or high prices of some of Europe’s more popular Ohrid was one of my favorite cities I visited during my 4-month trip around the Balkans. Not only is there plenty to see and do in the area, but the locals are warm, the food is delicious, and the town is truly Here is everything you need to know about visiting Ohrid, North Macedonia!"
+    },
+    {
+        "id": 1,
+        "name": "Lake Como",
+        "country": "Italy",
+        "image": ["lakeComo", "lakeComo2", "lakeComo3"],
+        "info": "Lake Como, locally known as Lago di Como or Lario, is the third largest Italian lake (after Lake Garda and Lake Maggiore). Located at the foot of the Alps, Lake Como offers some of the most romantic and picturesque scenery in  Its characteristic inverted-Y shape comes from the melting of glaciers combined with the erosive action of the Adda river. This led to the formation of the two southern branches that culminate in the cities of Como and Lecco, in the middle of which lies the famous ❗You will be surprised to learn about the many things to do on Lake Como, especially if you decide to stay more than one day! The distances between towns are such that you can visit at least 3 or 4 villages by local transportation, and you can lose yourself among enchanting villas and gardens, relax with a private boat tour or on your favorite beach, and even rejuvenate with a healthy nature walk."
+    },
+    {
+        "id": 1,
+        "name": "Lake Annecy",
+        "country": "France",
+        "image": ["lakeAnnecy", "lakeAnnecy2", "lakeAnnecy3"],
+        "info": "Lake Como, locally known as Lago di Como or Lario, is the third largest Italian lake (after Lake Garda and Lake Maggiore). Located at the foot of the Alps, Lake Como offers some of the most romantic and picturesque scenery in  Its characteristic inverted-Y shape comes from the melting of glaciers combined with the erosive action of the Adda river. This led to the formation of the two southern branches that culminate in the cities of Como and Lecco, in the middle of which lies the famous ❗You will be surprised to learn about the many things to do on Lake Como, especially if you decide to stay more than one day! The distances between towns are such that you can visit at least 3 or 4 villages by local transportation, and you can lose yourself among enchanting villas and gardens, relax with a private boat tour or on your favorite beach, and even rejuvenate with a healthy nature walk."
     },
     {
         "id": 2,
         "name": "Caribbean Sea",
         "country": "Mexico",
         "image": ["caribbeanSea", "caribbeanSea2", "caribbeanSea3"],
-        "info": "Caribbean Sea, Arm of the Atlantic Ocean. It covers about 1,063,000 sq mi (2,753,000 sq km) and washes the northern coast of South America, eastern Central America, and eastern Mexico. It reaches its greatest known depth, about 25,216 ft (7,686 m), in Cayman Trench, between Cuba and Jamaica. Its generally tropical climate varies, depending on mountain elevations, water currents, and trade winds. The economies of its island countries, including Saint Kitts and Nevis, Dominica, Saint Lucia, and Barbados, are greatly dependent on tourism; the region is one of the world’s principal winter resort areas.",
-            "isFavourite": false
+        "info": "Caribbean Sea, Arm of the Atlantic Ocean. It covers about 1,063,000 sq mi (2,753,000 sq km) and washes the northern coast of South America, eastern Central America, and eastern Mexico. It reaches its greatest known depth, about 25,216 ft (7,686 m), in Cayman Trench, between Cuba and Jamaica. Its generally tropical climate varies, depending on mountain elevations, water currents, and trade winds. The economies of its island countries, including Saint Kitts and Nevis, Dominica, Saint Lucia, and Barbados, are greatly dependent on tourism; the region is one of the world’s principal winter resort areas."
     },
     
     {
@@ -61,140 +82,204 @@
         "name": "Caspian Sea",
         "country": "Azerbaijan",
         "image": ["caspianSea", "caspianSea2", "caspianSea3"],
-        "info": "The Caspian Sea is the world’s largest closed body of water and a body of water with numerous ecosystem values. This waterbody contributes to a more favorable and livable climate in a large region, mainly in Azerbaijan, and plays an exceptional role in the natural purification of the air in Baku. The tourism and recreation resources of the Caspian Sea are also poorly used, and in most cases, the incorrect approaches observed in this sector prevent the sea from becoming a tourist center. Seawater pollution and negligence in coastal areas do not allow the use of most of the coastal areas as beaches. Simultaneously, the occupation of the coast by artisanal tourism facilities and individuals, while reducing its natural value, has a serious impact on the development of tourism in the country. Arbitrary appropriation and fencing of coastal areas not only seriously affect aesthetic values but also seriously affect the tourism and recreation resources of the Caspian Sea.",
-            "isFavourite": false
+        "info": "The Caspian Sea is the world’s largest closed body of water and a body of water with numerous ecosystem values. This waterbody contributes to a more favorable and livable climate in a large region, mainly in Azerbaijan, and plays an exceptional role in the natural purification of the air in Baku. The tourism and recreation resources of the Caspian Sea are also poorly used, and in most cases, the incorrect approaches observed in this sector prevent the sea from becoming a tourist center. Seawater pollution and negligence in coastal areas do not allow the use of most of the coastal areas as beaches. Simultaneously, the occupation of the coast by artisanal tourism facilities and individuals, while reducing its natural value, has a serious impact on the development of tourism in the country. Arbitrary appropriation and fencing of coastal areas not only seriously affect aesthetic values but also seriously affect the tourism and recreation resources of the Caspian Sea."
     },
     
-
-      {
-          "id": 2,
-          "name": "Coral Sea",
-          "country": "Australia",
-          "image": ["coralSea", "coralSea2", "coralSea3"],
-          "info": "Perched on 320 metres of sandy beach, Coral Sea Holiday Resort features 6 exquisite restaurants and 7 bars, catering to all culinary needs. Recreational facilities encompass a Spa, 4 outdoor swimming pools (two heated in winter), children’s pool with aqua tower, one Thalassic pool in the Spa, and 6 private swim-up room The 5-star Coral Sea Holiday Resort houses 484 elegant guest rooms with modern amenities, superbly-designed facilities. The bathroom is fitted with a bath or a It also includes a fully equipped kids club, multi-purpose court, tennis court, archery and a well-equipped workout room. WiFi access across the complex is available to fulfil all business If you feel like visiting the surroundings, check out Naama Bay (25.3 km) and Ras Mohammed National Park (33.7 km). This resort is 8 km from Sharm El-Sheikh International Couples particularly like the location — they rated it 8.4 for a two-person trip.",
-          "isFavourite": false
-      },
-      {
-          "id": 2,
-          "name": "Andaman Sea",
-          "country": "Thailand",
-          "image": ["andamanSea", "andamanSea2", "andamanSea3"],
-          "info": "The Andaman Sea is a semi-enclosed marginal sea in the northeastern Indian Ocean. It lies between the eastern coast of India and the Malay Peninsula, with Myanmar to the north and the Indonesian island of Sumatra to the south. The Bay of Bengal bounds the Andaman Sea to the west and the Strait of Malacca to the east. The sea, covering an area of approximately 307,994 mi², extends about 750 miles in length and 400 miles in   Furthermore, the Andaman Sea is a complex geological region with a tectonically active plate boundary. It is part of the larger Sunda Plate, which the Indian Plate borders to the northwest and the Australian Plate to the southeast. The ongoing tectonic convergence between these plates has resulted in the formation of the Andaman Basin, characterized by undersea ridges, trenches, and faults. The most prominent geological feature in the region is the Andaman Trench, which is formed by the subduction of the Indian Plate beneath the Eurasian Plate. This tectonic activity has given rise to numerous earthquakes and volcanic eruptions in the region, making the Andaman Sea seismically active.",
-          "isFavourite": false
-      },
-      {
-          "id": 2,
-          "name": "Baltic Sea",
-          "country": "Denmark",
-          "image": ["balticSea", "balticSea2", "balticSea3"],
-          "info": "There are different ways to reach the Baltic Sea. Airline connections with and between Germany, Lithuania, Denmark and Poland are excellent. Flight connections are easy to reach thanks to airports among others in: Hamburg, Berlin, Kopenhagen, Warszawa, Gdansk, Kaliningrad, Riga and Between Germany, Lithuania, Denmark and Poland there are many ferry connections across the Baltic Sea. Companies offering ferry travel to and from Germany, Denmark, Lithuania and Poland are amongst others Scandlines, TT-Lines, Stenaline and The railway network is also well established. Domestic and international Railway routes enable you to reach most of the cities and towns at the Baltic Danish State Railways (DSB) operate on a dense rail network. The Lithuanian rail is called JSC Lithuanian Railways (JSC „Lietuvos geležinkeliai“). The German Rail DB (Deutsche Bahn) has direct connections from many cities in Germany and also from abroad. Germany's first private mainline train - the InterConnex - connects Leipzig and Berlin with Rostock. The Polish carrier Polskie Koleje Państwowe (PKP) offers express connections (Intercity) as well as regional and fast trains, both domestic and international. Railway travel enables you to reach most of the cities and towns in By car you can easily reach your holiday destination on the German, Polish, Danish and Lithuanian coast by using well-developed roads and road networks. At airports, in bigger towns and cities you can as well rent a car.",
-            "isFavourite": false
-      },
-      {
-          "id": 2,
-          "name": "Black Sea",
-          "country": "Turkey",
-          "image": ["blackSea", "blackSea2", "blackSea3"],
-          "info": "The Black Sea coast of Bulgaria is the country's most important tourist region. The Black Sea guarantees beach fun, as its beaches are among the most beautiful in all of Europe thanks to their fine sand and clean water. Besides the well-visited main towns and party strongholds around Varna and Burgas, there are also quieter bays as well as romantic and impressive villages along the 380-kilometre-long coast.",
-          "isFavourite": false
-      },
-      {
-            "id": 3,
-            "name": "Mount Everest",
-            "country": "China",
-            "image": ["mountEverest", "mountEverest2", "mountEverest3"],
-            "info": "The Everest region in Nepal is more than just climbing and trekking, it is a life-changing experience and some see it as a journey close to achieving Nirvana. Located in the northeastern province of Nepal, this region is in a world of its own with vast glaciers, icefalls, the highest mountains, deep valleys, precarious settlements, and hardy people challenging the harshest conditions thrown at them by nature in the thin air of high Passing through legendary Sherpa villages, the trek is a mix of deep cultural and spiritual experiences and physical challenges that test your strength and endurance. Buddhist lamas, monks and nuns led by Rinpoches (reincarnate at mas) serve the predominantly Sherpa communities from their gompas (The journey to Everest or Everest Base Camp begins with a dramatic flight from Kathmandu to Lukla, after which you hike up the Everest region to reach your destination in the Himalayas. However, for die-hard lovers of trekking, there is another switchback starting from Jiri through the mid-hills of Solu, an ethnically diverse section of the trek rich.",
-            "isFavourite": false
-        },
-      {
-          "id": 3,
-          "name": "Mount Fuji",
-          "country": "Japan",
-          "image": ["mountFuji", "mountFuji2", "mountFuji3"],
-          "info": "Sacred, singular and spectacular, Mt. Fuji is nothing short of awe-inspiring and rightfully one of the country’s top Whether you experience Mt. Fuji up close, from the confines of a relaxing hot spring resort or ryokan, or from as far away as Tokyo, there are many ways you can make the country’s tallest mountain part of your Japan adventure. Feel inspired by our specially selected guides, stories and Fuji-related articles. From fifth station trailhead strolls to visiting the Fuji Five Lakes, exploring the foothills, and getting the very best views of the mountain, plan your Mt. Fuji excursion with our comprehensive Fuji Guide.",
-          "isFavourite": false
-      },
-      {
-           "id": 3,
-           "name": "Mount Rainier",
-           "country": "United States",
-           "image": ["mountRainier", "mountRainier2", "mountRainier3"],
-           "info": "Enjoy a fun-filled, day-long tour of the breathtakingly-beautiful wonderland that is Mount Rainier National Park. Heading south from Seattle, we’ll enter through the Nisqually park entrance and continue up the scenic, winding road to the Henry M. Jackson Visitor Center at Paradise at an elevation of 5,400 ft. Picks up visitors from downtown Seattle hotels and lodging in the Seattle Southside area. PRICE: $175 Adult, $100 Child for a 10 to 12-hour experience with transportation and entrance to the park included. Visit Mt. Rainier with professional, enthusiastic, and informative driver/guides. Travel in clean, comfortable 24-passenger mini-coaches with large windows, high back seats, and air-conditioning. Experience old-growth forests, wildflower-filled meadows, and thundering waterfalls on this tour of glacier-clad Mt. Rainier. Hike and walk a little, a lot, or not at all: there are options for all abilities. Enjoy lunch at a Mount Rainier cafe’ or buy a picnic lunch along the way. Visit the interpretive center at Paradise or Sunrise to learn even more about the mountain’s glaciers, plants, and animals. Return to Seattle through pastoral farmlands and memorable Pacific Northwest scenery. Bring a camera on this spectacular Mt. Rainier tour as well as comfortable walking shoes. Layer both warm and cool weather clothing as mountain temperatures can vary from rainy and cold to sunny and hot during a single day. Offers transportation and guided tours from downtown Seattle to the mountain and back. PRICES start at $186 for adults.",
-           "isFavourite": false
-       },
-      {
-             "id": 3,
-             "name": "Mount Olympus",
-             "country": "Macedonia",
-             "image": ["mountOlympus", "mountOlympus2", "mountOlympus3"],
-             "info": "Located on the border between Thessaly and Macedonia and standing with its peak Mytikas at almost 10,000 feet (2,918 m), Mount Olympus is the highest mountain in Greece, one of its most picturesque sites and mythical home of the ancient Greek Gods. Don’t forget that is was here, from its steep rocky summit – first climbed only 100 years ago, where Zeus supposedly hurled his thunderbolts against Mount Olympus has 52 peaks, deep gorges, exceptional biodiversity and is one of the highest peaks in Europe in terms of topographic prominence. This is the adventurous Mount Olympus Expedition Tour, our “active” version of seeing and enjoying the great Mount Olympus. Μount Olympus, also transliterated as Olympos and on Greek Maps indicated as Oros Olympos, is the highest mountain in Greece. It is located in the Olympus Range on the border between Thessaly and Macedonia and the regional units of Pieria and Larissa, about 80 km (50 mi) southwest from Thessaloniki. Mount Olympus has 52 peaks, deep gorges and exceptional biodiversity. The highest peak, Mytikas, meaning “nose”, rises to 2,917 metres (9,570 ft). It is one of the highest peaks in Europe in terms of topographic From its steep rocky summit, first climbed only 100 years ago, the father of all Gods Zeus used to fire his thunderbolts against humankind and the Titans! Its eastern flanks are the country’s first national park (created in the 1930’s), with dozens of endemic species of flora and There is also no habitation apart from the refuges, which bring together groups of mountaineers from all over the globe in their cozy and homely In this program, starting and ending in Litochoro village, we walk 8-9 hours per day, following mostly good forest paths; above the tree – line, the terrain varies from grassy uplands to rocky ridges, with some scrambling required for the peak ascents.",
-             "isFavourite": false
-         },
-      {
-          "id": 3,
-          "name": "Matterhorn",
-          "country": "Switzerland",
-          "image": ["matterhorn", "matterhorn2", "matterhorn3"],
-          "info": "The Matterhorn is considered an icon in the Alps, probably due to its emblematic shape. When we were young, we used to draw mountains like perfect pyramids, didn’t we? The Matterhorn’s iconic shape is made even more impressive by the absence of other high mountains in the surrounding  The legendary “King” has always attracted the attention of mountaineers. Climbing it from both the Italian and Swiss sides requires good climbing experience and intensive training. Although it does not pose significant technical difficulties (thanks to the presence of fixed ropes that facilitate the climb), it is still a challenging ascent with many exposed and difficult   We always recommend adding a few extra days to prepare adequately for the ascent and maximize your chances of success. Please, consider our Climb the Matterhorn in 6 days course, or, if you have a shorter timeframe but still want to prepare adequately for the climb, please check out our Climb the Matterhorn in 4 days   Depending on the chosen side of the climb, on the first day, we will either arrive at the Carrel on the Italian side or the Hörnli hut on the Swiss side. In the first case, the day will be quite challenging as the shelter is located at 3830 m. On the other hand, if the easier (but still challenging) pathway through Switzerland is chosen, it will take approximately 2.5 hours to walk from Schwarzsee station to reach the hut. The hut was completely rebuilt in 2015 on the 150th anniversary of the Matterhorn’s first  On the second day, the climb will take approximately 4 to 5 hours from both sides. The descent, which is always the most complicated part of climbing the Matterhorn, does not require abseiling. It’s all about having a deep knowledge of the route. The guide will always prioritize your safety, indicating the right direction at various crossroads that can mislead those unfamiliar with the For those who want to climb the Matterhorn in the most complete and beautiful way, it is possible to cross it in two or three days (up the Swiss side and down the Italian side) with an overnight stay at the Carrel and/or at the Hörnli hut.",
-          "isFavourite": false
-      },
-      {
-             "id": 3,
-             "name": "Tirich Mir",
-             "country": "Pakistan",
-             "image": ["tirichMir", "tirichMir2", "tirichMir3"],
-             "info": "Tirich Mir base camp trek delights fans of big mountains and mighty glaciers. Tirich Mir base camp trek is a demanding trek where you are off and on the lower Tirich glacier trekking right into the very center of the high Hindukush Mountains to the base camp of Tirich Mir known as  En route, there are impressive 7000m summits like Noshaq 7492m, Istor Nal 7403m besides others. There are two excess routes for doing the Tirich Mir base camp trek either through Torkhow valley or the Zani Pass which is preferred for acclimatization before the high trek. The trip can be combined with other treks in the Hindukush The Hindukush range lies beyond the reach of the monsoon and is a deserted arid mountainscape visited by very few. The scenic of Tirich is very fertile and populated with several small A spectacular drive to Uthul takes us to the jump-off point and trekking across Zani Pass provides excellent views of the Hindukush and the Hindu Raj Ranges. Passing through the villages of Atak and Bandak one arrives Shogor at the foot of the Trich A free day will enable us to explore and will allow for fantastic views of Trich Mir (7708m), Istoro Nal (7403m), and heavily crevassed Upper Tirich Glacier. Visit the legendary of the Kalash of Chitral Valley.",
-             "isFavourite": false
-         },
-      
-       {
-           "id": 4,
-           "name": "Amazon",
-           "country": "Brazil",
-           "image": ["amazon", "amazon2", "amazon3"],
-           "info": "Known as the Lungs of the Earth, the Amazon tops the wishlist of many travelers from around the globe and is an ideal destination for those looking to connect with Whether you want to explore the depths of Brazil’s jungles, lock eyes with wild animals, taste wonderful exotic fruits, relax on unspoiled beaches or cruise down the Amazon River – you will make memories that will last a lifetime! And this Amazon rainforest travel guide will show you exactly how to do Without further ado, let’s dive into all the things you need to know for planning a trip to the Amazon rainforest in Brazil. The best way to get to the Amazon rainforest in Brazil is to fly to Eduardo Gomes International Airport in the city of Manaus. Known as the gateway to the Brazilian Amazon, Manaus is the main tourist hub in the region and the capital of the Amazonas You can take a direct flight from Sao Paulo to Amazon rainforest (Manaus), which takes about four hours. There are also direct flights to Manaus from other major cities in Brazil, such as Rio de Janeiro and Brasilia, as well as from Miami, Panama City Alternatively, you could also fly to Santarem, which is a smaller town about 600km (370 mi) east of We started our Amazon trip by flying to Manaus and finished it by flying out of Santarem. To get from Manaus to Santarem, we took a ferry down the Amazon River. I’m explaining more about why we did this further below.",
-           "isFavourite": false
-       },
-       {
-            "id": 4,
-            "name": "The Black Forest",
-            "country": "Germany",
-            "image": ["blackForest", "blackForest2", "blackForest3"],
-            "info": "Impressive natural landscapes characterise the region in the central Black Forest: Pristine forests, green pastures or crystal clear lakes and streams. You also find the yummy Black Forest cake here (and many other sweet delicacies), tasty ham, traditional farmhouses or mills and the famous cuckoo clocks. For centuries the Black Forest Highlands were a major center of clock making and the clocks were carried on frame backpacks and sold throughout Europe and further.  Now we are happy to welcome our guests from far away! Go on a refreshing boat trip on the glistening blue lake Titisee, hike up to the top of mountain Feldberg or enjoy a relaxing time with wellness or culinary delights. A trip to the Black Forest Highlands, near France and Switzerland and just 30 kilometres east of Freiburg, leads into the most popular holiday region in the Black Forest. From cosy and traditional to fashionable and luxurious, from campsites to five star hotels: more than 2.600 hosts invite you to take a relaxing break in the Black Forest Highlands. Fresh spring water, sparkling waterfalls and lots of bathing fun! In the summer months, the Black Forest Highlands region is a top destination for anyone who loves water! Boat tours on lake Titisee and lake Schluchsee, hikes in the Wutach gorge or a visit to Todtnau waterfall -  we have put together these and more great excursion options for all of you!",
-            "isFavourite": false
-        },
-       {
-            "id": 4,
-            "name": "Crooked Forest",
-            "country": "Poland",
-            "image": ["crookedForest", "crookedForest2", "crookedForest3"],
-            "info": "The Crooked Forest is a small grove of trees on the outskirts of the small town of Gryfino in Northwestern Poland. It is estimated they were planted in the mid-1930s. The trees uniformly grow in a hooked, “J” shape, and no one knows why. If you follow your navigation (my Google maps app finds it if I simply type in “crooked forest”) to the crooked forest, you might drive right past it. When you are “arriving”. Park alongside the road, where the big industrial pipe goes up, over, and down at right angles, making a sort of strangely juxtaposed industrial archway over the entrance to the nature trail. It is marked with a little unassuming sign that says “Krzywy Las” which, translates to “crooked Follow the trail back a few hundred meters in to the woods. You are currently walking through a very generic deciduous forest that could be anywhere. Take a left at the first trail and walk another few hundred meters, and you will emerge in to the truly unique “crooked wood”. It isn’t a very large area, I’d guesstimate maybe an acre, or two, with hundreds of trees uniformly standing tall, after they all curve horizontally to the earth at a 90 degree angle. It is peaceful, pleasant, and magical, in a wizarding world sort of way. If you can ignore the big shiny industrial pipe lining one side of the forest, and pretend like you can’t see the bloc-style apartment building through the trees, it feels like you could have walked through a hidden charmed portal into a funhouse mirror.",
-            "isFavourite": false
-        },
-       
-       
-       {
-           "id": 4,
-           "name": "Dragon's blood",
-           "country": "Yemen",
-           "image": ["dragonsBloodForest", "dragonsBloodForest2", "dragonsBloodForest3"],
-           "info": "Welcome, nature lovers and adventurers! Today we embark on a journey to one of the most enchanting and remote natural wonders on earth – the Dragon Trees of Socotra. Nestled in the Indian Ocean, this remote archipelago is home to these unique and ancient trees that have stood the test of time. Their mystical allure and special appearance have enchanted the hearts and minds of those who were lucky enough to witness their beauty. And now, with our exclusive tours, you too can experience the magic of Socotra’s Dragon Trees. And now, with our exclusive Socotra tours, you too can experience the magic of Socotra’s Dragon Trees. You can go to Socotra by group tour or private tour. The Dragon Blood Tree (Dracaena cinnabari) is an iconic symbol of Socotra. This otherworldly tree, with its distinctive umbrella-shaped canopy, can live for more than 1,000 years. The name “Dragon Blood” refers to the tree’s red resin, which has been used for centuries in traditional medicine, dyes, and even cosmetics. Its branches and leaves create a stunning silhouette against the arid landscape, making it an unforgettable sight for visitors. We take pride in offering a range of tours that cater to different interests and budgets. Our experienced and knowledgeable guides will lead you through the breathtaking landscapes of Socotra, ensuring an unforgettable experience. Here are a few highlights of our  Guided hikes through the rugged terrain to explore the Dragon Blood Tree forests, where you’ll learn about their ecology, history, and cultural Opportunities to interact with the local Socotri people, whose rich culture and traditions have been shaped by their unique Visits to pristine beaches and stunning coastal vistas, where you can relax and soak in the beauty of this untouched Wildlife spotting, including the chance to see rare and endemic species such as the Socotra Sunbird and the Socotra Tailor-made itineraries that can be customized to suit your preferences and desired level of adventure. There’s no better time to visit the enchanting Socotra Archipelago and witness the magnificent Dragon Blood Trees. Our tours are designed to provide you with an immersive and memorable experience. Don’t miss your chance to explore this hidden gem. Contact our travel experts today to book your dream trip to Socotra.",
-           "isFavourite": false
-       },
-       {
-            "id": 4,
-            "name": "Dancing Forest",
-            "country": "Russia",
-            "image": ["dancingForest", "dancingForest2", "dancingForest3"],
-            "info": "Between the Baltic Sea and the Curonian Lagoon, on the Kruglaya Dune of the Curonian Spit, there is a forest where the pine trees seem to be doing the Dozens of trees in the Dancing Forest of Russia have trunks that are contorted into rings, spirals, and other loops and squiggles, and the reason for this mysterious malformation is not known. The trees were planted in the early 1960s to stabilize the dune sand, but the unstable sand is one explanation people posit for the trees seeming so unstable themselves. Locals call the crooked wood the Drunken Studies have been done to try to determine the exact cause, though results are inconclusive. The leading scientific theory is that pine shoot moth caterpillars damaged the pine shoot's apical buds at an early age causing them to start out growing at an odd angle, from their lateral buds. Since plants naturally grow toward the sun, they eventually corrected themselves and started growing up again, but with their new deformities Some blame strong winds, others manipulation by humans. The supernatural-inclined have suggested that the forest is in a place where positive and negative energies clash and that these forces have manipulated the shapes of the trees. Some say that the trees willfully follow the movements of the dune One local legend says the dancing trees twist and bend because centuries ago, on that very spot, trees were made to dance in order to prove the power of the Christian God. Superstition fuels many of the theories, and has also made the Dancing Forest a popular source of hope: Climbing through one of the rings has been said to add a year to a person’s life or earn that person a granted wish. ",
-            "isFavourite": false
-        },
-       {
-           "id": 4,
-           "name": "Waipoua Forest",
-           "country": "New Zealand",
-           "image": ["waipouaForest", "waipouaForest2", "waipouaForest3"],
-           "info": "Meet the ancient 2 giant Kauri trees. Te Matua Ngahere - The Father of the Forest - is between 2,500 and 3,000 years old and the oldest kauri tree in the world. The Lord of the Forest - the giant Tane Mahuta - is the biggest Kauri tree in the world. The tour starts with a visit to the kauri Museum in Matakohe. This museum showcases the history of Kauri, focusing on the pioneering era when logging was a livelihood. Explore the giant Kauri trees, beautiful timber, and the history surrounding resin. In the forest you will meet Te Matua Ngahere - 'The Father of the Forest'. At between 2,500 and 3,000 years old he is the oldest known kauri tree in the world. The highlight of the tour will be your meeting with 'The Lord of the Forest' - the giant Tane Mahuta. Your guide will formally greet the silent giant. Interacting with the ancient kauri trees that have watched over Waipoua Forest over 2000 years would be an unforgettable experience.",
-           "isFavourite": false
-       }
+    
+    {
+        "id": 2,
+        "name": "Coral Sea",
+        "country": "Australia",
+        "image": ["coralSea", "coralSea2", "coralSea3"],
+        "info": "Perched on 320 metres of sandy beach, Coral Sea Holiday Resort features 6 exquisite restaurants and 7 bars, catering to all culinary needs. Recreational facilities encompass a Spa, 4 outdoor swimming pools (two heated in winter), children’s pool with aqua tower, one Thalassic pool in the Spa, and 6 private swim-up room The 5-star Coral Sea Holiday Resort houses 484 elegant guest rooms with modern amenities, superbly-designed facilities. The bathroom is fitted with a bath or a It also includes a fully equipped kids club, multi-purpose court, tennis court, archery and a well-equipped workout room. WiFi access across the complex is available to fulfil all business If you feel like visiting the surroundings, check out Naama Bay (25.3 km) and Ras Mohammed National Park (33.7 km). This resort is 8 km from Sharm El-Sheikh International Couples particularly like the location — they rated it 8.4 for a two-person trip."
+    },
+    {
+        "id": 2,
+        "name": "Andaman Sea",
+        "country": "Thailand",
+        "image": ["andamanSea", "andamanSea2", "andamanSea3"],
+        "info": "The Andaman Sea is a semi-enclosed marginal sea in the northeastern Indian Ocean. It lies between the eastern coast of India and the Malay Peninsula, with Myanmar to the north and the Indonesian island of Sumatra to the south. The Bay of Bengal bounds the Andaman Sea to the west and the Strait of Malacca to the east. The sea, covering an area of approximately 307,994 mi², extends about 750 miles in length and 400 miles in   Furthermore, the Andaman Sea is a complex geological region with a tectonically active plate boundary. It is part of the larger Sunda Plate, which the Indian Plate borders to the northwest and the Australian Plate to the southeast. The ongoing tectonic convergence between these plates has resulted in the formation of the Andaman Basin, characterized by undersea ridges, trenches, and faults. The most prominent geological feature in the region is the Andaman Trench, which is formed by the subduction of the Indian Plate beneath the Eurasian Plate. This tectonic activity has given rise to numerous earthquakes and volcanic eruptions in the region, making the Andaman Sea seismically active."
+    },
+    {
+        "id": 2,
+        "name": "Baltic Sea",
+        "country": "Denmark",
+        "image": ["balticSea", "balticSea2", "balticSea3"],
+        "info": "There are different ways to reach the Baltic Sea. Airline connections with and between Germany, Lithuania, Denmark and Poland are excellent. Flight connections are easy to reach thanks to airports among others in: Hamburg, Berlin, Kopenhagen, Warszawa, Gdansk, Kaliningrad, Riga and Between Germany, Lithuania, Denmark and Poland there are many ferry connections across the Baltic Sea. Companies offering ferry travel to and from Germany, Denmark, Lithuania and Poland are amongst others Scandlines, TT-Lines, Stenaline and The railway network is also well established. Domestic and international Railway routes enable you to reach most of the cities and towns at the Baltic Danish State Railways (DSB) operate on a dense rail network. The Lithuanian rail is called JSC Lithuanian Railways (JSC „Lietuvos geležinkeliai“). The German Rail DB (Deutsche Bahn) has direct connections from many cities in Germany and also from abroad. Germany's first private mainline train - the InterConnex - connects Leipzig and Berlin with Rostock. The Polish carrier Polskie Koleje Państwowe (PKP) offers express connections (Intercity) as well as regional and fast trains, both domestic and international. Railway travel enables you to reach most of the cities and towns in By car you can easily reach your holiday destination on the German, Polish, Danish and Lithuanian coast by using well-developed roads and road networks. At airports, in bigger towns and cities you can as well rent a car."
+    },
+    {
+        "id": 2,
+        "name": "Black Sea",
+        "country": "Turkey",
+        "image": ["blackSea", "blackSea2", "blackSea3"],
+        "info": "The Black Sea coast of Bulgaria is the country's most important tourist region. The Black Sea guarantees beach fun, as its beaches are among the most beautiful in all of Europe thanks to their fine sand and clean water. Besides the well-visited main towns and party strongholds around Varna and Burgas, there are also quieter bays as well as romantic and impressive villages along the 380-kilometre-long coast."
+    },
+    {
+        "id": 2,
+        "name": "Aegean Sea",
+        "country": "Greek",
+        "image": ["aegeanSea", "aegeanSea2", "aegeanSea3"],
+        "info": "The ship Luxury company Seabourn’s relaxed ethos, breezy atmosphere, sail-away deck parties and light-flooded ship spaces complement the Aegean. Solis restaurant focuses on light, modern Mediterranean cuisine. Expert-led “conversations” provide informative background. The cruise Seabourn’s Cycladic Island itineraries have a smart combination of big-name ports and smaller, more tranquil but equally delightful destinations. Athens and Istanbul are the big-city anchors. A 16-day ”Greek Isles, Ephesus & Turquoise Coast″ cruise return from Piraeus (Athens) visits interesting ports such as Gythion on the Peloponnese, the islands of Milos and Patmos, and Turkish resort Cesme. The lowdown Turkey and Greece border the Aegean. Crete and Rhodes form a barrier to the wider Mediterranean, and the Cyclades archipelago includes Mykonos and Santorini. This sea offers a brilliant jumble of castles, Greek and Roman ruins, Ottoman mosques, jetsetter islands, and resort towns overlooking sparkling seas."
+    },
+    {
+        "id": 2,
+        "name": "Adriatic Sea",
+        "country": "Italy",
+        "image": ["adriaticSea", "adriaticSea2", "adriaticSea3"],
+        "info": "The ship Azamara Quest, like Azamara’s other premium ships, offers comfort, good value and excellent dining options, including Aqualina Italian restaurant. The line is destination-focused: long stays in port are what you need given their beauty and cultural attractions. The cruise Azamara’s eight-night “Croatia Intensive” voyage return from Chioggia (Venice) combines Split and Dubrovnik with lesser-known but wonderful alternatives such as 19th-century Hapsburg retreat Opatija, medieval town Zadar and the approach to castle-topped Sibenik, past islands and through a narrow channel into a hidden harbour, is wonderful. The lowdown This scintillating stretch of Mediterranean, bordered by six countries, separates the Italian and Balkan peninsulas and is scattered with 1300 islands, mostly in Croatia. A youthful population, rugged scenery, age-old history and recent economic resurgence makes this a holiday hotspot. Don’t miss The long sail into Kotor in Montenegro should have you pinned to the deck. A fjord-like sunken valley framed in biscuit-brown mountains twists and turns, providing marvellous vistas."
+    },
+    {
+        "id": 2,
+        "name": "Tyrrhenian Sea",
+        "country": "Europe",
+        "image": ["tyrrhenianSea", "tyrrhenianSea2", "tyrrhenianSea3"],
+        "info": "The ship Embark on Silversea’s Silver Ray. The company was founded in Italy and the on-board vibe is stately European. The food is top-notch. Atlantide restaurant showcases Mediterranean-influenced seafood; Spaccanapoli dishes up Neapolitan-style pizzas. The cruise Silversea’s six-day “Civitavecchia to Monte Carlo” cruise kicks off with delectable excursion choices from Naples: the Amalfi Coast, the ruins of Pompeii, or the island of Capri. Next comes chic Tuscan holiday town Porto Santo Stefano, Livorno for another challenging excursion choice (Florence, Pisa or Lucca), and Portofino on the Italian Riviera. The lowdown This sea ringed by the Italian peninsula, Sicily, Sardinia and Corsica mightn’t have the most recognisable name but has an excess of famous destinations. Civitavecchia near Rome is the common turnaround port. Active volcanoes and mountainous landscapes complement the historical drama. Don’t miss Naples, somewhat overlooked thanks to its seedy reputation, is cluttered with dazzling if crumbling architecture and outstanding art museums, and offers a buzzing street life.."
+    },
+    {
+        "id": 2,
+        "name": "South Pacific",
+        "country": "New Caledonia",
+        "image": ["southPacific", "southPacific2", "southPacific3"],
+        "info": "The ship Oceania operates small ships such as the 670-passenger Nautica, which is in the premium category but offers a luxury feel, and some of the best food (and coffee) at sea. The upper deck that rings the pool deck below, and The Terrace Cafe are the perfect perches to admire scenic sail-ins. The cruise The highlight of Oceania’s 10-day ”Papeete to Papeete″ itineraries might be supermodel Bora Bora where the ship overnights, but you’ll also visit less tourist-charged islands such as kick-back Raiatea and low-lying atoll Fakarava for superb snorkelling. Nuku Hiva in the Marquesas islands has landscapes of isolated, rugged power. The lowdown This isn’t technically a sea, but the tropical Pacific belt below the equator is a must-cruise destination thanks to upthrust volcanic islands and electric blue lagoons. Many cruise lines visit Fiji and French Polynesia, some take in Samoa, Tonga and the Cook Islands. Don’t miss Rangiroa, where the ship anchors in a coral-encrusted lagoon swarming with multi-coloured fish. Tiputa Pass is one of the world’s best drift dives."
+    },
+    {
+        "id": 3,
+        "name": "Mount Everest",
+        "country": "China",
+        "image": ["mountEverest", "mountEverest2", "mountEverest3"],
+        "info": "The Everest region in Nepal is more than just climbing and trekking, it is a life-changing experience and some see it as a journey close to achieving Nirvana. Located in the northeastern province of Nepal, this region is in a world of its own with vast glaciers, icefalls, the highest mountains, deep valleys, precarious settlements, and hardy people challenging the harshest conditions thrown at them by nature in the thin air of high Passing through legendary Sherpa villages, the trek is a mix of deep cultural and spiritual experiences and physical challenges that test your strength and endurance. Buddhist lamas, monks and nuns led by Rinpoches (reincarnate at mas) serve the predominantly Sherpa communities from their gompas (The journey to Everest or Everest Base Camp begins with a dramatic flight from Kathmandu to Lukla, after which you hike up the Everest region to reach your destination in the Himalayas. However, for die-hard lovers of trekking, there is another switchback starting from Jiri through the mid-hills of Solu, an ethnically diverse section of the trek rich."
+    },
+    {
+        "id": 3,
+        "name": "Mount Fuji",
+        "country": "Japan",
+        "image": ["mountFuji", "mountFuji2", "mountFuji3"],
+        "info": "Sacred, singular and spectacular, Mt. Fuji is nothing short of awe-inspiring and rightfully one of the country’s top Whether you experience Mt. Fuji up close, from the confines of a relaxing hot spring resort or ryokan, or from as far away as Tokyo, there are many ways you can make the country’s tallest mountain part of your Japan adventure. Feel inspired by our specially selected guides, stories and Fuji-related articles. From fifth station trailhead strolls to visiting the Fuji Five Lakes, exploring the foothills, and getting the very best views of the mountain, plan your Mt. Fuji excursion with our comprehensive Fuji Guide."
+    },
+    {
+        "id": 3,
+        "name": "Mount Rainier",
+        "country": "United States",
+        "image": ["mountRainier", "mountRainier2", "mountRainier3"],
+        "info": "Enjoy a fun-filled, day-long tour of the breathtakingly-beautiful wonderland that is Mount Rainier National Park. Heading south from Seattle, we’ll enter through the Nisqually park entrance and continue up the scenic, winding road to the Henry M. Jackson Visitor Center at Paradise at an elevation of 5,400 ft. Picks up visitors from downtown Seattle hotels and lodging in the Seattle Southside area. PRICE: $175 Adult, $100 Child for a 10 to 12-hour experience with transportation and entrance to the park included. Visit Mt. Rainier with professional, enthusiastic, and informative driver/guides. Travel in clean, comfortable 24-passenger mini-coaches with large windows, high back seats, and air-conditioning. Experience old-growth forests, wildflower-filled meadows, and thundering waterfalls on this tour of glacier-clad Mt. Rainier. Hike and walk a little, a lot, or not at all: there are options for all abilities. Enjoy lunch at a Mount Rainier cafe’ or buy a picnic lunch along the way. Visit the interpretive center at Paradise or Sunrise to learn even more about the mountain’s glaciers, plants, and animals. Return to Seattle through pastoral farmlands and memorable Pacific Northwest scenery. Bring a camera on this spectacular Mt. Rainier tour as well as comfortable walking shoes. Layer both warm and cool weather clothing as mountain temperatures can vary from rainy and cold to sunny and hot during a single day. Offers transportation and guided tours from downtown Seattle to the mountain and back. PRICES start at $186 for adults."
+    },
+    {
+        "id": 3,
+        "name": "Mount Olympus",
+        "country": "Macedonia",
+        "image": ["mountOlympus", "mountOlympus2", "mountOlympus3"],
+        "info": "Located on the border between Thessaly and Macedonia and standing with its peak Mytikas at almost 10,000 feet (2,918 m), Mount Olympus is the highest mountain in Greece, one of its most picturesque sites and mythical home of the ancient Greek Gods. Don’t forget that is was here, from its steep rocky summit – first climbed only 100 years ago, where Zeus supposedly hurled his thunderbolts against Mount Olympus has 52 peaks, deep gorges, exceptional biodiversity and is one of the highest peaks in Europe in terms of topographic prominence. This is the adventurous Mount Olympus Expedition Tour, our “active” version of seeing and enjoying the great Mount Olympus. Μount Olympus, also transliterated as Olympos and on Greek Maps indicated as Oros Olympos, is the highest mountain in Greece. It is located in the Olympus Range on the border between Thessaly and Macedonia and the regional units of Pieria and Larissa, about 80 km (50 mi) southwest from Thessaloniki. Mount Olympus has 52 peaks, deep gorges and exceptional biodiversity. The highest peak, Mytikas, meaning “nose”, rises to 2,917 metres (9,570 ft). It is one of the highest peaks in Europe in terms of topographic From its steep rocky summit, first climbed only 100 years ago, the father of all Gods Zeus used to fire his thunderbolts against humankind and the Titans! Its eastern flanks are the country’s first national park (created in the 1930’s), with dozens of endemic species of flora and There is also no habitation apart from the refuges, which bring together groups of mountaineers from all over the globe in their cozy and homely In this program, starting and ending in Litochoro village, we walk 8-9 hours per day, following mostly good forest paths; above the tree – line, the terrain varies from grassy uplands to rocky ridges, with some scrambling required for the peak ascents."
+    },
+    {
+        "id": 3,
+        "name": "Matterhorn",
+        "country": "Switzerland",
+        "image": ["matterhorn", "matterhorn2", "matterhorn3"],
+        "info": "The Matterhorn is considered an icon in the Alps, probably due to its emblematic shape. When we were young, we used to draw mountains like perfect pyramids, didn’t we? The Matterhorn’s iconic shape is made even more impressive by the absence of other high mountains in the surrounding  The legendary “King” has always attracted the attention of mountaineers. Climbing it from both the Italian and Swiss sides requires good climbing experience and intensive training. Although it does not pose significant technical difficulties (thanks to the presence of fixed ropes that facilitate the climb), it is still a challenging ascent with many exposed and difficult   We always recommend adding a few extra days to prepare adequately for the ascent and maximize your chances of success. Please, consider our Climb the Matterhorn in 6 days course, or, if you have a shorter timeframe but still want to prepare adequately for the climb, please check out our Climb the Matterhorn in 4 days   Depending on the chosen side of the climb, on the first day, we will either arrive at the Carrel on the Italian side or the Hörnli hut on the Swiss side. In the first case, the day will be quite challenging as the shelter is located at 3830 m. On the other hand, if the easier (but still challenging) pathway through Switzerland is chosen, it will take approximately 2.5 hours to walk from Schwarzsee station to reach the hut. The hut was completely rebuilt in 2015 on the 150th anniversary of the Matterhorn’s first  On the second day, the climb will take approximately 4 to 5 hours from both sides. The descent, which is always the most complicated part of climbing the Matterhorn, does not require abseiling. It’s all about having a deep knowledge of the route. The guide will always prioritize your safety, indicating the right direction at various crossroads that can mislead those unfamiliar with the For those who want to climb the Matterhorn in the most complete and beautiful way, it is possible to cross it in two or three days (up the Swiss side and down the Italian side) with an overnight stay at the Carrel and/or at the Hörnli hut."
+    },
+    {
+        "id": 3,
+        "name": "Tirich Mir",
+        "country": "Pakistan",
+        "image": ["tirichMir", "tirichMir2", "tirichMir3"],
+        "info": "Tirich Mir base camp trek delights fans of big mountains and mighty glaciers. Tirich Mir base camp trek is a demanding trek where you are off and on the lower Tirich glacier trekking right into the very center of the high Hindukush Mountains to the base camp of Tirich Mir known as  En route, there are impressive 7000m summits like Noshaq 7492m, Istor Nal 7403m besides others. There are two excess routes for doing the Tirich Mir base camp trek either through Torkhow valley or the Zani Pass which is preferred for acclimatization before the high trek. The trip can be combined with other treks in the Hindukush The Hindukush range lies beyond the reach of the monsoon and is a deserted arid mountainscape visited by very few. The scenic of Tirich is very fertile and populated with several small A spectacular drive to Uthul takes us to the jump-off point and trekking across Zani Pass provides excellent views of the Hindukush and the Hindu Raj Ranges. Passing through the villages of Atak and Bandak one arrives Shogor at the foot of the Trich A free day will enable us to explore and will allow for fantastic views of Trich Mir (7708m), Istoro Nal (7403m), and heavily crevassed Upper Tirich Glacier. Visit the legendary of the Kalash of Chitral Valley."
+    },
+    {
+        "id": 3,
+        "name": "Vinicunca",
+        "country": "Peru",
+        "image": ["vinicunca", "vinicunca2", "vinicunca3"],
+        "info": "Mountain Vinicunca: is a travel agency in cusco Peru, specialized in offering tourist packages to Cuzco, Arequipa, Lima, Puerto Maldonado, Puno and Bolivia., specializes in offering adventure tours, hiking, mystic and cultural. We have the best travel packages and day tours in Cusco. Our agency specializes in adventure tours such as Vinicunca Rainbow Mountain, Machu Picchu Full Day, Trekking Inca Trail, Huayna Picchu, Mountain Palcoyo, Humantay Lagoon, Salt Mines, Sacred Valley and a variety of tours in Cusco."
+    },
+    {
+        "id": 3,
+        "name": "Cayambe",
+        "country": "Ecuador",
+        "image": ["cayambe", "cayambe2", "cayambe3"],
+        "info": "Overshadowed by the eponymous volcano, CAYAMBE (2850m) is worth a quick visit for its renowned home-made cheese and bizcochos – buttery biscuits locals carry around by the bagful. It’s also a regional centre for Ecuador’s flower industry (its fourth-largest export), evident in the shimmer of plastic-sheeted greenhouses gleaming across the valley. For much of the year it’s a quiet provincial town most travellers skip on their way from Quito to Otavalo, but during the fiestas of late June, things really get busy when indígenas descend from the surrounding villages for singing, dancing, parades and bullfights. The celebration kicks off with Inti Raymi (Quichua for “sun festival”), which heralds the summer solstice and continues for several days until it merges with the fiesta of San Pedro on June 29, honouring the town’s patron saint."
+    },
+    {
+        "id": 3,
+        "name": "Mount Kenya",
+        "country": "Africa",
+        "image": ["mountKenya", "mountKenya2", "mountKenya3"],
+        "info": "What is your dream? Climb one of our special mountains? Combine Mount Kenya climb with a safari? Spend a night or two in a village? Whatever - we can personalize your trip especially for you. And that is where we are at our best. It's important that we get to know you before you arrive and really get to know each other when you are with us. We turn guests into friends after the trip and many, many come back. So, have fun exploring our website and if you need more information then please email us. Getting To Know Us. When you visit you will get to know my partners - guides, porters, drivers, cooks. We hope you will want to know more about us. We have some pictures in the section Your Guides although my partners are definitely not photogenic! We are proud people who love nothing more than chatting to our guests about our language, our politics, our culture. And pointing - we do a lot of that! You will see so much your head will spin . . . from little cheeky birds to the big chunky animals that we treat with serious respect!"
+    },
+    {
+        "id": 3,
+        "name": "Cradle Mountain",
+        "country": "Australia",
+        "image": ["cradleMountain", "cradleMountain2", "cradleMountain3"],
+        "info": "The imposing summit – the fifth highest in the state – stands supreme above Dove Lake, which provides the classic Cradle Mountain view. The ridges and peaks around the lake, meanwhile, add new angles to the panorama. This one mighty mountain, which rises at the northern end of Cradle Mountain-Lake St Clair National Park, is just the starting point to the area’s wilderness experience. Alpine lakes lie scattered across the landscape, riverbanks are cloaked in rainforest, and wildlife is prolific along the trails and around visitor areas. Cradle Mountain is a place for all seasons, beaming through summer (with occasional unexpected snowfalls), gleaming white in winter, and glowing golden in autumn when the deciduous fagus turns in colour on the slopes above Dove Lake. Come for the mountain, but expect so much more."
+    },
+    {
+        "id": 4,
+        "name": "Amazon",
+        "country": "Brazil",
+        "image": ["amazon", "amazon2", "amazon3"],
+        "info": "Known as the Lungs of the Earth, the Amazon tops the wishlist of many travelers from around the globe and is an ideal destination for those looking to connect with Whether you want to explore the depths of Brazil’s jungles, lock eyes with wild animals, taste wonderful exotic fruits, relax on unspoiled beaches or cruise down the Amazon River – you will make memories that will last a lifetime! And this Amazon rainforest travel guide will show you exactly how to do Without further ado, let’s dive into all the things you need to know for planning a trip to the Amazon rainforest in Brazil. The best way to get to the Amazon rainforest in Brazil is to fly to Eduardo Gomes International Airport in the city of Manaus. Known as the gateway to the Brazilian Amazon, Manaus is the main tourist hub in the region and the capital of the Amazonas You can take a direct flight from Sao Paulo to Amazon rainforest (Manaus), which takes about four hours. There are also direct flights to Manaus from other major cities in Brazil, such as Rio de Janeiro and Brasilia, as well as from Miami, Panama City Alternatively, you could also fly to Santarem, which is a smaller town about 600km (370 mi) east of We started our Amazon trip by flying to Manaus and finished it by flying out of Santarem. To get from Manaus to Santarem, we took a ferry down the Amazon River. I’m explaining more about why we did this further below."
+    },
+    {
+        "id": 4,
+        "name": "The Black Forest",
+        "country": "Germany",
+        "image": ["blackForest", "blackForest2", "blackForest3"],
+        "info": "Impressive natural landscapes characterise the region in the central Black Forest: Pristine forests, green pastures or crystal clear lakes and streams. You also find the yummy Black Forest cake here (and many other sweet delicacies), tasty ham, traditional farmhouses or mills and the famous cuckoo clocks. For centuries the Black Forest Highlands were a major center of clock making and the clocks were carried on frame backpacks and sold throughout Europe and further.  Now we are happy to welcome our guests from far away! Go on a refreshing boat trip on the glistening blue lake Titisee, hike up to the top of mountain Feldberg or enjoy a relaxing time with wellness or culinary delights. A trip to the Black Forest Highlands, near France and Switzerland and just 30 kilometres east of Freiburg, leads into the most popular holiday region in the Black Forest. From cosy and traditional to fashionable and luxurious, from campsites to five star hotels: more than 2.600 hosts invite you to take a relaxing break in the Black Forest Highlands. Fresh spring water, sparkling waterfalls and lots of bathing fun! In the summer months, the Black Forest Highlands region is a top destination for anyone who loves water! Boat tours on lake Titisee and lake Schluchsee, hikes in the Wutach gorge or a visit to Todtnau waterfall -  we have put together these and more great excursion options for all of you!"
+    },
+    {
+        "id": 4,
+        "name": "Crooked Forest",
+        "country": "Poland",
+        "image": ["crookedForest", "crookedForest2", "crookedForest3"],
+        "info": "The Crooked Forest is a small grove of trees on the outskirts of the small town of Gryfino in Northwestern Poland. It is estimated they were planted in the mid-1930s. The trees uniformly grow in a hooked, “J” shape, and no one knows why. If you follow your navigation (my Google maps app finds it if I simply type in “crooked forest”) to the crooked forest, you might drive right past it. When you are “arriving”. Park alongside the road, where the big industrial pipe goes up, over, and down at right angles, making a sort of strangely juxtaposed industrial archway over the entrance to the nature trail. It is marked with a little unassuming sign that says “Krzywy Las” which, translates to “crooked Follow the trail back a few hundred meters in to the woods. You are currently walking through a very generic deciduous forest that could be anywhere. Take a left at the first trail and walk another few hundred meters, and you will emerge in to the truly unique “crooked wood”. It isn’t a very large area, I’d guesstimate maybe an acre, or two, with hundreds of trees uniformly standing tall, after they all curve horizontally to the earth at a 90 degree angle. It is peaceful, pleasant, and magical, in a wizarding world sort of way. If you can ignore the big shiny industrial pipe lining one side of the forest, and pretend like you can’t see the bloc-style apartment building through the trees, it feels like you could have walked through a hidden charmed portal into a funhouse mirror."
+    },
+    {
+        "id": 4,
+        "name": "Dragon's blood",
+        "country": "Yemen",
+        "image": ["dragonsBloodForest", "dragonsBloodForest2", "dragonsBloodForest3"],
+        "info": "Welcome, nature lovers and adventurers! Today we embark on a journey to one of the most enchanting and remote natural wonders on earth – the Dragon Trees of Socotra. Nestled in the Indian Ocean, this remote archipelago is home to these unique and ancient trees that have stood the test of time. Their mystical allure and special appearance have enchanted the hearts and minds of those who were lucky enough to witness their beauty. And now, with our exclusive tours, you too can experience the magic of Socotra’s Dragon Trees. And now, with our exclusive Socotra tours, you too can experience the magic of Socotra’s Dragon Trees. You can go to Socotra by group tour or private tour. The Dragon Blood Tree (Dracaena cinnabari) is an iconic symbol of Socotra. This otherworldly tree, with its distinctive umbrella-shaped canopy, can live for more than 1,000 years. The name “Dragon Blood” refers to the tree’s red resin, which has been used for centuries in traditional medicine, dyes, and even cosmetics. Its branches and leaves create a stunning silhouette against the arid landscape, making it an unforgettable sight for visitors. We take pride in offering a range of tours that cater to different interests and budgets. Our experienced and knowledgeable guides will lead you through the breathtaking landscapes of Socotra, ensuring an unforgettable experience. Here are a few highlights of our  Guided hikes through the rugged terrain to explore the Dragon Blood Tree forests, where you’ll learn about their ecology, history, and cultural Opportunities to interact with the local Socotri people, whose rich culture and traditions have been shaped by their unique Visits to pristine beaches and stunning coastal vistas, where you can relax and soak in the beauty of this untouched Wildlife spotting, including the chance to see rare and endemic species such as the Socotra Sunbird and the Socotra Tailor-made itineraries that can be customized to suit your preferences and desired level of adventure. There’s no better time to visit the enchanting Socotra Archipelago and witness the magnificent Dragon Blood Trees. Our tours are designed to provide you with an immersive and memorable experience. Don’t miss your chance to explore this hidden gem. Contact our travel experts today to book your dream trip to Socotra."
+    },
+    {
+        "id": 4,
+        "name": "Dancing Forest",
+        "country": "Russia",
+        "image": ["dancingForest", "dancingForest2", "dancingForest3"],
+        "info": "Between the Baltic Sea and the Curonian Lagoon, on the Kruglaya Dune of the Curonian Spit, there is a forest where the pine trees seem to be doing the Dozens of trees in the Dancing Forest of Russia have trunks that are contorted into rings, spirals, and other loops and squiggles, and the reason for this mysterious malformation is not known. The trees were planted in the early 1960s to stabilize the dune sand, but the unstable sand is one explanation people posit for the trees seeming so unstable themselves. Locals call the crooked wood the Drunken Studies have been done to try to determine the exact cause, though results are inconclusive. The leading scientific theory is that pine shoot moth caterpillars damaged the pine shoot's apical buds at an early age causing them to start out growing at an odd angle, from their lateral buds. Since plants naturally grow toward the sun, they eventually corrected themselves and started growing up again, but with their new deformities Some blame strong winds, others manipulation by humans. The supernatural-inclined have suggested that the forest is in a place where positive and negative energies clash and that these forces have manipulated the shapes of the trees. Some say that the trees willfully follow the movements of the dune One local legend says the dancing trees twist and bend because centuries ago, on that very spot, trees were made to dance in order to prove the power of the Christian God. Superstition fuels many of the theories, and has also made the Dancing Forest a popular source of hope: Climbing through one of the rings has been said to add a year to a person’s life or earn that person a granted wish. "
+    },
+    {
+        "id": 4,
+        "name": "Waipoua Forest",
+        "country": "New Zealand",
+        "image": ["waipouaForest", "waipouaForest2", "waipouaForest3"],
+        "info": "Meet the ancient 2 giant Kauri trees. Te Matua Ngahere - The Father of the Forest - is between 2,500 and 3,000 years old and the oldest kauri tree in the world. The Lord of the Forest - the giant Tane Mahuta - is the biggest Kauri tree in the world. The tour starts with a visit to the kauri Museum in Matakohe. This museum showcases the history of Kauri, focusing on the pioneering era when logging was a livelihood. Explore the giant Kauri trees, beautiful timber, and the history surrounding resin. In the forest you will meet Te Matua Ngahere - 'The Father of the Forest'. At between 2,500 and 3,000 years old he is the oldest known kauri tree in the world. The highlight of the tour will be your meeting with 'The Lord of the Forest' - the giant Tane Mahuta. Your guide will formally greet the silent giant. Interacting with the ancient kauri trees that have watched over Waipoua Forest over 2000 years would be an unforgettable experience."
+    },
+    {
+        "id": 4,
+        "name": "Hoh Rainforest",
+        "country": "Washington",
+        "image": ["hohRainforest", "hohRainforest2", "hohRainforest3"],
+        "info": "The Hoh Rain Forest, pronounced Hoe, earns its name from the ever-flowing Hoh River that carves its way from Mount Olympus towards the Pacific Coast. However, where the name originates, is up for debate. The word Hoh undoubtedly comes from Native American languages; possibly the Quileute word Ohalet which means fast moving water or snow water. Since the river itself forms from glacial runoff, that origin seems straightfoward. Other explanations state that the Quinault word Qu, meaning boundary, could be the root of the name as a river as massive as the Hoh certainly forms a formidable boundary across the landscape. A third consideration claims that the word Hoh translates to man with quarreling wives. What the actual history behind the name is appears to be lost to time. Regardless of the name, there's no question as to the allure that draws visitors back to the rainforest year after year. Throughout the winter season, rain falls frequently in the Hoh Rain Forest, contributing to the yearly average of 140 inches (3.55 meters) of precipitation each year. The result is a lush, green canopy of both coniferous and deciduous species. Mosses and ferns that blanket the surfaces add another dimension to the enchantment of the rainforest. The Hoh Rain Forest is located in the stretch of the Pacific Northwest rainforest which once spanned the Pacific coast from southeastern Alaska to the central coast of California. The Hoh is one of the finest remaining examples of temperate rainforest in the United States and is one of the park's most popular destinations."
+    },
+    {
+        "id": 4,
+        "name": "Great Bear forest",
+        "country": "Columbia",
+        "image": ["greatBear", "greatBear2", "greatBear3"],
+        "info": "There’s no place like British Columbia’s Great Bear Rainforest, the largest intact coastal temperate rainforest in the world. Encompassing more than 64,000 square kilometres (24,700 square miles), this is a place where ancient, towering forests support more biomass than any other terrestrial ecosystem in the world. Our Great Bear Rainforest Fall expeditions take us deep into the heart of this remote region where we’ll encounter and learn about its ecosystems and most iconic species – salmon, bears, wolves, and whales. Living and traveling aboard the schooner Passing Cloud, we’ll visit glacier-scoured fiords, spectacular estuaries, ancient forests, vast islands, and outer coast beaches. We’ll use our inflatable skiff extensively to explore these habitats, and we’ll meander our way up small river systems on foot to witness salmon returning to spawn and view the bears and other wildlife that congregate to feast on this annual ecological bonanza. And throughout our expedition, we look forward to encounters with the abundant populations of whales, dolphins, seals, sea lions, and other coastal wildlife that thrive in the surrounding coastal seas."
+    },
+    {
+        "id": 4,
+        "name": "Hallerbos forest",
+        "country": "Belgium",
+        "image": ["hallerbos", "hallerbos2", "hallerbos3"],
+        "info": "Once a year Hallerbos forest in Belgium turns purple, attracting big crowds to admire this colorful nature spectacle. The Blue Forest in Halle, Belgium gets its name thanks to the beautiful purple carpet of bluebells, also called wild hyacinths. They bloom around mid-April and to the beginning of May. Are you visiting Belgium in spring and want to see one of the most stunning spring flower displays in the world, but are not sure where and when to go or how to get there? This article should answer all your questions about visiting Hallerbos, the Blue Forest in Halle, just near Brussels. Find out!"
+    },
+    {
+        "id": 4,
+        "name": "Arashiyama forest",
+        "country": "Japan",
+        "image": ["arashiyama", "arashiyama2", "arashiyama3"],
+        "info": "Located at the foot of the “Storm Mountains” in the north of the city of Kyoto, this world-famous, seemingly endless forest of swaying bamboo boughs is perfect for a relaxing retreat to nature during a stay in Japan. The Arashiyama bamboo grove is open 24/7 and admission is free. The surrounding Arashiyama district, known for unique fishing methods which involve using trained cormorant birds, is also well worth a visit. Its main street and Togetsu-kyo Bridge have been called a “tourist circus,” but beyond this thoroughfare, Arashiyama offers an authentic and unforgettable Japanese experience. Read on to discover how the bamboo forest is just the beginning. This sightseeing district makes for an incredible day trip from Kyoto. From lush forests to cherry blossoms to vibrant autumn koyo colors, Arashiyama is a visual delight."
+    }
 ]

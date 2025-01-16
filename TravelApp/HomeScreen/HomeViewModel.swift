@@ -14,6 +14,7 @@ class HomeViewModel {
     let jsonHelper = JsonHelper()
     var travel = [TravelList]()
     let coreDataHelper = CoreDataHelper()
+    let userDefaultsManager = UserDefaultsManager()
     var isSegmentConfigured = false
     
     func readData() {

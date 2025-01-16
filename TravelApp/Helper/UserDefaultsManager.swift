@@ -11,6 +11,7 @@ class UserDefaultsManager {
     enum UserDefaultsTypes: String {
         case isLoggedIn = "isLoggedIn"
         case emailSaved = "emailSaved"
+        case heartButtonSelected = "heartButtonSelected"
     }
     
     func setValue(value: Any, key: UserDefaultsTypes) {
@@ -23,5 +24,13 @@ class UserDefaultsManager {
     
     func getString(key: UserDefaultsTypes) -> String {
         UserDefaults.standard.string(forKey: key.rawValue) ?? ""
+    }
+    
+    func setHeartButtonState(isSelected: Bool, countryName: String) {
+        UserDefaults.standard.set(isSelected, forKey: countryName)
+    }
+    
+    func getHeartButtonState(for countryName: String) -> Bool {
+        UserDefaults.standard.bool(forKey: countryName)
     }
 }
