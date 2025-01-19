@@ -8,19 +8,19 @@
 import UIKit
 
 class FavouritesCell: UITableViewCell {
-
+    
     @IBOutlet private weak var favouriteCountry: UILabel!
     @IBOutlet private weak var favouriteName: UILabel!
     @IBOutlet private weak var favouriteImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
         configUI()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
     }
     
     func configUI() {

@@ -8,14 +8,13 @@
 import UIKit
 
 class InfoController: UIViewController {
-    var travel: Travel?
     let viewModel = InfoViewModel()
     
     @IBOutlet private weak var infoTable: UITableView!
     @IBOutlet private weak var heartButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configUI()
         configHeader()
     }
@@ -28,13 +27,10 @@ class InfoController: UIViewController {
         infoTable.allowsSelection = false
     }
     
-    func configHeader() {        
+    func configHeader() {
         let headerView = TableHeaderView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 400))
-        headerView.travel = travel
+        headerView.travel = viewModel.travel
         infoTable.tableHeaderView = headerView
-    }
-    
-    @IBAction func heartButtonTapped(_ sender: Any) {
     }
 }
 
@@ -45,7 +41,7 @@ extension InfoController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell") as! InfoCell
-        if let travel = travel {
+        if let travel = viewModel.travel {
             cell.configCell(travel: travel)
         }
         return cell
@@ -53,5 +49,5 @@ extension InfoController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
-    }       
+    }
 }

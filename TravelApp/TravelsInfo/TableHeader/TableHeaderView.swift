@@ -10,7 +10,6 @@ import UIKit
 class TableHeaderView: UIView {
     var travel: Travel?
     let jsonHelper = JsonHelper()
-    var index = 0
     
     private lazy var collection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -31,9 +30,7 @@ class TableHeaderView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        collection.delegate = self
-        collection.dataSource = self
-        collection.addSubview(pageControl)
+        configUI()
         configConstraint()
         Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollingSetup), userInfo: nil, repeats: true)
     }
@@ -43,6 +40,7 @@ class TableHeaderView: UIView {
     }
     
     @objc func scrollingSetup() {
+        var index = 0
         if index < (travel?.image.count ?? 1) - 1 {
             index += 1
         } else {
@@ -51,6 +49,12 @@ class TableHeaderView: UIView {
         pageControl.numberOfPages = travel?.image.count ?? 1
         pageControl.currentPage = index
         collection.scrollToItem(at: IndexPath(item: index, section: 0), at: .right, animated: true)
+    }
+    
+    func configUI() {
+        collection.delegate = self
+        collection.dataSource = self
+        collection.addSubview(pageControl)
     }
     
     func configConstraint() {

@@ -9,13 +9,13 @@ import UIKit
 
 class TripsController: UIViewController {
     let viewModel = TripsViewModel()
-
+    
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var searchView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configUI()
     }
     
@@ -43,6 +43,14 @@ extension TripsController: UICollectionViewDelegate, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
         cell.configCell(travel: viewModel.trips[indexPath.row])
+        cell.heartButtonHandler = {
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesController") as! FavouritesController
+            if cell.isHeartButtonSelected() {
+                self.viewModel.coreDataHelper.saveData(travel: self.viewModel.trips[indexPath.row])
+            } else {
+                controller.viewModel.deleteData(at: indexPath)
+            }
+        }
         return cell
     }
     

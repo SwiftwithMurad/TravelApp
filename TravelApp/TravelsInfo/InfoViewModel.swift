@@ -8,5 +8,5 @@
 import Foundation
 
 class InfoViewModel {
-    
+    var travel: Travel?
 }

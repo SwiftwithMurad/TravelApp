@@ -32,7 +32,7 @@ class FavouritesController: UIViewController {
     @objc func refreshData() {
         viewModel.readData {
             self.favouritesTable.reloadData()
-            refreshControl.endRefreshing()
+            self.refreshControl.endRefreshing()
         }
     }
 }
@@ -58,9 +58,10 @@ extension FavouritesController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "") { action, view, completionHandler in
+            NotificationCenter.default.post(name: .favouritesUpdated, object: self.viewModel.travel[indexPath.row].countryName)
+            self.viewModel.helper.deleteData(travel: self.viewModel.travel[indexPath.row], completion: nil)
             self.viewModel.travel.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            self.viewModel.deleteData(at: indexPath)
             completionHandler(true)
         }
         deleteAction.image = UIImage(systemName: "trash")

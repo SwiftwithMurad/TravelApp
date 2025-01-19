@@ -8,7 +8,7 @@
 import UIKit
 
 class HeaderCell: UICollectionViewCell {
-
+    
     @IBOutlet private weak var cellLabel: UILabel!
     @IBOutlet private weak var cellImage: UIImageView!
     @IBOutlet private weak var cellView: UIView!
@@ -17,7 +17,7 @@ class HeaderCell: UICollectionViewCell {
         
         configUI()
     }
-
+    
     func configUI() {
         backgroundColor = .white
         layer.cornerRadius = 20

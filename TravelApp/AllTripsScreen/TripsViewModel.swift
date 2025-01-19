@@ -10,7 +10,8 @@ import Foundation
 class TripsViewModel {
     var trips = [Travel]()
     var existedTrips = [Travel]()
-    var jsonHelper = JsonHelper()
+    let jsonHelper = JsonHelper()
+    let coreDataHelper = CoreDataHelper()
     
     func readData() {
         jsonHelper.readTravelData { travel in

@@ -12,14 +12,14 @@ class FavouritesViewModel {
     var travel = [TravelList]()
     var trips = [Travel]()
     
-    func readData(completion: (() -> Void)) {
+    func readData(completion: (() -> Void)?) {
         helper.fetchData { travel in
             self.travel = travel
-            completion()
+            completion?()
         }
     }
     
     func deleteData(at indexPath: IndexPath) {
-        self.helper.deleteData(at: indexPath)
+        helper.deleteData(travel: travel[indexPath.row], completion: nil)
     }
 }

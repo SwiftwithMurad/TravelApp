@@ -73,9 +73,9 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         cell.heartButtonHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesController") as! FavouritesController
             if cell.isHeartButtonSelected() {
-                self.viewModel.coreDataHelper.saveData(travel: self.viewModel.trips[indexPath.row])
+                controller.viewModel.helper.saveData(travel: self.viewModel.trips[indexPath.row])
             } else {
-                controller.viewModel.deleteData(at: indexPath)
+                controller.viewModel.helper.deleteData(travel: self.viewModel.travel[indexPath.row], completion: nil)
             }
         }
         return cell
@@ -88,7 +88,7 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "InfoController") as! InfoController
         controller.hidesBottomBarWhenPushed = true
-        controller.travel = viewModel.trips[indexPath.row]
+        controller.viewModel.travel = viewModel.trips[indexPath.row]
         controller.title = viewModel.trips[indexPath.row].name
         navigationController?.show(controller, sender: nil)
     }
