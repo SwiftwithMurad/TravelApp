@@ -8,10 +8,6 @@
 import UIKit
 
 class RegisterController: UIViewController {
-    let helper = FileManagerHelper()
-    let manager = UserDefaultsManager()
-    var user = [User]()
-    var sendDataBack: ((User) -> Void)?
     let viewModel = RegisterViewModel()
     
     @IBOutlet private weak var passwordField: UITextField!
@@ -27,9 +23,7 @@ class RegisterController: UIViewController {
         addBottomToEmail(to: emailField, height: 1)
         addBottomToUsername(to: usernameField, height: 1)
         addBottomToPassword(to: passwordField, height: 1)
-        helper.readData { user in
-            self.user = user
-        }
+        viewModel.readData()
     }
     
     func addBottomToEmail(to textField: UITextField, height: CGFloat) {
@@ -58,10 +52,7 @@ class RegisterController: UIViewController {
         if let email = emailField.text, !email.isEmpty,
            let username = usernameField.text, !username.isEmpty,
            let password = passwordField.text, !password.isEmpty {
-            let users: User = .init(username: username, email: email, password: password)
-            user.append(users)
-            helper.writeData(user: user)
-            sendDataBack?(users)
+            viewModel.config(email: email, username: username, password: password)
             navigationController?.popViewController(animated: true)
         }
     }

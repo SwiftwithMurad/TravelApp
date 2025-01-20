@@ -18,8 +18,4 @@ class FavouritesViewModel {
             completion?()
         }
     }
-    
-    func deleteData(at indexPath: IndexPath) {
-        helper.deleteData(travel: travel[indexPath.row], completion: nil)
-    }
 }

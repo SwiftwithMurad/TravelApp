@@ -44,7 +44,7 @@ class LoginController: UIViewController {
     
     @IBAction func createButtonTapped(_ sender: Any) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "RegisterController") as! RegisterController
-        controller.sendDataBack = { user in
+        controller.viewModel.sendUser = { user in
             self.emailField.text = user.email
             self.passwordField.text = user.password
         }

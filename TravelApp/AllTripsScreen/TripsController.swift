@@ -47,9 +47,7 @@ extension TripsController: UICollectionViewDelegate, UICollectionViewDataSource,
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesController") as! FavouritesController
             if cell.isHeartButtonSelected() {
                 self.viewModel.coreDataHelper.saveData(travel: self.viewModel.trips[indexPath.row])
-            } else {
-                controller.viewModel.deleteData(at: indexPath)
-            }
+            } 
         }
         return cell
     }
