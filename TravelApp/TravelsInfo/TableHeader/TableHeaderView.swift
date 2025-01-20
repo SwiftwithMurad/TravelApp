@@ -10,6 +10,7 @@ import UIKit
 class TableHeaderView: UIView {
     var travel: Travel?
     let jsonHelper = JsonHelper()
+    var index = 0
     
     private lazy var collection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -32,29 +33,17 @@ class TableHeaderView: UIView {
         super.init(frame: frame)
         configUI()
         configConstraint()
-        Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollingSetup), userInfo: nil, repeats: true)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func scrollingSetup() {
-        var index = 0
-        if index < (travel?.image.count ?? 1) - 1 {
-            index += 1
-        } else {
-            index = 0
-        }
-        pageControl.numberOfPages = travel?.image.count ?? 1
-        pageControl.currentPage = index
-        collection.scrollToItem(at: IndexPath(item: index, section: 0), at: .right, animated: true)
-    }
-    
     func configUI() {
         collection.delegate = self
         collection.dataSource = self
         collection.addSubview(pageControl)
+        Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(scrollingSetup), userInfo: nil, repeats: true)
     }
     
     func configConstraint() {
@@ -68,6 +57,17 @@ class TableHeaderView: UIView {
             pageControl.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12)
         ])
     }
+    
+    @objc func scrollingSetup() {
+        if index < (travel?.image.count ?? 1) - 1 {
+            index += 1
+        } else {
+            index = 0
+        }
+        pageControl.numberOfPages = travel?.image.count ?? 1
+        pageControl.currentPage = index
+        collection.scrollToItem(at: IndexPath(item: index, section: 0), at: .right, animated: true)
+    }
 }
 
 extension TableHeaderView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -78,7 +78,6 @@ extension TableHeaderView: UICollectionViewDelegate, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TableHeaderCell
         cell.configImage(imageName: travel?.image[indexPath.row] ?? "")
-        cell.addSubview(pageControl)
         return cell
     }
     

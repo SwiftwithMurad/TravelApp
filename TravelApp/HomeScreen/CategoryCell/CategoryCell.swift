@@ -22,13 +22,8 @@ class CategoryCell: UICollectionViewCell {
         configUI()
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        
-        heartButton.isSelected = false
-    }
-    
     deinit {
+        heartButton.isSelected = false
         NotificationCenter.default.removeObserver(self, name: .favouritesUpdated, object: nil)
     }
     
@@ -70,8 +65,4 @@ class CategoryCell: UICollectionViewCell {
         }
         heartButtonHandler?()
     }
-}
-
-extension Notification.Name {
-    static let favouritesUpdated = Notification.Name("favoritesUpdated")
 }
