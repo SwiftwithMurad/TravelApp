@@ -16,7 +16,7 @@
     {
         "id": 1,
         "name": "Lake McDonald",
-        "country": "Canada",
+        "country": "Montana",
         "image": ["lakeMcdonald", "lakeMcdonald2", "lakeMcdonald3"],
         "info": "Lake McDonald is Glacier National Park's biggest lake; ten miles long and 472 feet deep. Filling a basin gouged out by Ice Age glaciers, Lake McDonald is a classic glacial feature. This long fjord-like lake is surrounded by mountains on the north, south, and east with the Continental Divide, 14 miles away. The mountains provide a spectacular backdrop for the lake and also act as a rain block. Much of the blocked precipitation ends up falling on the McDonald valley. The result is a mild, damp climate. Stands of western red cedar and hemlock flourish in the valley of Lake McDonald. The wildlife-viewing here can be spectacular, with species including bighorn sheep, mountain goat, elk, black bear, and whitetail and mule deer."
     },
@@ -37,7 +37,7 @@
     {
         "id": 1,
         "name": "Moraine Lake",
-        "country": "Canada",
+        "country": "Alberta",
         "image": ["moraineLake", "moraineLake2", "moraineLake3"],
         "info": "Don't miss a visit to one of Banff's most popular locations, Moraine Lake. This stunning turquoise gem, cradled by the Valley of the Ten Peaks, is a sight straight out of a dream. Take in the iconic views from the lakeshore and the rockpile or explore the area further with trails suitable for both seasoned hikers and casual  Open from June to October, a shuttle is required to access Moraine Lake. Plan ahead and book your shuttle in advance to avoid Moraine Lake is closed in the winter months from October to June. The road is track set for cross-country skiing when conditions permit."
     },
