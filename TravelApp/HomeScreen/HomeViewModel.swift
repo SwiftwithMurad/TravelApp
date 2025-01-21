@@ -25,6 +25,9 @@ class HomeViewModel {
             self.trips = trips
             self.existedTrips = trips
         }
+    }
+    
+    func readCoreData() {
         coreDataHelper.fetchData { travel in
             self.travel = travel
         }

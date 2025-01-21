@@ -44,10 +44,14 @@ extension TripsController: UICollectionViewDelegate, UICollectionViewDataSource,
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
         cell.configCell(travel: viewModel.trips[indexPath.row])
         cell.heartButtonHandler = {
-            let controller = self.storyboard?.instantiateViewController(withIdentifier: "FavouritesController") as! FavouritesController
+            self.viewModel.readCoreData()
             if cell.isHeartButtonSelected() {
-                self.viewModel.coreDataHelper.saveData(travel: self.viewModel.trips[indexPath.row])
-            } 
+                self.viewModel.saveData(at: indexPath)
+            } else {
+                if let selectedTrip = self.viewModel.travel.first(where: { $0.tripName == self.viewModel.existedTrips[indexPath.row].name }) {
+                    self.viewModel.deleteData(travel: selectedTrip)
+                }
+            }
         }
         return cell
     }

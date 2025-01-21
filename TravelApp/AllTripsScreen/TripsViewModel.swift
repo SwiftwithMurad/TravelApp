@@ -10,6 +10,7 @@ import Foundation
 class TripsViewModel {
     var trips = [Travel]()
     var existedTrips = [Travel]()
+    var travel = [TravelList]()
     let jsonHelper = JsonHelper()
     let coreDataHelper = CoreDataHelper()
     
@@ -18,6 +19,20 @@ class TripsViewModel {
             trips = travel
             existedTrips = trips
         }
+    }
+    
+    func readCoreData() {
+        coreDataHelper.fetchData { travel in
+            self.travel = travel
+        }
+    }
+    
+    func saveData(at indexPath: IndexPath) {
+        coreDataHelper.saveData(travel: trips[indexPath.row])
+    }
+    
+    func deleteData(travel: TravelList) {
+        coreDataHelper.deleteData(travel: travel, completion: nil)
     }
     
     func configSearch(search: String, reloadCollection: (() -> Void)) {
