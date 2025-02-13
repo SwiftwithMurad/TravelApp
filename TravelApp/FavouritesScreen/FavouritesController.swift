@@ -30,9 +30,10 @@ class FavouritesController: UIViewController {
     }
     
     @objc func refreshData() {
-        viewModel.readData {
-            self.favouritesTable.reloadData()
-            self.refreshControl.endRefreshing()
+        viewModel.readData { [weak self] in
+            guard let self = self else { return }
+            favouritesTable.reloadData()
+            refreshControl.endRefreshing()
         }
     }
 }

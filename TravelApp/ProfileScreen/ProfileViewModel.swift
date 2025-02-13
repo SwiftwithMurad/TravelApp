@@ -14,7 +14,8 @@ class ProfileViewModel {
     let fileManagerHelper = FileManagerHelper()
     
     func configViewModel(completion: ((String, String, String) -> Void)) {
-        fileManagerHelper.readData { user in
+        fileManagerHelper.readData { [weak self] user in
+            guard let self = self else { return }
             self.user = user
         }
         let filteredUser = user.filter({ $0.email == userDefaultsManager.getString(key: .emailSaved) })

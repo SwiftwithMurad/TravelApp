@@ -17,8 +17,9 @@ class LoginViewModel {
     var errorAlert: (() -> Void)?
     
     func readUserData() {
-        helper.readData { result in
-            self.user = result
+        helper.readData { [weak self] result in
+            guard let self = self else { return }
+            user = result
         }
     }
     

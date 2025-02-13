@@ -101,13 +101,15 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
             header.configCategory(category: viewModel.category)
             viewModel.isSegmentConfigured = true
         }
-        header.buttonHandler = {
-            let controller = self.storyboard?.instantiateViewController(withIdentifier: "TripsController") as! TripsController
-            self.navigationController?.show(controller, sender: nil)
+        header.buttonHandler = { [weak self] in
+            guard let self = self else { return }
+            let controller = storyboard?.instantiateViewController(withIdentifier: "TripsController") as! TripsController
+            navigationController?.show(controller, sender: nil)
         }
-        header.reloadCategoryData = { id in
-            self.viewModel.trips = self.viewModel.existedTrips.filter({ $0.id == id })
-            self.homeCollection.reloadData()
+        header.reloadCategoryData = { [weak self] id in
+            guard let self = self else { return }
+            viewModel.trips = viewModel.existedTrips.filter({ $0.id == id })
+            homeCollection.reloadData()
         }
         return header
     }

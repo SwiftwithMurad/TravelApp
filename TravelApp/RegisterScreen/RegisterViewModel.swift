@@ -14,7 +14,8 @@ class RegisterViewModel {
     var sendUser: ((User) -> Void)?
     
     func readData() {
-        helper.readData { user in
+        helper.readData { [weak self] user in
+            guard let self = self else { return }
             self.user = user
         }
     }

@@ -13,7 +13,8 @@ class FavouritesViewModel {
     var trips = [Travel]()
     
     func readData(completion: (() -> Void)?) {
-        helper.fetchData { travel in
+        helper.fetchData { [weak self] travel in
+            guard let self = self else { return }
             self.travel = travel
             completion?()
         }

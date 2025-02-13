@@ -34,10 +34,11 @@ class ProfileController: UIViewController {
             view.layer.borderWidth = 1
             view.layer.borderColor = UIColor.home.cgColor
         }
-        viewModel.configViewModel { email, name, password in
-            self.emailLabel.text = email
-            self.nameLabel.text = name
-            self.passwordLabel.text = password
+        viewModel.configViewModel { [weak self] email, name, password in
+            guard let self = self else { return }
+            emailLabel.text = email
+            nameLabel.text = name
+            passwordLabel.text = password
         }
     }
     

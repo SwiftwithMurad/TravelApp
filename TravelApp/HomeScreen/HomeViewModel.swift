@@ -18,17 +18,20 @@ class HomeViewModel {
     var isSegmentConfigured = false
     
     func readData() {
-        jsonHelper.readCategoryData { categories in
-            self.category = categories
+        jsonHelper.readCategoryData { [weak self] categories in
+            guard let self = self else { return }
+            category = categories
         }
-        jsonHelper.readTravelData { trips in
+        jsonHelper.readTravelData { [weak self] trips in
+            guard let self = self else { return }
             self.trips = trips
-            self.existedTrips = trips
+            existedTrips = trips
         }
     }
     
     func readCoreData() {
-        coreDataHelper.fetchData { travel in
+        coreDataHelper.fetchData { [weak self] travel in
+            guard let self = self else { return }
             self.travel = travel
         }
     }

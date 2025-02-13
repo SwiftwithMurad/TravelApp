@@ -15,14 +15,16 @@ class TripsViewModel {
     let coreDataHelper = CoreDataHelper()
     
     func readData() {
-        jsonHelper.readTravelData { travel in
+        jsonHelper.readTravelData { [weak self] travel in
+            guard let self = self else { return }
             trips = travel
             existedTrips = trips
         }
     }
     
     func readCoreData() {
-        coreDataHelper.fetchData { travel in
+        coreDataHelper.fetchData { [weak self] travel in
+            guard let self = self else { return }
             self.travel = travel
         }
     }
